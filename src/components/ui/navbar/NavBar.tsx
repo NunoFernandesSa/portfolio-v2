@@ -18,24 +18,28 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcn/navigation-menu";
-import ThemeToggle from "../theme_toggle/ThemeToggle";
 
 /**
  * Lucide Icons
  */
 import { Menu } from "lucide-react";
+import { ModeToggle } from "../theme_toggle/ThemeToggle";
 
 /**
- * Fonts
+ * Fonts configuration constants
  */
 const dancingScript = Dancing_Script({
   subsets: ["latin"],
 });
+
 export default function NavBar() {
   return (
     <>
       {/* ----- Logo ----- */}
-      <Link href="" className={`${dancingScript.className} text-2xl font-bold`}>
+      <Link
+        href="/"
+        className={`${dancingScript.className} text-2xl font-bold`}
+      >
         Nuno Fernandes
       </Link>
 
@@ -69,7 +73,7 @@ export default function NavBar() {
           {/* Theme toggle */}
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <ThemeToggle />
+              <ModeToggle />
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>

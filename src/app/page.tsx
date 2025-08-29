@@ -1,4 +1,6 @@
-import NavBar from "@/components/navbar/NavBar";
+import NavBar from "@/components/ui/navbar/NavBar";
+import Section from "@/components/Section";
+import AboutTabs from "@/components/ui/about_tabs/AboutTabs";
 
 export default function Home() {
   return (
@@ -6,7 +8,11 @@ export default function Home() {
       <header className="flex items-center justify-between border-b-2">
         <NavBar />
       </header>
-      <main></main>
+      <main>
+        <Section>
+          <AboutTabs />
+        </Section>
+      </main>
       <footer></footer>
     </>
   );
