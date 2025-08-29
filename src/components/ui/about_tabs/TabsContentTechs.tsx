@@ -1,4 +1,12 @@
+/**
+ * Node modules / next
+ */
 import React from "react";
+import Image from "next/image";
+
+/**
+ * Shadcn Components
+ */
 import { TabsContent } from "../shadcn/tabs";
 import {
   Card,
@@ -8,6 +16,16 @@ import {
   CardHeader,
   CardTitle,
 } from "../shadcn/card";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/shadcn/tooltip";
+
+/**
+ * Skills icons
+ */
+import { skills } from "@/lib/skills-list";
 import { Button } from "../shadcn/button";
 
 export default function TabsContentTechs() {
@@ -23,10 +41,24 @@ export default function TabsContentTechs() {
             ready for future challenges.
           </CardDescription>
         </CardHeader>
-        <CardContent className="grid gap-6"></CardContent>
-        <CardFooter>
-          <Button>Save password</Button>
-        </CardFooter>
+        <CardContent className="flex flex-wrap gap-6">
+          {skills.map((skill) => (
+            <Tooltip key={skill.label}>
+              <TooltipTrigger className="p-1 bg-white rounded-md shadow-md">
+                <Image
+                  src={skill.icon}
+                  alt={skill.label}
+                  width={36}
+                  height={36}
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{skill.label}</p>
+                {/* <p>{skill.description}</p> */}
+              </TooltipContent>
+            </Tooltip>
+          ))}
+        </CardContent>
       </Card>
     </TabsContent>
   );
