@@ -1,20 +1,13 @@
-import { AppWindowIcon, CodeIcon } from "lucide-react";
+/**
+ * Shadcn Components
+ */
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/shadcn/tabs";
 
-import { Button } from "@/components/ui/shadcn/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/shadcn/card";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/shadcn/tabs";
+/**
+ * Components
+ */
+import TabsContentAboutMe from "./TabsContentAboutMe";
+import TabsContentTechs from "./TabsContentTechs";
 
 /**
  * Fonts
@@ -28,7 +21,7 @@ const dancingScript = Dancing_Script({
   subsets: ["latin"],
 });
 
-export default function TabsDemo() {
+export default function AboutTabs() {
   return (
     <div className={`flex w-full max-w-sm flex-col gap-6`}>
       <Tabs defaultValue="me">
@@ -39,62 +32,10 @@ export default function TabsDemo() {
         </TabsList>
 
         {/* me */}
-        <TabsContent value="me">
-          <Card>
-            <CardHeader>
-              <CardTitle className={`${dancingScript.className} text-lg`}>
-                Nuno Fernandes
-              </CardTitle>
-              <CardDescription>Full Stack Developer</CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-6">
-              As a freelance developer, I design and build tailored web and
-              mobile applications. Whether working directly with clients or
-              collaborating with tech and design professionals, I deliver
-              high-quality, customized solutions to meet your needs.
-            </CardContent>
-            <CardContent className="grid">
-              <span className="italic">Do you have an idea?</span>
-              <span className="italic">I can turn it into a product.</span>
-            </CardContent>
-            <CardFooter>
-              <Button className="cursor-pointer">Let's talk</Button>
-            </CardFooter>
-          </Card>
-        </TabsContent>
+        <TabsContentAboutMe fontStyle={dancingScript.className} />
 
         {/* Techs */}
-        <TabsContent value="techs">
-          <Card>
-            <CardHeader>
-              <CardTitle>Techs</CardTitle>
-              <CardDescription>
-                Change your techs here. After saving, you&apos;ll be logged out.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-6"></CardContent>
-            <CardFooter>
-              <Button>Save password</Button>
-            </CardFooter>
-          </Card>
-        </TabsContent>
-
-        {/* Contact */}
-        <TabsContent value="contact">
-          <Card>
-            <CardHeader>
-              <CardTitle>Contact</CardTitle>
-              <CardDescription>
-                Change your contact information here. After saving, you&apos;ll
-                be logged out.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="grid gap-6"></CardContent>
-            <CardFooter>
-              <Button>Save changes</Button>
-            </CardFooter>
-          </Card>
-        </TabsContent>
+        <TabsContentTechs />
       </Tabs>
     </div>
   );

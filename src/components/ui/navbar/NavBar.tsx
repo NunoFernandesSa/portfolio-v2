@@ -54,12 +54,6 @@ export default function NavBar() {
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link href="">About</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
               <Link href="">Services</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
