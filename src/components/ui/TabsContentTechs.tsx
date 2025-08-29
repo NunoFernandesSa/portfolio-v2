@@ -7,30 +7,34 @@ import Image from "next/image";
 /**
  * Shadcn Components
  */
-import { TabsContent } from "../shadcn/tabs";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
-} from "../shadcn/card";
+} from "./shadcn/card";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/shadcn/tooltip";
+import { TabsContent } from "./shadcn/tabs";
 
 /**
  * Skills icons
  */
 import { skills } from "@/lib/skills-list";
-import { Button } from "../shadcn/button";
 
-export default function TabsContentTechs() {
+export default function TabsContentTechs({
+  value,
+  className,
+}: {
+  value: string;
+  className?: string;
+}) {
   return (
-    <TabsContent value="techs">
+    <TabsContent value={value} className={className}>
       <Card>
         <CardHeader>
           <CardTitle>Technologies I Use</CardTitle>

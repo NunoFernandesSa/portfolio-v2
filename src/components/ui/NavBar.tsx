@@ -1,16 +1,11 @@
 /**
- * Node Modules
+ * Node Modules / Next
  */
 import React from "react";
 import Link from "next/link";
 
 /**
- * Fonts
- */
-import { Dancing_Script } from "next/font/google";
-
-/**
- * Components
+ * UI components
  */
 import {
   NavigationMenu,
@@ -18,12 +13,17 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcn/navigation-menu";
+import { ModeToggle } from "./theme_toggle/ThemeToggle";
 
 /**
  * Lucide Icons
  */
 import { Menu } from "lucide-react";
-import { ModeToggle } from "../theme_toggle/ThemeToggle";
+
+/**
+ * Fonts
+ */
+import { Dancing_Script } from "next/font/google";
 
 /**
  * Fonts configuration constants

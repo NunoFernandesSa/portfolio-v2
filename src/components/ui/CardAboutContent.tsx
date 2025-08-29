@@ -3,7 +3,6 @@ import React from "react";
 /**
  * Shadcn components
  */
-import { TabsContent } from "../shadcn/tabs";
 import {
   Card,
   CardContent,
@@ -11,21 +10,26 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../shadcn/card";
-import { Button } from "../shadcn/button";
+} from "./shadcn/card";
+import { Button } from "./shadcn/button";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/shadcn/avatar";
+import { TabsContent } from "./shadcn/tabs";
 
 export default function TabsContentAboutMe({
   fontStyle,
+  value,
+  className,
 }: {
   fontStyle: string;
+  value: string;
+  className?: string;
 }) {
   return (
-    <TabsContent value="me">
+    <TabsContent value={value} className={className}>
       <Card>
         <CardHeader>
           <Avatar className="h-36 w-36 border">

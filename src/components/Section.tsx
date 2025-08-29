@@ -6,7 +6,5 @@ interface SectionProps {
 }
 
 export default function Section({ children, className }: SectionProps) {
-  return (
-    <section className={`bg-red-500 mt-16 ${className}`}>{children}</section>
-  );
+  return <section className={`mt-24 ${className}`}>{children}</section>;
 }
