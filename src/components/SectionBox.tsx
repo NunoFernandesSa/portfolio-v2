@@ -5,11 +5,6 @@ import React from "react";
  */
 import { Card } from "./ui/shadcn/card";
 
-/**
- * Ui components
- */
-import TitleSection from "./ui/TitleSection";
-
 export default function SectionProjectsBox({
   children,
 }: {
@@ -17,10 +12,7 @@ export default function SectionProjectsBox({
 }) {
   return (
     <>
-      <Card className="w-full p-6">
-        <TitleSection title="Projects" />
-        {children}
-      </Card>
+      <Card className="w-full p-6">{children}</Card>
     </>
   );
 }

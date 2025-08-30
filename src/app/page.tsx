@@ -7,18 +7,10 @@ import TabsContentAbout from "@/components/ui/CardAboutContent";
 import TabsContentTechs from "@/components/ui/TabsContentTechs";
 
 /**
- * Fonts
+ * UI components
  */
-import { Dancing_Script } from "next/font/google";
-import Hero from "@/components/ui/Hero";
 import { ModeToggle } from "@/components/ui/theme_toggle/ThemeToggle";
-
-/**
- * Fonts configuration constants
- */
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-});
+import TitleSection from "@/components/ui/TitleSection";
 
 export default function Home() {
   return (
@@ -28,11 +20,10 @@ export default function Home() {
         <ModeToggle />
       </header>
       <main>
-        {/* <Section className="bg-red-300">
-          <Hero />
-        </Section> */}
         <Section className="flex gap-4">
-          <SectionBox></SectionBox>
+          <SectionBox>
+            <TitleSection title="Projects" />
+          </SectionBox>
           <BaseTabs
             tabsTrigger={[
               <TabsTrigger value="me" key="me">
