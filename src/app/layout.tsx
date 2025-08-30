@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { geistSans, geistMono, lato, rubik } from "@/lib/fonts";
 
 import "./globals.css";
-import { ThemeProvider } from "@/components/ui/theme-provider";
+import { ThemeProvider } from "@/components/custom/theme-provider";
 
 export const metadata: Metadata = {
   title: "Nuno Fernandes | Portfolio",

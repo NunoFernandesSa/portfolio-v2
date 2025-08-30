@@ -13,7 +13,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcn/navigation-menu";
-import { ModeToggle } from "./theme_toggle/ThemeToggle";
+import { ModeToggle } from "../custom/theme_toggle/ThemeToggle";
 
 /**
  * Lucide Icons

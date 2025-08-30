@@ -1,16 +1,15 @@
-import NavBar from "@/components/ui/NavBar";
-import Section from "@/components/Section";
-import BaseTabs from "@/components/ui/BaseTabs";
-import SectionBox from "@/components/SectionBox";
-import { TabsTrigger } from "@/components/ui/shadcn/tabs";
-import TabsContentAbout from "@/components/ui/CardAboutContent";
-import TabsContentTechs from "@/components/ui/TabsContentTechs";
-
 /**
  * UI components
  */
-import { ModeToggle } from "@/components/ui/theme_toggle/ThemeToggle";
-import TitleSection from "@/components/ui/TitleSection";
+import NavBar from "@/components/custom/NavBar";
+import Section from "@/components/custom/Section";
+import BaseTabs from "@/components/custom/BaseTabs";
+import SectionBox from "@/components/custom/SectionBox";
+import TabsContentAbout from "@/components/custom/CardAboutContent";
+import TabsContentTechs from "@/components/custom/TabsContentTechs";
+import { TabsTrigger } from "@/components/ui/shadcn/tabs";
+import { ModeToggle } from "@/components/custom/theme_toggle/ThemeToggle";
+import TitleSection from "@/components/custom/TitleSection";
 
 export default function Home() {
   return (
@@ -24,6 +23,7 @@ export default function Home() {
           <SectionBox>
             <TitleSection title="Projects" />
           </SectionBox>
+
           <BaseTabs
             tabsTrigger={[
               <TabsTrigger value="me" key="me">
