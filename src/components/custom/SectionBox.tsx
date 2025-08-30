@@ -3,7 +3,7 @@ import React from "react";
 /**
  * Shadcn components
  */
-import { Card } from "./ui/shadcn/card";
+import { Card } from "@/components/ui/shadcn/card";
 
 export default function SectionProjectsBox({
   children,

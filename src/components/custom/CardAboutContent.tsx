@@ -10,14 +10,14 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./shadcn/card";
-import { Button } from "./shadcn/button";
+} from "@/components/ui/shadcn/card";
+import { Button } from "@/components/ui/shadcn/button";
 import {
   Avatar,
   AvatarFallback,
   AvatarImage,
 } from "@/components/ui/shadcn/avatar";
-import { TabsContent } from "./shadcn/tabs";
+import { TabsContent } from "@/components/ui/shadcn/tabs";
 
 export default function TabsContentAboutMe({
   fontStyle,

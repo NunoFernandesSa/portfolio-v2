@@ -13,13 +13,13 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./shadcn/card";
+} from "@/components/ui/shadcn/card";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/shadcn/tooltip";
-import { TabsContent } from "./shadcn/tabs";
+import { TabsContent } from "@/components/ui/shadcn/tabs";
 
 /**
  * Skills icons
