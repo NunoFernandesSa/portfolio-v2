@@ -15,9 +15,8 @@ import { portfolioItems } from "@/constants/portfolio";
 export default function Home() {
   return (
     <>
-      <header className="flex items-center justify-between border-b-2">
+      <header className="flex items-center justify-center">
         <NavBar />
-        <ModeToggle />
       </header>
       <main></main>
       <footer></footer>

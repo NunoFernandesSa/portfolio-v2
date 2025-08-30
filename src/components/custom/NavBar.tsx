@@ -36,12 +36,20 @@ export default function NavBar() {
   return (
     <>
       {/* ----- Desktop navbar links ----- */}
-      <NavigationMenu className="hidden md:flex h-14">
-        <NavigationMenuList>
+      <NavigationMenu className="hidden md:flex h-14 border m-2 px-6 rounded-full">
+        <NavigationMenuList className="flex gap-3">
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link href="" className="text-[14px] font-semibold">
                 Home
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Link href="" className="text-[14px] font-semibold">
+                Portfolio
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
@@ -61,8 +69,11 @@ export default function NavBar() {
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
+
+          <ModeToggle />
         </NavigationMenuList>
       </NavigationMenu>
+
       {/* mobile navbar links */}
       {/* ----- navbar links ----- */}
       <NavigationMenu className="flex md:hidden h-14">
