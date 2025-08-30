@@ -24,7 +24,7 @@ import { TabsContent } from "@/components/ui/shadcn/tabs";
 /**
  * Skills icons
  */
-import { skills } from "@/lib/skills-list";
+import { skills } from "@/constants/skills-list";
 
 export default function TabsContentTechs({
   value,

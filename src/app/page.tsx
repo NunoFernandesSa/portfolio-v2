@@ -4,12 +4,18 @@
 import NavBar from "@/components/custom/NavBar";
 import Section from "@/components/custom/Section";
 import BaseTabs from "@/components/custom/BaseTabs";
-import SectionBox from "@/components/custom/SectionBox";
 import TabsContentAbout from "@/components/custom/CardAboutContent";
 import TabsContentTechs from "@/components/custom/TabsContentTechs";
 import { TabsTrigger } from "@/components/ui/shadcn/tabs";
 import { ModeToggle } from "@/components/custom/theme_toggle/ThemeToggle";
 import TitleSection from "@/components/custom/TitleSection";
+import PortfolioBox from "@/components/custom/PortfolioBox";
+import PortfolioCard from "@/components/custom/PortfolioCard";
+
+/**
+ *
+ */
+import { portfolioItems } from "@/constants/portfolio";
 
 export default function Home() {
   return (
@@ -20,9 +26,25 @@ export default function Home() {
       </header>
       <main>
         <Section className="flex gap-4">
-          <SectionBox>
+          <PortfolioBox>
             <TitleSection title="Projects" />
-          </SectionBox>
+            <p>
+              Explore my recent work. Transforming ideas into powerful technical
+              solutions.
+            </p>
+
+            <div className="grid grid-cols-3 gap-4">
+              {portfolioItems.map((item) => (
+                <PortfolioCard
+                  key={item.title}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                  link={item.link}
+                />
+              ))}
+            </div>
+          </PortfolioBox>
 
           <BaseTabs
             tabsTrigger={[

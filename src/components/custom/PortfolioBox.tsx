@@ -5,7 +5,7 @@ import React from "react";
  */
 import { Card } from "@/components/ui/shadcn/card";
 
-export default function SectionProjectsBox({
+export default function PortfolioBox({
   children,
 }: {
   children?: React.ReactNode;
