@@ -35,44 +35,34 @@ const dancingScript = Dancing_Script({
 export default function NavBar() {
   return (
     <>
-      {/* ----- Logo ----- */}
-      <Link
-        href="/"
-        className={`${dancingScript.className} text-2xl font-bold`}
-      >
-        Nuno Fernandes
-      </Link>
-
       {/* ----- Desktop navbar links ----- */}
       <NavigationMenu className="hidden md:flex h-14">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link href="">Home</Link>
+              <Link href="" className="text-[14px] font-semibold">
+                Home
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link href="">Services</Link>
+              <Link href="" className="text-[14px] font-semibold">
+                Services
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link href="">Contact</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-
-          {/* Theme toggle */}
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <ModeToggle />
+              <Link href="" className="text-[14px] font-semibold">
+                Contact
+              </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
-
       {/* mobile navbar links */}
       {/* ----- navbar links ----- */}
       <NavigationMenu className="flex md:hidden h-14">

@@ -24,7 +24,7 @@ export default function TabsContentAboutMe({
   value,
   className,
 }: {
-  fontStyle: string;
+  fontStyle?: string;
   value: string;
   className?: string;
 }) {

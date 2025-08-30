@@ -10,6 +10,8 @@ import TabsContentTechs from "@/components/ui/TabsContentTechs";
  * Fonts
  */
 import { Dancing_Script } from "next/font/google";
+import Hero from "@/components/ui/Hero";
+import { ModeToggle } from "@/components/ui/theme_toggle/ThemeToggle";
 
 /**
  * Fonts configuration constants
@@ -23,9 +25,14 @@ export default function Home() {
     <>
       <header className="flex items-center justify-between border-b-2">
         <NavBar />
+        <ModeToggle />
       </header>
       <main>
+        {/* <Section className="bg-red-300">
+          <Hero />
+        </Section> */}
         <Section className="flex gap-4">
+          <SectionBox></SectionBox>
           <BaseTabs
             tabsTrigger={[
               <TabsTrigger value="me" key="me">
@@ -39,16 +46,11 @@ export default function Home() {
               </TabsTrigger>,
             ]}
             tabsContent={[
-              <TabsContentAbout
-                value="me"
-                fontStyle={dancingScript.className}
-                key={"me"}
-              />,
+              <TabsContentAbout value="me" key={"me"} />,
               <TabsContentTechs key={"techs"} value="techs" />,
             ]}
             value="me"
           />
-          <SectionBox></SectionBox>
         </Section>
       </main>
       <footer></footer>
