@@ -39,6 +39,14 @@ export default function NavBar({ className }: { className?: string }) {
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link href="" className="text-[14px] font-semibold">
+                Technologies
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Link href="" className="text-[14px] font-semibold">
                 Portfolio
               </Link>
             </NavigationMenuLink>

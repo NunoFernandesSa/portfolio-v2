@@ -6,7 +6,7 @@ import Section from "./Section";
 
 export default function Hero() {
   return (
-    <Section className="lg:mb-36">
+    <Section className="">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:p-8">

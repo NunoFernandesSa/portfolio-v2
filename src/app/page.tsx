@@ -5,6 +5,8 @@ import NavBar from "@/components/custom/NavBar";
 import Hero from "@/components/custom/Hero";
 import Technologies from "@/components/custom/Technologies";
 import Projects from "@/components/custom/Projects";
+import Services from "@/components/custom/Services";
+import Contact from "@/components/custom/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
         <Hero />
         <Technologies />
         <Projects />
+        <Services />
+        <Contact />
       </main>
       <footer></footer>
     </>

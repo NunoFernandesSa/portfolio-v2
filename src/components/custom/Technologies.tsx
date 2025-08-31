@@ -33,11 +33,18 @@ import TitleSection from "./TitleSection";
  * Shadcn components
  */
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
+import SubtitleSection from "./SubtitleSection";
 
 export default function Technologies() {
   return (
     <Section>
       <TitleSection title="Technologies" />
+      <SubtitleSection
+        text=" I expertly wield cutting-edge technologies to build high-performance
+        solutions across the full development lifecycle. By continuously
+        adopting the latest industry innovations, I create scalable systems
+        ready for future challenges."
+      />
 
       <div className="flex flex-wrap items-center justify-center gap-10">
         {/* ----- frontend ----- -----*/}

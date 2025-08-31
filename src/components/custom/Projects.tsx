@@ -16,11 +16,13 @@ import TitleSection from "./TitleSection";
  */
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
 import Image from "next/image";
+import SubtitleSection from "./SubtitleSection";
 
 export default function Projects() {
   return (
     <Section>
       <TitleSection title="Projects" />
+      <SubtitleSection text="Explore my recent work. Transforming ideas into powerful technical solutions." />
 
       <div className="">
         {PORTFOLIO_ITEMS.map((project, index) => (
