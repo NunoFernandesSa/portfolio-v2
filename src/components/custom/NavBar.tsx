@@ -16,55 +16,49 @@ import {
 import { ModeToggle } from "../custom/theme_toggle/ThemeToggle";
 
 /**
- * Lucide Icons
+ * React Icons
  */
-import { Menu } from "lucide-react";
+import { RiHome2Line } from "react-icons/ri";
+import { FaCode } from "react-icons/fa6";
+import { PiBriefcase } from "react-icons/pi";
+import { LuMessageSquareCode } from "react-icons/lu";
+import { MdOutlineDesignServices } from "react-icons/md";
 
 export default function NavBar({ className }: { className?: string }) {
   return (
     <>
       {/* ----- Desktop navbar links ----- */}
       <NavigationMenu
-        className={`hidden md:flex h-14 border m-2 px-6 rounded-full ${className}`}
+        className={`flex h-14 border px-3 mt-3 rounded-xl ${className}`}
       >
-        <NavigationMenuList className="flex gap-3">
+        <NavigationMenuList className="flex gap-2">
           <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link href="/" className="text-[14px] font-semibold">
-                Home
-              </Link>
+            <NavigationMenuLink className="cursor-pointer">
+              <RiHome2Line />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link href="" className="text-[14px] font-semibold">
-                Technologies
-              </Link>
+            <NavigationMenuLink className="cursor-pointer">
+              <FaCode />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link href="" className="text-[14px] font-semibold">
-                Portfolio
-              </Link>
+            <NavigationMenuLink className="cursor-pointer">
+              <PiBriefcase />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link href="" className="text-[14px] font-semibold">
-                Services
-              </Link>
+            <NavigationMenuLink className="cursor-pointer">
+              <MdOutlineDesignServices />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link href="" className="text-[14px] font-semibold">
-                Contact
-              </Link>
+            <NavigationMenuLink className="cursor-pointer">
+              <LuMessageSquareCode />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
@@ -74,15 +68,15 @@ export default function NavBar({ className }: { className?: string }) {
 
       {/* mobile navbar links */}
       {/* ----- navbar links ----- */}
-      <NavigationMenu className="flex md:hidden h-14">
+      {/* <NavigationMenu className="md:hidden h-14 mt-2">
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Menu size={38} />
+              <Menu size={56} className="border" />
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>
-      </NavigationMenu>
+      </NavigationMenu> */}
     </>
   );
 }

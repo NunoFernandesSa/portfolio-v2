@@ -12,7 +12,7 @@ import Footer from "@/components/custom/Footer";
 export default function Home() {
   return (
     <>
-      <header className="container mx-auto px-4 sm:px-8 flex items-center justify-center">
+      <header className="container mx-auto flex items-center justify-center">
         <NavBar />
       </header>
       <main className="container mx-auto px-4 sm:px-8">
