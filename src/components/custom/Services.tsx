@@ -18,6 +18,12 @@ import Section from "./Section";
 import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";
 
+/**
+ * Constants
+ */
+import { SERVICES } from "@/constants/services";
+import Image from "next/image";
+
 export default function Services() {
   return (
     <Section>
@@ -28,15 +34,24 @@ export default function Services() {
 From concept to long-term support, let's make your digital vision a reality."
       />
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Web Development</CardTitle>
-          <CardDescription>
-            Enter your email below to login to your account
-          </CardDescription>
-        </CardHeader>
-        <CardContent></CardContent>
-      </Card>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-6">
+        {SERVICES.map((service, index) => (
+          <Card key={index} className="bg-transparent border">
+            <CardHeader>
+              <Image
+                src={service.icon}
+                alt={service.title}
+                width={80}
+                height={80}
+                className="mx-auto"
+              />
+              <CardTitle>{service.title}</CardTitle>
+              <CardDescription>{service.description}</CardDescription>
+            </CardHeader>
+            <CardContent></CardContent>
+          </Card>
+        ))}
+      </div>
     </Section>
   );
 }
