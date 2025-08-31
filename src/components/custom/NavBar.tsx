@@ -30,7 +30,7 @@ export default function NavBar({ className }: { className?: string }) {
         <NavigationMenuList className="flex gap-3">
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
-              <Link href="" className="text-[14px] font-semibold">
+              <Link href="/" className="text-[14px] font-semibold">
                 Home
               </Link>
             </NavigationMenuLink>
