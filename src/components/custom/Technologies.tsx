@@ -46,11 +46,11 @@ export default function Technologies() {
         ready for future challenges."
       />
 
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-10">
         {/* ----- frontend ----- -----*/}
         <Card>
           <CardHeader>Frontend</CardHeader>
-          <CardContent className="flex flex-wrap items-center gap-3">
+          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
             {/* React */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -95,7 +95,7 @@ export default function Technologies() {
         {/* ----- backend ----- -----*/}
         <Card>
           <CardHeader>Backend</CardHeader>
-          <CardContent className="flex flex-wrap items-center gap-3">
+          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
             {/* Nodejs */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -140,7 +140,7 @@ export default function Technologies() {
         {/* ----- mobile ----- */}
         <Card>
           <CardHeader>Mobile</CardHeader>
-          <CardContent className="flex flex-wrap items-center gap-3">
+          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
             {/* Dart */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -162,40 +162,11 @@ export default function Technologies() {
             </Tooltip>
           </CardContent>
         </Card>
-        {/* ----- other skills ----- */}
+
+        {/* ----- Database -----*/}
         <Card>
-          <CardHeader>Other skills</CardHeader>
-          <CardContent className="flex flex-wrap items-center gap-3">
-            {/* electron.js */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiElectron className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Electron.js</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Figma */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <FaFigma className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Figma</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Docker */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandDocker className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Docker</span>
-              </TooltipContent>
-            </Tooltip>
-
+          <CardHeader>Database</CardHeader>
+          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
             {/* Postgresql */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -223,6 +194,41 @@ export default function Technologies() {
               </TooltipTrigger>
               <TooltipContent>
                 <span>Sqlite</span>
+              </TooltipContent>
+            </Tooltip>
+          </CardContent>
+        </Card>
+
+        {/* ----- other skills ----- */}
+        <Card>
+          <CardHeader>Other skills</CardHeader>
+          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
+            {/* electron.js */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiElectron className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Electron.js</span>
+              </TooltipContent>
+            </Tooltip>
+            {/* Figma */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <FaFigma className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Figma</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Docker */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandDocker className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Docker</span>
               </TooltipContent>
             </Tooltip>
 
