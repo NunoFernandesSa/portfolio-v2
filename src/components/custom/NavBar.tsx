@@ -20,18 +20,6 @@ import { ModeToggle } from "../custom/theme_toggle/ThemeToggle";
  */
 import { Menu } from "lucide-react";
 
-/**
- * Fonts
- */
-import { Dancing_Script } from "next/font/google";
-
-/**
- * Fonts configuration constants
- */
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-});
-
 export default function NavBar() {
   return (
     <>
