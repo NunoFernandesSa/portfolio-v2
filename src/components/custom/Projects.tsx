@@ -1,6 +1,11 @@
 import React from "react";
 
 /**
+ * Shadcn components
+ */
+import { Badge } from "@/components/ui/shadcn/badge";
+
+/**
  * Ui components
  */
 import Section from "./Section";
@@ -19,7 +24,7 @@ export default function Projects() {
 
       <div className="">
         {PORTFOLIO_ITEMS.map((project, index) => (
-          <div className="mb-8 flex flex-wrap lg:justify-center" key={index}>
+          <div className="mb-10 flex flex-wrap lg:justify-center" key={index}>
             <div className="w-full lg:w-1/4">
               <Image
                 src={project.image}
@@ -37,6 +42,11 @@ export default function Projects() {
               <p className="mb-4 text-stone-400 text-sm sm:text-lg">
                 {project.description}
               </p>
+              {project.technos.map((item, index) => (
+                <span key={index} className="text-sm mr-2 rounded font-medium">
+                  <Badge variant="default">{item}</Badge>
+                </span>
+              ))}
             </div>
           </div>
         ))}
