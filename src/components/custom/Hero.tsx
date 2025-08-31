@@ -6,9 +6,9 @@ import Section from "./Section";
 
 export default function Hero() {
   return (
-    <Section className="">
+    <Section>
       <div className="flex flex-wrap lg:flex-row-reverse">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full sm:w-1/2 lg:w-1/3 mx-auto">
           <div className="flex justify-center lg:p-8">
             <Image
               src={profilePic}
@@ -17,7 +17,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-2/3">
           <div className="flex flex-col items-center lg:items-start mt-10">
             <h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
               Nuno Fernandes
@@ -26,12 +26,15 @@ export default function Hero() {
               Full Stack Developer
             </span>
 
-            <p className="my-2 py-6 max-w-lg text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+            <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
               As a freelance developer, I design and build tailored web and
               mobile applications. Whether working directly with clients or
               collaborating with tech and design professionals, I deliver
-              high-quality, customized solutions to meet your needs. Do you have
-              an idea? I can turn it into a product.
+              high-quality, customized solutions to meet your needs.
+            </p>
+
+            <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+              Do you have an idea? I can turn it into a product.
             </p>
 
             <Button

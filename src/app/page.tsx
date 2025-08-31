@@ -7,6 +7,7 @@ import Technologies from "@/components/custom/Technologies";
 import Projects from "@/components/custom/Projects";
 import Services from "@/components/custom/Services";
 import Contact from "@/components/custom/Contact";
+import Footer from "@/components/custom/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +22,9 @@ export default function Home() {
         <Services />
         <Contact />
       </main>
-      <footer></footer>
+      <footer className="container mx-auto px-8">
+        <Footer />
+      </footer>
     </>
   );
 }
