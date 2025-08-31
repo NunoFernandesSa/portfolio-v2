@@ -22,6 +22,9 @@ import SubtitleSection from "./SubtitleSection";
  */
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
 
+import { RiEyeLine } from "react-icons/ri";
+import { Button } from "../ui/shadcn/button";
+
 export default function Projects() {
   return (
     <Section>
@@ -31,22 +34,26 @@ export default function Projects() {
       <div className="">
         {PORTFOLIO_ITEMS.map((project, index) => (
           <div className="mb-10 flex flex-wrap lg:justify-center" key={index}>
-            <div className="w-full lg:w-1/4">
+            <div className="w-full lg:w-1/4 mb-6">
               <Image
                 src={project.image}
                 alt={project.title}
                 width={250}
                 height={250}
-                className="mb-6 rounded"
+                className="my-6 rounded"
               />
 
-              <Link
-                href={project.link}
-                className="mb-6 outline p-2 rounded-full text-sm"
-                title="Go to the project"
-              >
-                See project
-              </Link>
+              <Button size={"sm"} asChild>
+                <Link
+                  href={project.link}
+                  className="mb-6 flex gap-3 items-center justify-center text-sm"
+                  title="Go to the project"
+                  target="_blank"
+                >
+                  See project
+                  <RiEyeLine />
+                </Link>
+              </Button>
             </div>
 
             <div className="w-full max-w-xl lg:w-3/4">
@@ -57,7 +64,7 @@ export default function Projects() {
               <p className="mb-4 text-stone-400 text-sm sm:text-lg">
                 {project.description}
               </p>
-              <div className="flex flex-wrap items-center">
+              <div className="flex flex-wrap items-center gap-2">
                 {project.technos.map((item, index) => (
                   <span
                     key={index}

@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="flex flex-col justify-center lg:p-8">
             <Image
               src={profilePic}
-              alt="Hero Image"
+              alt="My profile picture"
               className="border-stone-900 rounded-3xl bg-[#161716]"
             />
             <div className="flex items-center justify-center gap-6 mt-3">

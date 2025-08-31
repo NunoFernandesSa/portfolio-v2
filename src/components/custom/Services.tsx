@@ -37,7 +37,7 @@ From concept to long-term support, let's make your digital vision a reality."
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-6">
         {SERVICES.map((service, index) => (
           <Card key={index} className="bg-transparent border">
-            <CardHeader>
+            <CardHeader className="p-2 sm:p-6 gap-3">
               <Image
                 src={service.icon}
                 alt={service.title}

@@ -46,11 +46,11 @@ export default function Technologies() {
         ready for future challenges."
       />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-10">
         {/* ----- frontend ----- -----*/}
         <Card>
           <CardHeader>Frontend</CardHeader>
-          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
+          <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
             {/* React */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -95,7 +95,7 @@ export default function Technologies() {
         {/* ----- backend ----- -----*/}
         <Card>
           <CardHeader>Backend</CardHeader>
-          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
+          <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
             {/* Nodejs */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -140,7 +140,7 @@ export default function Technologies() {
         {/* ----- mobile ----- */}
         <Card>
           <CardHeader>Mobile</CardHeader>
-          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
+          <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
             {/* Dart */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -166,7 +166,7 @@ export default function Technologies() {
         {/* ----- Database -----*/}
         <Card>
           <CardHeader>Database</CardHeader>
-          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
+          <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
             {/* Postgresql */}
             <Tooltip>
               <TooltipTrigger asChild>
@@ -202,7 +202,7 @@ export default function Technologies() {
         {/* ----- other skills ----- */}
         <Card>
           <CardHeader>Other skills</CardHeader>
-          <CardContent className="flex flex-wrap items-center mx-auto gap-3">
+          <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
             {/* electron.js */}
             <Tooltip>
               <TooltipTrigger asChild>
