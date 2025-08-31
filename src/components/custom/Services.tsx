@@ -6,7 +6,7 @@ import SubtitleSection from "./SubtitleSection";
 export default function Services() {
   return (
     <Section>
-      <TitleSection title="Services" />
+      <TitleSection title="What I Do" />
 
       <SubtitleSection
         text="I build and maintain high-performance websites & mobile apps—secure, scalable, and tailored to your goals.

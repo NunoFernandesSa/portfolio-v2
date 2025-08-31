@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="text-sm font-light">
           &copy;2025 nunofernandes-dev.com
         </div>
-        <Button variant="outline">
+        <Button variant="outline" size="sm">
           <Link href={""} className="text-sm font-light">
             Legal notice
           </Link>

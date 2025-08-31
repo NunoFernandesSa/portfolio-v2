@@ -3,20 +3,41 @@ import profilePic from "@/assets/images/profile_photo.png";
 import Image from "next/image";
 import { Button } from "../ui/shadcn/button";
 import Section from "./Section";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <Section>
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full sm:w-1/2 lg:w-1/3 mx-auto">
-          <div className="flex justify-center lg:p-8">
+          {/* rigth side */}
+          <div className="flex flex-col justify-center lg:p-8">
             <Image
               src={profilePic}
               alt="Hero Image"
               className="border-stone-900 rounded-3xl bg-[#161716]"
             />
+            <div className="flex items-center justify-center gap-6 mt-3">
+              <Button
+                variant={"outline"}
+                size={"sm"}
+                className="rounded-full"
+                title="Visit my LinkedIn profile"
+              >
+                <Link href={""}>LinkedIn</Link>
+              </Button>
+              <Button
+                variant={"outline"}
+                size={"sm"}
+                className="rounded-full"
+                title="Visit my Malt profile"
+              >
+                <Link href={""}>Malt</Link>
+              </Button>
+            </div>
           </div>
         </div>
+        {/* left side */}
         <div className="w-full lg:w-2/3">
           <div className="flex flex-col items-center lg:items-start mt-10">
             <h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
