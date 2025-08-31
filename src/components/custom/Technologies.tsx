@@ -39,7 +39,7 @@ export default function Technologies() {
     <Section>
       <TitleSection title="Technologies" />
 
-      <div className="flex flex-wrap items-center justify-center gap-4">
+      <div className="flex flex-wrap items-center justify-center gap-10">
         {/* ----- frontend ----- -----*/}
         <Card>
           <CardHeader>Frontend</CardHeader>
