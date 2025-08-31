@@ -3,6 +3,8 @@
  */
 import NavBar from "@/components/custom/NavBar";
 import Hero from "@/components/custom/Hero";
+import Technologies from "@/components/custom/Technologies";
+import Section from "@/components/custom/Section";
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       </header>
       <main className="container mx-auto px-8">
         <Hero />
+        <Technologies />
+        <Section></Section>
       </main>
       <footer></footer>
     </>
