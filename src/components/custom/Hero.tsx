@@ -1,9 +1,24 @@
+/**
+ * Node modules / Next
+ */
 import React from "react";
-import profilePic from "@/assets/images/profile_photo.png";
-import Image from "next/image";
-import { Button } from "../ui/shadcn/button";
-import Section from "./Section";
 import Link from "next/link";
+import Image from "next/image";
+
+/**
+ * assets
+ */
+import profilePic from "@/assets/images/profile_photo.png";
+
+/**
+ * Shadcn components
+ */
+import { Button } from "../ui/shadcn/button";
+
+/**
+ * Custom components
+ */
+import Section from "./Section";
 
 export default function Hero() {
   return (

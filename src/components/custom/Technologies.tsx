@@ -25,14 +25,14 @@ import { SiPrisma } from "react-icons/si";
 import Section from "./Section";
 
 /**
- * UI components
- */
-import TitleSection from "./TitleSection";
-
-/**
  * Shadcn components
  */
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
+
+/**
+ * Custom components
+ */
+import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";
 
 export default function Technologies() {

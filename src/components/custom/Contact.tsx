@@ -1,4 +1,8 @@
 import React from "react";
+
+/**
+ * Custom components
+ */
 import Section from "./Section";
 import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";

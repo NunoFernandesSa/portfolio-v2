@@ -1,9 +1,9 @@
 import React from "react";
 
-interface SectionProps {
-  children?: React.ReactNode;
-  className?: string;
-}
+/**
+ * Types
+ */
+import { SectionProps } from "@/types/SectionProps";
 
 export default function Section({ children, className }: SectionProps) {
   return <section className={`mt-24 ${className}`}>{children}</section>;

@@ -2,10 +2,9 @@
  * Node Modules / Next
  */
 import React from "react";
-import Link from "next/link";
 
 /**
- * UI components
+ * Shadcn components
  */
 import {
   NavigationMenu,
@@ -13,6 +12,10 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcn/navigation-menu";
+
+/**
+ * Custom components
+ */
 import { ModeToggle } from "../custom/theme_toggle/ThemeToggle";
 
 /**

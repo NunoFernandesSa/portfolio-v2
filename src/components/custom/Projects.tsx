@@ -1,4 +1,9 @@
+/**
+ * Node modules / Next
+ */
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 /**
  * Shadcn components
@@ -6,18 +11,16 @@ import React from "react";
 import { Badge } from "@/components/ui/shadcn/badge";
 
 /**
- * Ui components
+ * Custom components
  */
 import Section from "./Section";
 import TitleSection from "./TitleSection";
+import SubtitleSection from "./SubtitleSection";
 
 /**
  * Constants
  */
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
-import Image from "next/image";
-import SubtitleSection from "./SubtitleSection";
-import Link from "next/link";
 
 export default function Projects() {
   return (
