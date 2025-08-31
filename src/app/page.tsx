@@ -4,7 +4,7 @@
 import NavBar from "@/components/custom/NavBar";
 import Hero from "@/components/custom/Hero";
 import Technologies from "@/components/custom/Technologies";
-import Section from "@/components/custom/Section";
+import Projects from "@/components/custom/Projects";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <main className="container mx-auto px-8">
         <Hero />
         <Technologies />
-        <Section></Section>
+        <Projects />
       </main>
       <footer></footer>
     </>

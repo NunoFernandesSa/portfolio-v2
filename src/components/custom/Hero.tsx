@@ -2,17 +2,18 @@ import React from "react";
 import profilePic from "@/assets/images/profile_photo.png";
 import Image from "next/image";
 import { Button } from "../ui/shadcn/button";
+import Section from "./Section";
 
 export default function Hero() {
   return (
-    <div className="py-4 lg:mb-36">
+    <Section className="lg:mb-36">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="w-full lg:w-1/2">
           <div className="flex justify-center lg:p-8">
             <Image
               src={profilePic}
               alt="Hero Image"
-              className="border-stone-900 rounded-3xl bg-stone-900"
+              className="border-stone-900 rounded-3xl bg-[#161716]"
             />
           </div>
         </div>
@@ -42,6 +43,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 }

@@ -20,11 +20,13 @@ import { ModeToggle } from "../custom/theme_toggle/ThemeToggle";
  */
 import { Menu } from "lucide-react";
 
-export default function NavBar() {
+export default function NavBar({ className }: { className?: string }) {
   return (
     <>
       {/* ----- Desktop navbar links ----- */}
-      <NavigationMenu className="hidden md:flex h-14 border m-2 px-6 rounded-full">
+      <NavigationMenu
+        className={`hidden md:flex h-14 border m-2 px-6 rounded-full ${className}`}
+      >
         <NavigationMenuList className="flex gap-3">
           <NavigationMenuItem>
             <NavigationMenuLink asChild>

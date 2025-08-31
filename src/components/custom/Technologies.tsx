@@ -1,6 +1,6 @@
-import React from "react";
-import TitleSection from "./TitleSection";
-
+/**
+ * React icons
+ */
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiNestjs } from "react-icons/si";
@@ -24,6 +24,16 @@ import { SiSqlite } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 import Section from "./Section";
 
+/**
+ * UI components
+ */
+import TitleSection from "./TitleSection";
+
+/**
+ * Shadcn components
+ */
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
+
 export default function Technologies() {
   return (
     <Section>
@@ -34,44 +44,220 @@ export default function Technologies() {
         <Card>
           <CardHeader>Frontend</CardHeader>
           <CardContent className="flex flex-wrap items-center gap-3">
-            <RiReactjsLine className="text-7xl" />
-            <TbBrandNextjs className="text-7xl" />
-            <TbBrandTypescript className="text-7xl" />
-            <RiTailwindCssFill className="text-7xl" />
+            {/* React */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <RiReactjsLine className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>React</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Nextjs */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandNextjs className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Next.js</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Typescript */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandTypescript className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Typescript</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* TailwindCss */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <RiTailwindCssFill className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>TailwindCss</span>
+              </TooltipContent>
+            </Tooltip>
           </CardContent>
         </Card>
         {/* ----- backend ----- -----*/}
         <Card>
           <CardHeader>Backend</CardHeader>
           <CardContent className="flex flex-wrap items-center gap-3">
-            <RiNodejsFill className="text-7xl" />
-            <SiNestjs className="text-7xl" />
-            <TbBrandPython className="text-7xl" />
-            <TbBrandDjango className="text-7xl" />
+            {/* Nodejs */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <RiNodejsFill className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Nodejs</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Nestjs */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiNestjs className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Nest.js</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Python */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandPython className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Python</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Django */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandDjango className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Django</span>
+              </TooltipContent>
+            </Tooltip>
           </CardContent>
         </Card>
         {/* ----- mobile ----- */}
         <Card>
           <CardHeader>Mobile</CardHeader>
           <CardContent className="flex flex-wrap items-center gap-3">
-            <SiDart className="text-7xl" />
-            <RiFlutterFill className="text-7xl" />
+            {/* Dart */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiDart className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Dart</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Flutter */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <RiFlutterFill className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Flutter</span>
+              </TooltipContent>
+            </Tooltip>
           </CardContent>
         </Card>
         {/* ----- other skills ----- */}
         <Card>
           <CardHeader>Other skills</CardHeader>
           <CardContent className="flex flex-wrap items-center gap-3">
-            <SiElectron className="text-7xl" />
-            <FaFigma className="text-7xl" />
-            <TbBrandDocker className="text-7xl" />
-            <SiPostgresql className="text-7xl" />
-            <TbBrandMysql className="text-7xl" />
-            <SiSqlite className="text-7xl" />
-            <SiPrisma className="text-7xl" />
-            <VscVscode className="text-7xl" />
-            <SiAndroidstudio className="text-7xl" />
-            <RiWordpressLine className="text-7xl" />
+            {/* electron.js */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiElectron className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Electron.js</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Figma */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <FaFigma className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Figma</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Docker */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandDocker className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Docker</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Postgresql */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiPostgresql className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Postgresql</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Mysql */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <TbBrandMysql className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Mysql</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Sqlite */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiSqlite className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Sqlite</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Prisma */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiPrisma className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Prisma</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Vscode */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <VscVscode className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Vscode</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Android studio */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <SiAndroidstudio className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Android studio</span>
+              </TooltipContent>
+            </Tooltip>
+
+            {/* Wordpress */}
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <RiWordpressLine className="text-7xl" />
+              </TooltipTrigger>
+              <TooltipContent>
+                <span>Wordpress</span>
+              </TooltipContent>
+            </Tooltip>
           </CardContent>
         </Card>
       </div>
