@@ -22,21 +22,6 @@ export default function TechIcon({ name, icon, motionDelay }: TechIconType) {
       variants={iconVariants(motionDelay)}
       initial="initial"
       animate="animate"
-      // variants={{
-      //   initial: {
-      //     opacity: 1,
-      //     y: -10,
-      //   },
-      //   animate: {
-      //     y: [8, -8],
-      //     transition: {
-      //       duration: 2.5,
-      //       ease: "linear",
-      //       repeat: Infinity,
-      //       repeatType: "reverse",
-      //     },
-      //   },
-      // }}
     >
       <Tooltip>
         <TooltipTrigger asChild>{icon}</TooltipTrigger>

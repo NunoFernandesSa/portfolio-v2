@@ -38,10 +38,10 @@ export default function Hero() {
         <div className="w-full sm:w-1/2 lg:w-1/3 mx-auto">
           {/* rigth side */}
           <motion.div
-            className="flex flex-col justify-center lg:p-8"
             initial={{ opacity: 0, y: 100 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.5 }}
+            className="flex flex-col justify-center lg:p-8"
           >
             <Image
               src={profilePic}

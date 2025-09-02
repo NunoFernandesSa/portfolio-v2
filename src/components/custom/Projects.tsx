@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Node modules / Next
  */
@@ -9,6 +11,7 @@ import Image from "next/image";
  * Shadcn components
  */
 import { Badge } from "@/components/ui/shadcn/badge";
+import { Button } from "../ui/shadcn/button";
 
 /**
  * Custom components
@@ -22,8 +25,15 @@ import SubtitleSection from "./SubtitleSection";
  */
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
 
+/**
+ * Icons
+ */
 import { RiEyeLine } from "react-icons/ri";
-import { Button } from "../ui/shadcn/button";
+import { motion } from "framer-motion";
+import {
+  childVariants,
+  containerVariants,
+} from "@/constants/framer-motion-variants";
 
 export default function Projects() {
   return (
@@ -31,10 +41,18 @@ export default function Projects() {
       <TitleSection title="Projects" />
       <SubtitleSection text="Explore my recent work. Transforming ideas into powerful technical solutions." />
 
-      <div className="">
+      <div>
         {PORTFOLIO_ITEMS.map((project, index) => (
           <div className="mb-10 flex flex-wrap lg:justify-center" key={index}>
-            <div className="w-full lg:w-1/4 mb-6">
+            <motion.div
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              initial={{ opacity: 0, x: -100 }}
+              transition={{ duration: 1.5 }}
+              className="w-full lg:w-1/4 mb-6"
+            >
               <Image
                 src={project.image}
                 alt={project.title}
@@ -54,13 +72,21 @@ export default function Projects() {
                   <RiEyeLine />
                 </Link>
               </Button>
-            </div>
+            </motion.div>
 
-            <div className="w-full max-w-xl lg:w-3/4">
+            <motion.div
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 1.5 }}
+              className="w-full max-w-xl lg:w-3/4"
+            >
               <div className="flex flex-wrap"></div>
-              <h3 className="mb-2 font-semibold text-md sm:text-2xl">
+              <motion.h3 className="mb-2 font-semibold text-md sm:text-2xl">
                 {project.title}
-              </h3>
+              </motion.h3>
               <p className="mb-4 text-stone-400 text-sm sm:text-lg">
                 {project.description}
               </p>
@@ -74,7 +100,7 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
