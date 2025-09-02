@@ -12,17 +12,17 @@ import Footer from "@/components/custom/Footer";
 export default function Home() {
   return (
     <>
-      <header className="container mx-auto flex items-center justify-center">
+      <header className="container mx-auto flex items-center justify-center px-4 sm:px-8 md:px-16">
         <NavBar />
       </header>
-      <main className="container mx-auto px-4 sm:px-8">
+      <main className="container mx-auto px-4 sm:px-8 md:px-16">
         <Hero />
         <Technologies />
         <Projects />
         <Services />
         <Contact />
       </main>
-      <footer className="container mx-auto px-4 sm:px-8">
+      <footer className="container mx-auto px-4 sm:px-8 md:px-16">
         <Footer />
       </footer>
     </>
