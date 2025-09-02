@@ -12,19 +12,34 @@ import Footer from "@/components/custom/Footer";
 export default function Home() {
   return (
     <>
-      <header className="container mx-auto flex items-center justify-center px-4 sm:px-8 md:px-16">
-        <NavBar />
-      </header>
-      <main className="container mx-auto px-4 sm:px-8 md:px-16">
-        <Hero />
-        <Technologies />
-        <Projects />
-        <Services />
-        <Contact />
-      </main>
-      <footer className="container mx-auto px-4 sm:px-8 md:px-16">
-        <Footer />
-      </footer>
+      <div className="w-full overflow-x-hidden text-stone-300 antialiased">
+        <div className="fixed -z-10"></div>
+
+        <header className="container mx-auto flex items-center justify-center px-4 sm:px-8 md:px-16">
+          <NavBar />
+        </header>
+        <main className="container mx-auto px-4 sm:px-8 md:px-16">
+          <Hero />
+
+          <div id="technologies">
+            <Technologies />
+          </div>
+
+          <div id="portfolio">
+            <Projects />
+          </div>
+          <div id="services">
+            <Services />
+          </div>
+
+          <div id="contact">
+            <Contact />
+          </div>
+        </main>
+        <footer className="container mx-auto px-4 sm:px-8 md:px-16">
+          <Footer />
+        </footer>
+      </div>
     </>
   );
 }

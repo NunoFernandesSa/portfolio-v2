@@ -30,10 +30,6 @@ import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
  */
 import { RiEyeLine } from "react-icons/ri";
 import { motion } from "framer-motion";
-import {
-  childVariants,
-  containerVariants,
-} from "@/constants/framer-motion-variants";
 
 export default function Projects() {
   return (

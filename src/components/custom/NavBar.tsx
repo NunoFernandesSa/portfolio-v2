@@ -36,35 +36,34 @@ export default function NavBar({ className }: { className?: string }) {
       >
         <NavigationMenuList className="flex gap-2">
           <NavigationMenuItem>
-            <NavigationMenuLink className="cursor-pointer">
+            <NavigationMenuLink className="cursor-pointer" href="/">
               <RiHome2Line />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink className="cursor-pointer">
+            <NavigationMenuLink className="cursor-pointer" href="#technologies">
               <FaCode />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink className="cursor-pointer">
+            <NavigationMenuLink className="cursor-pointer" href="#portfolio">
               <PiBriefcase />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink className="cursor-pointer">
+            <NavigationMenuLink className="cursor-pointer" href="#services">
               <MdOutlineDesignServices />
             </NavigationMenuLink>
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink className="cursor-pointer">
+            <NavigationMenuLink className="cursor-pointer" href="#contact">
               <LuMessageSquareCode />
             </NavigationMenuLink>
           </NavigationMenuItem>
-
           <ModeToggle />
         </NavigationMenuList>
       </NavigationMenu>
