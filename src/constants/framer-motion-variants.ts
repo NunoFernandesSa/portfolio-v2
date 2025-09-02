@@ -1,3 +1,5 @@
+import { animate } from "framer-motion";
+
 export const containerVariants = {
   hidden: { opacity: 0, x: -100 },
   visible: {
@@ -15,3 +17,19 @@ export const childVariants = {
     transition: { duration: 0.5 },
   },
 };
+
+export const iconVariants = (duration: unknown) => ({
+  initial: {
+    opacity: 0,
+    y: -10,
+  },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+});

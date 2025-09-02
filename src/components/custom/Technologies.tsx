@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * React icons
  */
@@ -35,6 +37,12 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
 import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";
 
+/**
+ * Framer-motion
+ */
+import { motion } from "framer-motion";
+import TechIcon from "./TechIcon";
+
 export default function Technologies() {
   return (
     <Section>
@@ -46,120 +54,65 @@ export default function Technologies() {
         ready for future challenges."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-10">
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-10"
+      >
         {/* ----- frontend ----- -----*/}
         <Card>
           <CardHeader>Frontend</CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-            {/* React */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <RiReactjsLine className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>React</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="React"
+              icon={<RiReactjsLine className="text-7xl" />}
+            />
 
-            {/* Nextjs */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandNextjs className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Next.js</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Next.js"
+              icon={<TbBrandNextjs className="text-7xl" />}
+            />
 
-            {/* Typescript */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandTypescript className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Typescript</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Typescript"
+              icon={<TbBrandTypescript className="text-7xl" />}
+            />
 
-            {/* TailwindCss */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <RiTailwindCssFill className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>TailwindCss</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="TailwindCss"
+              icon={<RiTailwindCssFill className="text-7xl" />}
+            />
           </CardContent>
         </Card>
         {/* ----- backend ----- -----*/}
         <Card>
           <CardHeader>Backend</CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-            {/* Nodejs */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <RiNodejsFill className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Nodejs</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Nestjs */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiNestjs className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Nest.js</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Python */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandPython className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Python</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Django */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandDjango className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Django</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Nodejs"
+              icon={<RiNodejsFill className="text-7xl" />}
+            />
+            <TechIcon name="Nestjs" icon={<SiNestjs className="text-7xl" />} />
+            <TechIcon
+              name="Python"
+              icon={<TbBrandPython className="text-7xl" />}
+            />
+            <TechIcon
+              name="Django"
+              icon={<TbBrandDjango className="text-7xl" />}
+            />
           </CardContent>
         </Card>
         {/* ----- mobile ----- */}
         <Card>
           <CardHeader>Mobile</CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-            {/* Dart */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiDart className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Dart</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Flutter */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <RiFlutterFill className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Flutter</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon name="Dart" icon={<SiDart className="text-7xl" />} />
+            <TechIcon
+              name="Flutter"
+              icon={<RiFlutterFill className="text-7xl" />}
+            />
           </CardContent>
         </Card>
 
@@ -167,35 +120,15 @@ export default function Technologies() {
         <Card>
           <CardHeader>Database</CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-            {/* Postgresql */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiPostgresql className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Postgresql</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Mysql */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandMysql className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Mysql</span>
-              </TooltipContent>
-            </Tooltip>
-
-            {/* Sqlite */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiSqlite className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Sqlite</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Postgresql"
+              icon={<SiPostgresql className="text-7xl" />}
+            />
+            <TechIcon
+              name="Mysql"
+              icon={<TbBrandMysql className="text-7xl" />}
+            />
+            <TechIcon name="Sqlite" icon={<SiSqlite className="text-7xl" />} />
           </CardContent>
         </Card>
 
@@ -203,77 +136,33 @@ export default function Technologies() {
         <Card>
           <CardHeader>Other skills</CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-            {/* electron.js */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiElectron className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Electron.js</span>
-              </TooltipContent>
-            </Tooltip>
-            {/* Figma */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <FaFigma className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Figma</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Electron.js"
+              icon={<SiElectron className="text-7xl" />}
+            />
 
-            {/* Docker */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <TbBrandDocker className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Docker</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon name="Figma" icon={<FaFigma className="text-7xl" />} />
 
-            {/* Prisma */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiPrisma className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Prisma</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Docker"
+              icon={<TbBrandDocker className="text-7xl" />}
+            />
+            <TechIcon name="Prisma" icon={<SiPrisma className="text-7xl" />} />
 
-            {/* Vscode */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <VscVscode className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Vscode</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon name="Vscode" icon={<VscVscode className="text-7xl" />} />
 
-            {/* Android studio */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <SiAndroidstudio className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Android studio</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Android studio"
+              icon={<SiAndroidstudio className="text-7xl" />}
+            />
 
-            {/* Wordpress */}
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <RiWordpressLine className="text-7xl" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <span>Wordpress</span>
-              </TooltipContent>
-            </Tooltip>
+            <TechIcon
+              name="Wordpress"
+              icon={<RiWordpressLine className="text-7xl" />}
+            />
           </CardContent>
         </Card>
-      </div>
+      </motion.div>
     </Section>
   );
 }
