@@ -67,21 +67,25 @@ export default function Technologies() {
             <TechIcon
               name="React"
               icon={<RiReactjsLine className="text-7xl" />}
+              motionDelay={2}
             />
 
             <TechIcon
               name="Next.js"
               icon={<TbBrandNextjs className="text-7xl" />}
+              motionDelay={2.5}
             />
 
             <TechIcon
               name="Typescript"
               icon={<TbBrandTypescript className="text-7xl" />}
+              motionDelay={2}
             />
 
             <TechIcon
               name="TailwindCss"
               icon={<RiTailwindCssFill className="text-7xl" />}
+              motionDelay={2.5}
             />
           </CardContent>
         </Card>
@@ -92,15 +96,22 @@ export default function Technologies() {
             <TechIcon
               name="Nodejs"
               icon={<RiNodejsFill className="text-7xl" />}
+              motionDelay={2}
             />
-            <TechIcon name="Nestjs" icon={<SiNestjs className="text-7xl" />} />
+            <TechIcon
+              name="Nestjs"
+              icon={<SiNestjs className="text-7xl" />}
+              motionDelay={2.5}
+            />
             <TechIcon
               name="Python"
               icon={<TbBrandPython className="text-7xl" />}
+              motionDelay={2}
             />
             <TechIcon
               name="Django"
               icon={<TbBrandDjango className="text-7xl" />}
+              motionDelay={2.5}
             />
           </CardContent>
         </Card>
@@ -108,10 +119,15 @@ export default function Technologies() {
         <Card>
           <CardHeader>Mobile</CardHeader>
           <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-            <TechIcon name="Dart" icon={<SiDart className="text-7xl" />} />
+            <TechIcon
+              name="Dart"
+              icon={<SiDart className="text-7xl" />}
+              motionDelay={2}
+            />
             <TechIcon
               name="Flutter"
               icon={<RiFlutterFill className="text-7xl" />}
+              motionDelay={2.5}
             />
           </CardContent>
         </Card>
@@ -123,12 +139,18 @@ export default function Technologies() {
             <TechIcon
               name="Postgresql"
               icon={<SiPostgresql className="text-7xl" />}
+              motionDelay={2}
             />
             <TechIcon
               name="Mysql"
               icon={<TbBrandMysql className="text-7xl" />}
+              motionDelay={2.5}
             />
-            <TechIcon name="Sqlite" icon={<SiSqlite className="text-7xl" />} />
+            <TechIcon
+              name="Sqlite"
+              icon={<SiSqlite className="text-7xl" />}
+              motionDelay={2}
+            />
           </CardContent>
         </Card>
 
@@ -139,26 +161,42 @@ export default function Technologies() {
             <TechIcon
               name="Electron.js"
               icon={<SiElectron className="text-7xl" />}
+              motionDelay={2}
             />
 
-            <TechIcon name="Figma" icon={<FaFigma className="text-7xl" />} />
+            <TechIcon
+              name="Figma"
+              icon={<FaFigma className="text-7xl" />}
+              motionDelay={2.5}
+            />
 
             <TechIcon
               name="Docker"
               icon={<TbBrandDocker className="text-7xl" />}
+              motionDelay={2}
             />
-            <TechIcon name="Prisma" icon={<SiPrisma className="text-7xl" />} />
+            <TechIcon
+              name="Prisma"
+              icon={<SiPrisma className="text-7xl" />}
+              motionDelay={2.5}
+            />
 
-            <TechIcon name="Vscode" icon={<VscVscode className="text-7xl" />} />
+            <TechIcon
+              name="Vscode"
+              icon={<VscVscode className="text-7xl" />}
+              motionDelay={2}
+            />
 
             <TechIcon
               name="Android studio"
               icon={<SiAndroidstudio className="text-7xl" />}
+              motionDelay={2.5}
             />
 
             <TechIcon
               name="Wordpress"
               icon={<RiWordpressLine className="text-7xl" />}
+              motionDelay={2}
             />
           </CardContent>
         </Card>
