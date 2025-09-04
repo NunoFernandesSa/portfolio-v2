@@ -49,7 +49,7 @@ From concept to long-term support, let's make your digital vision a reality."
             transition={{ duration: 2 + index }}
             key={index}
           >
-            <Card className="bg-transparent border">
+            <Card className="bg-transparent border min-h-[360px]">
               <CardHeader className="p-2 sm:p-6 gap-3">
                 <Image
                   src={service.icon}

@@ -24,24 +24,19 @@ import { VscVscode } from "react-icons/vsc";
 import { SiAndroidstudio } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
-import Section from "./Section";
-
-/**
- * Shadcn components
- */
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
 
 /**
  * Custom components
  */
 import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";
+import Section from "./Section";
+import TechIcon from "./TechIcon";
 
 /**
  * Framer-motion
  */
 import { motion } from "framer-motion";
-import TechIcon from "./TechIcon";
 
 export default function Technologies() {
   return (

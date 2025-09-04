@@ -23,20 +23,4 @@ export const PORTFOLIO_ITEMS = [
     link: "https://artseecounsel.com/",
     technos: ["HTML", "CSS", "Javascript", "PHP", "Wordpress"],
   },
-  {
-    title: "gracoeiro.com",
-    description:
-      "I designed and developed the professional website for Bárbara Graçoeiro, a debt collection expert, highlighting her impressive career path and professional certifications. The clean, modern design combined with intuitive navigation enhances her credibility while clearly presenting her specialized services. The website, optimized for SEO and fully mobile-responsive, now serves as a key platform for converting visitors into clients.",
-    image: "/images/works/gracoeiro.png",
-    link: "https://gracoeiro.com/",
-    technos: ["HTML", "CSS", "Javascript", "PHP", "Wordpress"],
-  },
-  {
-    title: "gracoeiro.com",
-    description:
-      "I designed and developed the professional website for Bárbara Graçoeiro, a debt collection expert, highlighting her impressive career path and professional certifications. The clean, modern design combined with intuitive navigation enhances her credibility while clearly presenting her specialized services. The website, optimized for SEO and fully mobile-responsive, now serves as a key platform for converting visitors into clients.",
-    image: "/images/works/gracoeiro.png",
-    link: "https://gracoeiro.com/",
-    technos: ["HTML", "CSS", "Javascript", "PHP", "Wordpress"],
-  },
 ];
