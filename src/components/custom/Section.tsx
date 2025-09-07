@@ -7,6 +7,8 @@ import { SectionProps } from "@/types/SectionProps";
 
 export default function Section({ children, className }: SectionProps) {
   return (
-    <section className={`mt-12 md:mt-24 ${className}`}>{children}</section>
+    <section className={`mt-12 md:mt-30 xl:mt-40 ${className}`}>
+      {children}
+    </section>
   );
 }

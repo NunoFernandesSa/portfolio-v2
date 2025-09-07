@@ -18,21 +18,17 @@ export default function Home() {
       <main className="container mx-auto px-4 sm:px-8 md:px-16">
         <Hero />
 
-        <div id="services">
-          <Services />
-        </div>
+        <div id="services"></div>
+        <Services />
 
-        <div id="technologies">
-          <Technologies />
-        </div>
+        <div id="technologies"></div>
+        <Technologies />
 
-        <div id="portfolio">
-          <Projects />
-        </div>
+        <div id="portfolio"></div>
+        <Projects />
 
-        <div id="contact">
-          <Contact />
-        </div>
+        <div id="contact"></div>
+        <Contact />
       </main>
       <footer className="container mx-auto px-4 sm:px-8 md:px-16">
         <Footer />
