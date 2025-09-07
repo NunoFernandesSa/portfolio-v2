@@ -37,14 +37,21 @@ export default function Projects() {
       <div className="flex flex-wrap justify-center gap-10">
         {PORTFOLIO_ITEMS.map((project, index) => (
           <Drawer key={index}>
-            <DrawerTrigger className="">
-              <Image
-                src={project.image}
-                alt={project.title}
-                width={300}
-                height={300}
-                className="rounded hover:scale-101 cursor-pointer border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300"
-              />
+            <DrawerTrigger>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={300}
+                    height={300}
+                    className="rounded hover:scale-101 cursor-pointer border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300"
+                  />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <span>{project.title}</span>
+                </TooltipContent>
+              </Tooltip>
             </DrawerTrigger>
             <DrawerContent>
               <DrawerHeader className="mx-auto">
@@ -54,8 +61,10 @@ export default function Projects() {
                 </DrawerDescription>
               </DrawerHeader>
               <DrawerFooter>
-                <Button className="w-38 mx-auto cursor-pointer">
-                  Go to live
+                <Button className="w-38 mx-auto cursor-pointer" asChild>
+                  <Link href={project.link} target="_blank">
+                    Go to live
+                  </Link>
                 </Button>
                 <DrawerClose asChild>
                   <Button

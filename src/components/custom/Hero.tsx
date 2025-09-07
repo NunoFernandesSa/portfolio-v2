@@ -20,26 +20,32 @@ export default function Hero() {
           <Image
             src={profilePic}
             alt="My profile picture"
-            className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300 rounded-full"
+            className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu"
           />
           <div className="w-full flex items-center justify-center gap-6 mt-9">
             <Button
               size={"sm"}
-              className="rounded-full min-w-22"
+              className="rounded-full min-w-22 hover:scale-105 transition-all duration-300"
               title="Visit my LinkedIn profile"
               asChild
             >
-              <Link href={""} target="_blank">
+              <Link
+                href={"https://www.linkedin.com/in/nunofernandesdesa"}
+                target="_blank"
+              >
                 LinkedIn
               </Link>
             </Button>
             <Button
               size={"sm"}
-              className="rounded-full min-w-22"
+              className="rounded-full min-w-22 hover:scale-105 transition-all duration-300"
               title="Visit my Malt profile"
               asChild
             >
-              <Link href={""} target="_blank">
+              <Link
+                href={"https://www.malt.fr/profile/nunofernandes"}
+                target="_blank"
+              >
                 Malt
               </Link>
             </Button>
@@ -66,7 +72,7 @@ export default function Hero() {
           </p>
 
           <Button
-            className="rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer"
+            className="w-full max-w-lg rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer hover:scale-101 transition-all duration-300"
             title="Send me a message!"
             asChild
           >
