@@ -54,10 +54,13 @@ export default function Projects() {
                 </DrawerDescription>
               </DrawerHeader>
               <DrawerFooter>
+                <Button className="w-38 mx-auto cursor-pointer">
+                  Go to live
+                </Button>
                 <DrawerClose asChild>
                   <Button
                     variant="outline"
-                    className="w-20 mx-auto cursor-pointer"
+                    className="w-38 mx-auto cursor-pointer"
                   >
                     Close
                   </Button>
