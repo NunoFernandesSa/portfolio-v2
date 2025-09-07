@@ -1,17 +1,11 @@
-/**
- * Node modules / Next
- */
+// ----- Node modules / Next.js -----
 import React from "react";
 import Link from "next/link";
 
-/**
- * Shadcn components
- */
-import { Button } from "../ui/shadcn/button";
+// ----- Shadcn components -----
+import { Button } from "@/components/ui/shadcn/button";
 
-/**
- * Custom components
- */
+// ----- Custom components -----
 import Section from "./Section";
 
 export default function Footer() {

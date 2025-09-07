@@ -1,5 +1,3 @@
-"use client";
-
 // ----- Node modules / Next -----
 import React from "react";
 import Link from "next/link";

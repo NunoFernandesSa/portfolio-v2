@@ -7,7 +7,7 @@ import { RiNodejsFill } from "react-icons/ri";
 import { SiDart } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandPython } from "react-icons/tb";
-import { Card, CardContent, CardHeader } from "../ui/shadcn/card";
+import { Card } from "../ui/shadcn/card";
 import { TbBrandTypescript } from "react-icons/tb";
 import { TbBrandDjango } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
@@ -38,138 +38,96 @@ export default function Technologies() {
         ready for future challenges."
       />
 
-      {/* ----- frontend ----- -----*/}
-      <h3 className="text-2xl font-semibold">Frontend</h3>
-      <div className="slider--section">
-        <div className="slider">
-          <div className="slide-track">
-            <div className="slide">
-              <Card>
-                <TechIcon
-                  name="React"
-                  icon={<RiReactjsLine className="text-7xl" />}
-                />
-              </Card>
-            </div>
-
-            <div className="slide">
-              <TechIcon
-                name="Next.js"
-                icon={<TbBrandNextjs className="text-7xl" />}
-              />
-            </div>
-
-            <div className="slide">
-              <TechIcon
-                name="Typescript"
-                icon={<TbBrandTypescript className="text-7xl" />}
-              />
-            </div>
-
-            <div className="slide">
-              <TechIcon
-                name="TailwindCss"
-                icon={<RiTailwindCssFill className="text-7xl" />}
-              />
-            </div>
-          </div>
-        </div>
+      <div className="flex items-center justify-center flex-wrap gap-10">
+        {/* ----- frontend ----- -----*/}
+        <TechIcon
+          name="React"
+          icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Next.js"
+          icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Typescript"
+          icon={<TbBrandTypescript className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="TailwindCss"
+          icon={<RiTailwindCssFill className="text-5xl md:text-7xl" />}
+        />
 
         {/* ----- backend ----- ----- */}
-        <div>
-          <Card>
-            <CardHeader>Backend</CardHeader>
-            <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-              <TechIcon
-                name="Nodejs"
-                icon={<RiNodejsFill className="text-7xl" />}
-              />
-              <TechIcon
-                name="Nestjs"
-                icon={<SiNestjs className="text-7xl" />}
-              />
-              <TechIcon
-                name="Python"
-                icon={<TbBrandPython className="text-7xl" />}
-              />
-              <TechIcon
-                name="Django"
-                icon={<TbBrandDjango className="text-7xl" />}
-              />
-            </CardContent>
-          </Card>
-        </div>
+        <TechIcon
+          name="Nodejs"
+          icon={<RiNodejsFill className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Nestjs"
+          icon={<SiNestjs className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Python"
+          icon={<TbBrandPython className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Django"
+          icon={<TbBrandDjango className="text-5xl md:text-7xl" />}
+        />
+
         {/* ----- mobile ----- */}
-        <div>
-          <Card>
-            <CardHeader>Mobile</CardHeader>
-            <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-              <TechIcon name="Dart" icon={<SiDart className="text-7xl" />} />
-              <TechIcon
-                name="Flutter"
-                icon={<RiFlutterFill className="text-7xl" />}
-              />
-            </CardContent>
-          </Card>
-        </div>
+        <TechIcon
+          name="Dart"
+          icon={<SiDart className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Flutter"
+          icon={<RiFlutterFill className="text-5xl md:text-7xl" />}
+        />
+
         {/* ----- Database -----*/}
-        <div>
-          <Card>
-            <CardHeader>Database</CardHeader>
-            <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-              <TechIcon
-                name="Postgresql"
-                icon={<SiPostgresql className="text-7xl" />}
-              />
-              <TechIcon
-                name="Mysql"
-                icon={<TbBrandMysql className="text-7xl" />}
-              />
-              <TechIcon
-                name="Sqlite"
-                icon={<SiSqlite className="text-7xl" />}
-              />
-            </CardContent>
-          </Card>
-        </div>
+        <TechIcon
+          name="Postgresql"
+          icon={<SiPostgresql className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Mysql"
+          icon={<TbBrandMysql className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Sqlite"
+          icon={<SiSqlite className="text-5xl md:text-7xl" />}
+        />
+
         {/* ----- other skills ----- */}
-        <div>
-          <Card>
-            <CardHeader>Other skills</CardHeader>
-            <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-              <TechIcon
-                name="Electron.js"
-                icon={<SiElectron className="text-7xl" />}
-              />
-
-              <TechIcon name="Figma" icon={<FaFigma className="text-7xl" />} />
-
-              <TechIcon
-                name="Docker"
-                icon={<TbBrandDocker className="text-7xl" />}
-              />
-              <TechIcon
-                name="Prisma"
-                icon={<SiPrisma className="text-7xl" />}
-              />
-
-              <TechIcon
-                name="Vscode"
-                icon={<VscVscode className="text-7xl" />}
-              />
-
-              <TechIcon
-                name="Android studio"
-                icon={<SiAndroidstudio className="text-7xl" />}
-              />
-
-              <TechIcon
-                name="Wordpress"
-                icon={<RiWordpressLine className="text-7xl" />}
-              />
-            </CardContent>
-          </Card>
-        </div>
+        <TechIcon
+          name="Electron.js"
+          icon={<SiElectron className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Figma"
+          icon={<FaFigma className="text-5xl md:text-6xl" />}
+        />
+        <TechIcon
+          name="Docker"
+          icon={<TbBrandDocker className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Prisma"
+          icon={<SiPrisma className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Vscode"
+          icon={<VscVscode className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Android studio"
+          icon={<SiAndroidstudio className="text-5xl md:text-7xl" />}
+        />
+        <TechIcon
+          name="Wordpress"
+          icon={<RiWordpressLine className="text-5xl md:text-7xl" />}
+        />
       </div>
     </Section>
   );
