@@ -15,7 +15,7 @@ import Section from "./Section";
 export default function Hero() {
   return (
     <Section>
-      <div className="min-h-screen flex flex-wrap justify-between flex-row md:flex-row-reverse">
+      <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
         <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 md:order-1">
           <Image
             src={profilePic}
