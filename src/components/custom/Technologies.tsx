@@ -38,10 +38,10 @@ export default function Technologies() {
         ready for future challenges."
       />
 
-      <div className="flex items-center justify-center flex-wrap gap-10">
+      <div className="flex items-center justify-center flex-wrap gap-16">
         {/* ----- frontend ----- -----*/}
         <TechIcon
-          name="React"
+          name="React Native"
           icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
         />
         <TechIcon
@@ -76,10 +76,10 @@ export default function Technologies() {
         />
 
         {/* ----- mobile ----- */}
-        <TechIcon
+        {/* <TechIcon
           name="Dart"
           icon={<SiDart className="text-5xl md:text-7xl" />}
-        />
+        /> */}
         <TechIcon
           name="Flutter"
           icon={<RiFlutterFill className="text-5xl md:text-7xl" />}
@@ -106,7 +106,7 @@ export default function Technologies() {
         />
         <TechIcon
           name="Figma"
-          icon={<FaFigma className="text-5xl md:text-6xl" />}
+          icon={<FaFigma className="text-5xl md:text-7xl" />}
         />
         <TechIcon
           name="Docker"

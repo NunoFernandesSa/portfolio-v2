@@ -7,7 +7,7 @@ import { TechIconType } from "@/types/techIconsTypes";
 export default function TechIcon({ name, icon }: TechIconType) {
   return (
     <>
-      <Tooltip>
+      <Tooltip open={true}>
         <TooltipTrigger asChild>{icon}</TooltipTrigger>
         <TooltipContent>
           <span>{name}</span>
