@@ -1,10 +1,6 @@
-"use client";
-
 import React from "react";
 
-/**
- * Shadcn components
- */
+// ----- Shadcn components -----
 import {
   Card,
   CardContent,
@@ -13,23 +9,14 @@ import {
   CardDescription,
 } from "../ui/shadcn/card";
 
-/**
- * Custom components
- */
+// -----  Custom components -----
 import Section from "./Section";
 import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";
 
-/**
- * Constants
- */
+// ----- Constants -----
 import { SERVICES } from "@/constants/services";
 import Image from "next/image";
-
-/**
- * Framer-motion
- */
-import { motion } from "framer-motion";
 
 export default function Services() {
   return (
@@ -43,7 +30,7 @@ From concept to long-term support, let's make your digital vision a reality."
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-6">
         {SERVICES.map((service, index) => (
-          <motion.div key={index}>
+          <div key={index}>
             <Card className="bg-transparent border-2 border-purple-500/10 min-h-[360px] shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300 ">
               <CardHeader className="p-2 sm:p-6 gap-6">
                 <Image
@@ -58,7 +45,7 @@ From concept to long-term support, let's make your digital vision a reality."
               </CardHeader>
               <CardContent></CardContent>
             </Card>
-          </motion.div>
+          </div>
         ))}
       </div>
     </Section>

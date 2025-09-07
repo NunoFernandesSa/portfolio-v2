@@ -42,6 +42,12 @@ export default function NavBar({ className }: { className?: string }) {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
+            <NavigationMenuLink className="cursor-pointer" href="#services">
+              <MdOutlineDesignServices />
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
             <NavigationMenuLink className="cursor-pointer" href="#technologies">
               <FaCode />
             </NavigationMenuLink>
@@ -54,31 +60,15 @@ export default function NavBar({ className }: { className?: string }) {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            <NavigationMenuLink className="cursor-pointer" href="#services">
-              <MdOutlineDesignServices />
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-
-          <NavigationMenuItem>
             <NavigationMenuLink className="cursor-pointer" href="#contact">
               <LuMessageSquareCode />
             </NavigationMenuLink>
           </NavigationMenuItem>
-          <ModeToggle />
+
+          {/* ---- toggle ligth/dark mode ---- */}
+          {/* <ModeToggle /> */}
         </NavigationMenuList>
       </NavigationMenu>
-
-      {/* mobile navbar links */}
-      {/* ----- navbar links ----- */}
-      {/* <NavigationMenu className="md:hidden h-14 mt-2">
-        <NavigationMenuList>
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Menu size={56} className="border" />
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-        </NavigationMenuList>
-      </NavigationMenu> */}
     </>
   );
 }

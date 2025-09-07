@@ -1,8 +1,4 @@
-"use client";
-
-/**
- * React icons
- */
+// ----- React icons -----
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiNestjs } from "react-icons/si";
@@ -25,18 +21,11 @@ import { SiAndroidstudio } from "react-icons/si";
 import { SiSqlite } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
-/**
- * Custom components
- */
+// ----- Custom components -----
 import TitleSection from "./TitleSection";
 import SubtitleSection from "./SubtitleSection";
 import Section from "./Section";
 import TechIcon from "./TechIcon";
-
-/**
- * Framer-motion
- */
-import { motion } from "framer-motion";
 
 export default function Technologies() {
   return (
@@ -49,36 +38,45 @@ export default function Technologies() {
         ready for future challenges."
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-10">
-        {/* ----- frontend ----- -----*/}
-        <motion.div>
-          <Card>
-            <CardHeader>Frontend</CardHeader>
-            <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
-              <TechIcon
-                name="React"
-                icon={<RiReactjsLine className="text-7xl" />}
-              />
+      {/* ----- frontend ----- -----*/}
+      <h3 className="text-2xl font-semibold">Frontend</h3>
+      <div className="slider--section">
+        <div className="slider">
+          <div className="slide-track">
+            <div className="slide">
+              <Card>
+                <TechIcon
+                  name="React"
+                  icon={<RiReactjsLine className="text-7xl" />}
+                />
+              </Card>
+            </div>
 
+            <div className="slide">
               <TechIcon
                 name="Next.js"
                 icon={<TbBrandNextjs className="text-7xl" />}
               />
+            </div>
 
+            <div className="slide">
               <TechIcon
                 name="Typescript"
                 icon={<TbBrandTypescript className="text-7xl" />}
               />
+            </div>
 
+            <div className="slide">
               <TechIcon
                 name="TailwindCss"
                 icon={<RiTailwindCssFill className="text-7xl" />}
               />
-            </CardContent>
-          </Card>
-        </motion.div>
-        {/* ----- backend ----- -----*/}
-        <motion.div>
+            </div>
+          </div>
+        </div>
+
+        {/* ----- backend ----- ----- */}
+        <div>
           <Card>
             <CardHeader>Backend</CardHeader>
             <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
@@ -100,9 +98,9 @@ export default function Technologies() {
               />
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
         {/* ----- mobile ----- */}
-        <motion.div>
+        <div>
           <Card>
             <CardHeader>Mobile</CardHeader>
             <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
@@ -113,10 +111,9 @@ export default function Technologies() {
               />
             </CardContent>
           </Card>
-        </motion.div>
-
+        </div>
         {/* ----- Database -----*/}
-        <motion.div>
+        <div>
           <Card>
             <CardHeader>Database</CardHeader>
             <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
@@ -134,10 +131,9 @@ export default function Technologies() {
               />
             </CardContent>
           </Card>
-        </motion.div>
-
+        </div>
         {/* ----- other skills ----- */}
-        <motion.div>
+        <div>
           <Card>
             <CardHeader>Other skills</CardHeader>
             <CardContent className="flex flex-wrap items-center justify-center mx-auto gap-6">
@@ -173,7 +169,7 @@ export default function Technologies() {
               />
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
       </div>
     </Section>
   );

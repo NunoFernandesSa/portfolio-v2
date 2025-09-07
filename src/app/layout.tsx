@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { geistSans, geistMono, lato, rubik } from "@/lib/fonts";
 
 import "@/styles/globals.css";
+
 import { ThemeProvider } from "@/components/custom/theme-provider";
 
 export const metadata: Metadata = {

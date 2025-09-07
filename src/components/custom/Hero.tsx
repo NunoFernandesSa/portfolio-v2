@@ -14,14 +14,11 @@ import { Button } from "../ui/shadcn/button";
 // ----- Custom components -----
 import Section from "./Section";
 
-// ----- Framer motion custom variants -----
-import { motion } from "framer-motion";
-
 export default function Hero() {
   return (
     <Section>
       <div className="min-h-screen flex flex-wrap justify-between flex-row md:flex-row-reverse">
-        <motion.div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 md:order-1">
+        <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 md:order-1">
           <Image
             src={profilePic}
             alt="My profile picture"
@@ -49,26 +46,26 @@ export default function Hero() {
               </Link>
             </Button>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div className="w-full flex flex-col items-center justify-start lg:items-start mt-10 lg:w-1/2 order-1 md:order-2">
-          <motion.h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
+        <div className="w-full flex flex-col items-center justify-start lg:items-start mt-10 lg:w-1/2 order-1 md:order-2">
+          <h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
             Nuno Fernandes
-          </motion.h2>
-          <motion.span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent">
+          </h2>
+          <span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent">
             Full Stack Developer
-          </motion.span>
+          </span>
 
-          <motion.p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+          <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
             As a freelance developer, I design and build tailored web and mobile
             applications. Whether working directly with clients or collaborating
             with tech and design professionals, I deliver high-quality,
             customized solutions to meet your needs.
-          </motion.p>
+          </p>
 
-          <motion.p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+          <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
             Do you have an idea? I can turn it into a product.
-          </motion.p>
+          </p>
 
           <Button
             className="rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer"
@@ -77,7 +74,7 @@ export default function Hero() {
           >
             <Link href={"#contact"}>Let&apos;s Connect</Link>
           </Button>
-        </motion.div>
+        </div>
       </div>
     </Section>
   );
