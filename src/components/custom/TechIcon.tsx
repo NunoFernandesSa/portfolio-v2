@@ -1,28 +1,17 @@
 "use client";
 
-/**
- * Motion-framer
- */
+// ----- Motion-framer -----
 import { motion } from "framer-motion";
 
-/**
- * Shadcn components
- */
+// -----  Shadcn components -----
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
 
-/**
- * Custom Types
- */
-import { iconVariants } from "@/constants/framer-motion-variants";
+// ----- Custom Types -----
 import { TechIconType } from "@/types/techIconsTypes";
 
-export default function TechIcon({ name, icon, motionDelay }: TechIconType) {
+export default function TechIcon({ name, icon }: TechIconType) {
   return (
-    <motion.div
-      variants={iconVariants(motionDelay)}
-      initial="initial"
-      animate="animate"
-    >
+    <motion.div>
       <Tooltip>
         <TooltipTrigger asChild>{icon}</TooltipTrigger>
         <TooltipContent>

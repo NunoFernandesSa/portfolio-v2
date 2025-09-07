@@ -39,15 +39,7 @@ export default function Projects() {
 
       {PORTFOLIO_ITEMS.map((project, index) => (
         <div className="mb-20 flex flex-wrap lg:justify-center" key={index}>
-          <motion.div
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            initial={{ opacity: 0, x: -100 }}
-            transition={{ duration: 1.5 }}
-            className="w-full lg:w-1/4 mb-6"
-          >
+          <motion.div className="w-full lg:w-1/4 mb-6">
             <Image
               src={project.image}
               alt={project.title}
@@ -69,15 +61,7 @@ export default function Projects() {
             </Button>
           </motion.div>
 
-          <motion.div
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            initial={{ opacity: 0, x: 100 }}
-            transition={{ duration: 1.5 }}
-            className="w-full max-w-xl lg:w-3/4"
-          >
+          <motion.div className="w-full max-w-xl lg:w-3/4">
             <div className="flex flex-wrap"></div>
             <motion.h3 className="mb-2 font-semibold text-md sm:text-2xl">
               {project.title}

@@ -43,12 +43,7 @@ From concept to long-term support, let's make your digital vision a reality."
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-6">
         {SERVICES.map((service, index) => (
-          <motion.div
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 100 }}
-            transition={{ duration: 2 + index }}
-            key={index}
-          >
+          <motion.div key={index}>
             <Card className="bg-transparent border min-h-[360px]">
               <CardHeader className="p-2 sm:p-6 gap-3">
                 <Image
