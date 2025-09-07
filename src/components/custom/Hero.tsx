@@ -25,9 +25,9 @@ export default function Hero() {
           <Image
             src={profilePic}
             alt="My profile picture"
-            className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300 p-6 rounded-lg"
+            className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300 rounded-full"
           />
-          <div className="flex items-center justify-center gap-6 mt-9">
+          <div className="w-full flex items-center justify-center gap-6 mt-9">
             <Button
               size={"sm"}
               className="rounded-full min-w-22"
@@ -51,12 +51,7 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="w-full flex flex-col items-center justify-start lg:items-start mt-10 lg:w-1/2 order-1 md:order-2"
-        >
+        <motion.div className="w-full flex flex-col items-center justify-start lg:items-start mt-10 lg:w-1/2 order-1 md:order-2">
           <motion.h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
             Nuno Fernandes
           </motion.h2>
@@ -75,15 +70,13 @@ export default function Hero() {
             Do you have an idea? I can turn it into a product.
           </motion.p>
 
-          <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <Button
-              className="rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer"
-              title="Send me a message!"
-              asChild
-            >
-              <Link href={"#contact"}>Let&apos;s Connect</Link>
-            </Button>
-          </motion.span>
+          <Button
+            className="rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer"
+            title="Send me a message!"
+            asChild
+          >
+            <Link href={"#contact"}>Let&apos;s Connect</Link>
+          </Button>
         </motion.div>
       </div>
     </Section>

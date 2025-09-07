@@ -16,8 +16,11 @@ export default function Home() {
         <NavBar />
       </header>
       <main className="container mx-auto px-4 sm:px-8 md:px-16">
-        
         <Hero />
+
+        <div id="services">
+          <Services />
+        </div>
 
         <div id="technologies">
           <Technologies />
@@ -25,9 +28,6 @@ export default function Home() {
 
         <div id="portfolio">
           <Projects />
-        </div>
-        <div id="services">
-          <Services />
         </div>
 
         <div id="contact">

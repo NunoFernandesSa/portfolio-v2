@@ -44,8 +44,8 @@ From concept to long-term support, let's make your digital vision a reality."
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-6">
         {SERVICES.map((service, index) => (
           <motion.div key={index}>
-            <Card className="bg-transparent border min-h-[360px]">
-              <CardHeader className="p-2 sm:p-6 gap-3">
+            <Card className="bg-transparent border-2 border-purple-500/10 min-h-[360px] shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300 ">
+              <CardHeader className="p-2 sm:p-6 gap-6">
                 <Image
                   src={service.icon}
                   alt={service.title}
