@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 // ----- Shadcn components -----
-import { Badge } from "@/components/ui/shadcn/badge";
 import {
   Drawer,
   DrawerClose,
@@ -15,6 +14,8 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/shadcn/drawer";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
+import { Button } from "../ui/shadcn/button";
 
 // ----- Custom components -----
 import Section from "./Section";
@@ -23,10 +24,9 @@ import SubtitleSection from "./SubtitleSection";
 
 // ----- Constants -----
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
-import { Tooltip, TooltipContent } from "../ui/shadcn/tooltip";
-import { TooltipTrigger } from "@radix-ui/react-tooltip";
-import { Card } from "../ui/shadcn/card";
-import { Button } from "../ui/shadcn/button";
+
+// ----- Icons -----
+import { GiCrossMark } from "react-icons/gi";
 
 export default function Projects() {
   return (
@@ -59,19 +59,26 @@ export default function Projects() {
                 <DrawerDescription className="max-w-2xl mx-auto">
                   {project.description}
                 </DrawerDescription>
+                <div className="flex items-center justify-center gap-2">
+                  {project.technos.map((item, index) => (
+                    <span
+                      key={index}
+                      className="text-[10px]  bg-[#7420e8] px-2 py-[0.5px] rounded-full"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </DrawerHeader>
-              <DrawerFooter>
-                <Button className="w-38 mx-auto cursor-pointer" asChild>
+              <DrawerFooter className="flex flex-row justify-center flex-wrap">
+                <Button className="w-38 cursor-pointer" asChild>
                   <Link href={project.link} target="_blank">
                     Go to live
                   </Link>
                 </Button>
                 <DrawerClose asChild>
-                  <Button
-                    variant="outline"
-                    className="w-38 mx-auto cursor-pointer"
-                  >
-                    Close
+                  <Button variant="outline" className="w-38 cursor-pointer">
+                    <GiCrossMark />
                   </Button>
                 </DrawerClose>
               </DrawerFooter>
@@ -81,29 +88,4 @@ export default function Projects() {
       </div>
     </Section>
   );
-}
-
-{
-  /* <div className="w-1/3 items-center justify-start bg-transparent p-3">
-  <Link href={project.link} target="_blank">
-    <Tooltip>
-      <TooltipTrigger asChild>
-        <Image
-          src={project.image}
-          alt={project.title}
-          width={300}
-          height={300}
-          className="rounded hover:scale-95 transition-all duration-300"
-        />
-      </TooltipTrigger>
-      <TooltipContent>
-        <span>Go to {project.title}</span>
-      </TooltipContent>
-    </Tooltip>
-  </Link>
-
-  <h3 className="font-semibold text-sm sm:text-xl">{project.title}</h3>
-
-  <p className=" text-stone-400 text-sm md:text-md">{project.description}</p>
-</div>; */
 }
