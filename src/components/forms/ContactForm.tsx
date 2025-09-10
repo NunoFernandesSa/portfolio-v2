@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/shadcn/card";
 import { Button } from "../ui/shadcn/button";
 import { Input } from "../ui/shadcn/input";
@@ -20,8 +20,16 @@ import { zodResolver } from "@hookform/resolvers/zod";
 // ----- schemas -----
 import { formSchema } from "@/lib/schemas";
 
+// ----- emailjs -----
+import { email_js } from "@/lib/email";
+import emailjs from "@emailjs/browser";
+// ----- toast -----
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function ContactForm() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const contactForm = useRef<HTMLFormElement>(null);
+  const [submitting, setSubmitting] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -32,12 +40,23 @@ export default function ContactForm() {
     },
   });
 
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    setIsSubmitting(true);
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setSubmitting(true);
+
+    try {
+      await emailjs.sendForm(
+        email_js.SERVICE_ID!,
+        email_js.TEMPLATE_ID!,
+        contactForm.current!,
+        email_js.PUBLIC_KEY
+      );
+      toast.success("Message sent successfully!");
+      form.reset();
+    } catch (error) {
+      toast.error("⚠️ An error has occurred. Please try again later!");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -47,7 +66,11 @@ export default function ContactForm() {
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+          <form
+            ref={contactForm}
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-4"
+          >
             <div className="space-y-3">
               <FormField
                 control={form.control}
@@ -72,7 +95,11 @@ export default function ContactForm() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="your.email@example.com" {...field} />
+                      <Input
+                        placeholder="your.email@example.com"
+                        type="email"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -100,8 +127,12 @@ export default function ContactForm() {
               />
             </div>
 
-            <Button type="submit" className="w-full cursor-pointer">
-              {isSubmitting ? "Sending..." : "Send Message"}
+            <Button
+              type="submit"
+              className="w-full cursor-pointer"
+              disabled={submitting}
+            >
+              {submitting ? "Sending..." : "Send message"}
             </Button>
           </form>
         </Form>
