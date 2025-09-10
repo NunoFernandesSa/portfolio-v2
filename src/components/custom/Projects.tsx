@@ -26,7 +26,8 @@ import SubtitleSection from "./SubtitleSection";
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
 
 // ----- Icons -----
-import { GiCrossMark } from "react-icons/gi";
+import { VscClose } from "react-icons/vsc";
+import { FaRegEye } from "react-icons/fa";
 
 export default function Projects() {
   return (
@@ -74,11 +75,12 @@ export default function Projects() {
                 <Button className="w-38 cursor-pointer" asChild>
                   <Link href={project.link} target="_blank">
                     Go to live
+                    <FaRegEye />
                   </Link>
                 </Button>
                 <DrawerClose asChild>
                   <Button variant="outline" className="w-38 cursor-pointer">
-                    <GiCrossMark />
+                    Close <VscClose />
                   </Button>
                 </DrawerClose>
               </DrawerFooter>
