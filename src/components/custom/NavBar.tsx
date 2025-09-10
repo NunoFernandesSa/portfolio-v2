@@ -8,9 +8,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcn/navigation-menu";
-
-// ----- Custom components -----
-import { ModeToggle } from "../custom/theme_toggle/ThemeToggle";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
 
 // ----- React Icons -----
 import { RiHome2Line } from "react-icons/ri";
@@ -18,7 +16,6 @@ import { FaCode } from "react-icons/fa6";
 import { PiBriefcase } from "react-icons/pi";
 import { LuMessageSquareCode } from "react-icons/lu";
 import { MdOutlineDesignServices } from "react-icons/md";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
 
 export default function NavBar({ className }: { className?: string }) {
   return (

@@ -1,4 +1,7 @@
-import { boolean } from "zod";
+//----- Curstom components -----
+import { ModalProps } from "@/types/ModalProps";
+
+//----- Types -----
 import ModalContent from "./ModalContent";
 
 export function Modal({ isOpen, onClose, title }: ModalProps) {
@@ -33,10 +36,4 @@ export function Modal({ isOpen, onClose, title }: ModalProps) {
       </div>
     </div>
   );
-}
-
-interface ModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  title: string;
 }

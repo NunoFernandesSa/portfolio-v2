@@ -4,10 +4,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiNestjs } from "react-icons/si";
 import { SiElectron } from "react-icons/si";
 import { RiNodejsFill } from "react-icons/ri";
-import { SiDart } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandPython } from "react-icons/tb";
-import { Card } from "../ui/shadcn/card";
 import { TbBrandTypescript } from "react-icons/tb";
 import { TbBrandDjango } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
@@ -76,10 +74,6 @@ export default function Technologies() {
         />
 
         {/* ----- mobile ----- */}
-        {/* <TechIcon
-          name="Dart"
-          icon={<SiDart className="text-5xl md:text-7xl" />}
-        /> */}
         <TechIcon
           name="Flutter"
           icon={<RiFlutterFill className="text-5xl md:text-7xl" />}
