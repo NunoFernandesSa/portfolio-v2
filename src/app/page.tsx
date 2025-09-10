@@ -8,10 +8,12 @@ import Projects from "@/components/custom/Projects";
 import Services from "@/components/custom/Services";
 import Contact from "@/components/custom/Contact";
 import Footer from "@/components/custom/Footer";
+import SmoothFollower from "@/components/custom/SmoothFollowerCursor";
 
 export default function Home() {
   return (
     <>
+      <SmoothFollower />
       <header className="fixed top-0 w-full flex items-center justify-center px-4 sm:px-8 md:px-16">
         <NavBar />
       </header>
