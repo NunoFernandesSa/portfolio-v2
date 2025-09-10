@@ -43,7 +43,7 @@ export default function ContactForm() {
   });
 
   const {
-    formState: { isValid, isDirty },
+    formState: { isValid },
   } = form;
 
   async function onSubmit() {
@@ -58,7 +58,7 @@ export default function ContactForm() {
       );
       toast.success("Message sent successfully!");
       form.reset();
-    } catch (error) {
+    } catch (_) {
       toast.error("⚠️ An error has occurred. Please try again later!");
     } finally {
       setSubmitting(false);

@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="flex flex-col items-center justify-center gap-8 md:gap-16 w-full lg:w-2/3 mx-auto">
           <Card className="w-full flex flex-col items-center justify-center gap-4 bg-transparent border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300">
             <h3 className="font-bold mx-3">
-              Don't like forms? Send me an email.
+              Don&apos;t like forms? Send me an email.
             </h3>
 
             <div className="flex flex-row items-center gap-3 my-6">
