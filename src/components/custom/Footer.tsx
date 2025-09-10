@@ -29,7 +29,6 @@ export default function Footer() {
       </div>
 
       {/* ===== RGPD Modal ===== */}
-
       {isOpen && (
         <Modal
           isOpen={isOpen}

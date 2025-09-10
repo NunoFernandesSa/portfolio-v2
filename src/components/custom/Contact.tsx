@@ -19,18 +19,28 @@ export default function Contact() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
         <div className="flex flex-col items-center justify-center gap-8 md:gap-16 w-full lg:w-2/3 mx-auto">
-          <Card className="w-full flex flex-wrap flex-row items-center justify-center gap-4 bg-transparent border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300 ">
-            <IoIosPhonePortrait size={30} />
-            <span className="text-sm"> +33 7 71 80 29 21</span>
-          </Card>
-          <Card className="w-full flex flex-wrap flex-row items-center justify-center gap-4 bg-transparent border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300">
-            <MdOutlineMarkEmailUnread size={30} />
-            <span className="text-sm">n.fernandes.contact@gmail.com</span>
+          <Card className="w-full flex flex-col items-center justify-center gap-4 bg-transparent border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300">
+            <h3 className="font-bold mx-3">
+              Don't like forms? Send me an email.
+            </h3>
+
+            <div className="flex flex-row items-center gap-3 my-6">
+              <MdOutlineMarkEmailUnread size={30} />
+              <span className="text-sm">
+                <a href="mailto:n.fernandes.contact@gmail.com">
+                  n.fernandes.contact@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div className="flex flex-row items-center gap-3">
+              <IoIosPhonePortrait size={30} />
+              <span className="text-sm"> +33 7 71 80 29 21</span>
+            </div>
           </Card>
         </div>
-        <div className="">
-          <ContactForm />
-        </div>
+
+        <ContactForm />
       </div>
     </Section>
   );
