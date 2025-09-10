@@ -16,11 +16,11 @@ export default function Hero() {
   return (
     <Section>
       <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
-        <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 md:order-1">
+        <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 lg:order-1">
           <Image
             src={profilePic}
             alt="My profile picture"
-            className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu"
+            className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu -z-10 w-1/2 lg:w-full"
           />
           <div className="w-full flex items-center justify-center gap-6 mt-9">
             <Button
@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="w-full flex flex-col items-center justify-start lg:items-start mt-10 lg:w-1/2 order-1 md:order-2">
+        <div className="w-full flex flex-col items-center justify-start lg:items-start mt-20 lg:mt-10 lg:w-1/2 order-1 lg:order-2">
           <h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
             Nuno Fernandes
           </h2>
