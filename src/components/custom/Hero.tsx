@@ -5,6 +5,8 @@ import Image from "next/image";
 
 // ----- assets -----
 import profilePic from "@/assets/images/profile_photo.png";
+import linkedin from "../../../public/images/social/linkedin.png";
+import malt from "../../../public/images/social/malt.png";
 
 // ----- Shadcn components -----
 import { Button } from "../ui/shadcn/button";
@@ -20,12 +22,12 @@ export default function Hero() {
           <Image
             src={profilePic}
             alt="My profile picture"
-            className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu -z-10 w-1/2 lg:w-full"
+            className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu w-1/2 lg:w-full"
           />
           <div className="w-full flex items-center justify-center gap-6 mt-9">
             <Button
-              size={"sm"}
-              className="rounded-full min-w-22 hover:scale-105 transition-all duration-300"
+              size={"lg"}
+              className="rounded-full min-w-22 bg-transparent hover:bg-transparent border border-purple-500 hover:scale-105 transition-all duration-300"
               title="Visit my LinkedIn profile"
               asChild
             >
@@ -33,12 +35,12 @@ export default function Hero() {
                 href={"https://www.linkedin.com/in/nunofernandesdesa"}
                 target="_blank"
               >
-                LinkedIn
+                <Image src={linkedin} alt="LinkedIn" className="w-20" />
               </Link>
             </Button>
             <Button
-              size={"sm"}
-              className="rounded-full min-w-22 hover:scale-105 transition-all duration-300"
+              size={"lg"}
+              className="rounded-full min-w-30 bg-transparent hover:bg-transparent border border-purple-500 hover:scale-105 transition-all duration-300"
               title="Visit my Malt profile"
               asChild
             >
@@ -46,7 +48,7 @@ export default function Hero() {
                 href={"https://www.malt.fr/profile/nunofernandes"}
                 target="_blank"
               >
-                Malt
+                <Image src={malt} alt="Malt" className="w-20" />
               </Link>
             </Button>
           </div>
