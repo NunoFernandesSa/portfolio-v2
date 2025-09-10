@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/custom/theme-provider";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ScrollToTop from "@/components/custom/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Nuno Fernandes | Portfolio",
@@ -30,8 +31,7 @@ export default function RootLayout({
         >
           {/* ----- background fixed ----- */}
           <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-
-          {children}
+          <ScrollToTop />
           <ToastContainer
             position="top-right"
             autoClose={5000}
@@ -43,6 +43,7 @@ export default function RootLayout({
             draggable
             pauseOnHover
           />
+          {children}
         </ThemeProvider>
       </body>
     </html>
