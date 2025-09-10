@@ -54,7 +54,7 @@ export default function ScrollToTop() {
   return (
     <Button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-50 rounded-full p-0 cursor-pointer bg-purple-500/50 border-purple-500/10 shadow-md shadow-purple-500/30 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
+      className="fixed bottom-16 right-6 z-50 rounded-full p-0 cursor-pointer bg-purple-500/50 border-purple-500/10 shadow-md shadow-purple-500/30 hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
       aria-label="Back to top"
     >
       <TbChevronsUp />
