@@ -17,7 +17,7 @@ export default function SmoothFollower() {
   const BORDER_DOT_SMOOTHNESS = 0.1;
 
   useEffect(() => {
-    // Marquer que nous sommes côté client
+    // client side set
     setIsClient(true);
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -27,7 +27,7 @@ export default function SmoothFollower() {
     const handleMouseEnter = () => setIsHovering(true);
     const handleMouseLeave = () => setIsHovering(false);
 
-    // Ajouter les écouteurs d'événements
+    // event listeners
     window.addEventListener("mousemove", handleMouseMove);
 
     const interactiveElements = document.querySelectorAll(
@@ -38,7 +38,7 @@ export default function SmoothFollower() {
       element.addEventListener("mouseleave", handleMouseLeave);
     });
 
-    // Fonction d'animation pour un mouvement fluide
+    // animation loop function for smmoth mouvement
     const animate = () => {
       const lerp = (start: number, end: number, factor: number) => {
         return start + (end - start) * factor;
@@ -77,10 +77,10 @@ export default function SmoothFollower() {
       requestAnimationFrame(animate);
     };
 
-    // Démarrer la boucle d'animation
+    // start a loop
     const animationId = requestAnimationFrame(animate);
 
-    // Nettoyage
+    // cleanning
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
 
@@ -93,7 +93,7 @@ export default function SmoothFollower() {
     };
   }, []);
 
-  // Ne rien rendre pendant le SSR
+  // Do not return anything during the SSR
   if (!isClient) {
     return null;
   }
