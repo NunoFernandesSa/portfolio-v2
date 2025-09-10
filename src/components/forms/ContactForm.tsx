@@ -38,9 +38,14 @@ export default function ContactForm() {
       email: "",
       message: "",
     },
+    mode: "onChange",
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  const {
+    formState: { isValid, isDirty },
+  } = form;
+
+  async function onSubmit() {
     setSubmitting(true);
 
     try {
@@ -130,7 +135,7 @@ export default function ContactForm() {
             <Button
               type="submit"
               className="w-full cursor-pointer"
-              disabled={submitting}
+              disabled={!isValid || submitting}
             >
               {submitting ? "Sending..." : "Send message"}
             </Button>
