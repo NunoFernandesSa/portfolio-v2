@@ -12,8 +12,8 @@ export default function ModalContent() {
 
       <section>
         <h3 className="text-lg">Hosting Provider</h3>
-        <p>Name : Netlify, Inc.</p>
-        <p>Website: www.netlify.com</p>
+        <p>Name : Vercel Inc</p>
+        <p>Website: https://vercel.com/</p>
       </section>
 
       <section>
@@ -69,9 +69,9 @@ export default function ModalContent() {
         </p>
       </section>
 
-      <section>
+      {/* <section>
         <h3 className="text-lg">Images/Icons credits</h3>
-      </section>
+      </section> */}
     </div>
   );
 }
