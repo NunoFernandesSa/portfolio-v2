@@ -32,7 +32,8 @@ export default function Hero() {
           <div className="w-full flex items-center justify-center gap-6 mt-9">
             <Button
               size={"lg"}
-              className="rounded-full min-w-22 bg-transparent hover:bg-transparent border border-purple-500 hover:scale-105 transition-all duration-300"
+              variant={"outline"}
+              className="rounded-full min-w-22 bg-transparent hover:bg-transparent hover:scale-105 transition-all duration-300"
               title={`${t("linkedinBtnTitleText")}`}
               asChild
             >
@@ -45,7 +46,8 @@ export default function Hero() {
             </Button>
             <Button
               size={"lg"}
-              className="rounded-full min-w-30 bg-transparent hover:bg-transparent border border-purple-500 hover:scale-105 transition-all duration-300"
+              variant={"outline"}
+              className="rounded-full min-w-30 bg-transparent hover:bg-transparent hover:scale-105 transition-all duration-300"
               title={`${t("maltBtnTitleText")}`}
               asChild
             >
@@ -71,12 +73,16 @@ export default function Hero() {
             {t("subtitle")}
           </p>
 
-          <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+          <p className="mt-4 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
             {t("ctlText")}
+          </p>
+          <p className="mb-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+            {t("ctlText2")}
           </p>
 
           <Button
-            className="w-full max-w-lg rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer hover:scale-101 transition-all duration-300"
+            className="w-full max-w-lg rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer hover:scale-101 transition-all duration-300 border border-purple-500"
+            variant={"outline"}
             title={t("ctlBtnText")}
             asChild
           >
