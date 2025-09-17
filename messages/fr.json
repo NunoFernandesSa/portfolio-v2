@@ -1,12 +1,59 @@
 {
   "HomePage": {
+    "navbarHome": "Accueil",
+    "navbarServices": "Services",
+    "navbarTechnologies": "Technologies",
+    "navbarPortfolio": "Portfolio",
+    "navbarContact": "Contact",
+
     "title": "Développeur Full Stack",
     "subtitle": "En tant que développeur freelance, je conçois et développe des applications web et mobiles sur mesure. Que ce soit en collaboration directe avec mes clients ou avec des professionnels de la technologie et du design, je propose des solutions personnalisées de haute qualité pour répondre à vos besoins.",
+
     "ctlText": "Vous avez une idée? Je peux la transformer en produit.",
     "ctlBtnText": "Contactez-moi",
     "linkedinBtnTitleText": "Visitez mon profil LinkedIn",
     "maltBtnTitleText": "Visitez mon profil Malt",
 
-    "servicesTitle": "Ce que je fais ?"
+    "servicesTitle": "Ce que je fais ?",
+    "servicesSubtitle": "Je crée et maintiens des sites web et des applications mobiles performants, sécurisés, évolutifs et adaptés à vos objectifs. De la conception à l'accompagnement à long terme, je concrétise votre vision numérique.",
+
+    "wdService": "Développement Web",
+    "wdServiceDesc": "Je crée des solutions sur mesure pour la mise en valeur de sites web et d'applications web complexes, alliant design intuitif, esthétique et architecture robuste. Je crée des sites performants et optimisés SEO en utilisant les technologies et frameworks les plus récents pour des résultats modernes et performants.",
+
+    "mdService": "Développement Mobile",
+    "mdServiceDesc": "Je développe des applications mobiles hybrides pour smartphones et tablettes, en m'appuyant sur des frameworks comme Flutter ou React Native pour proposer des solutions sur mesure. Mes applications se distinguent par une attention particulière portée à l'ergonomie et au design, alliant ergonomie et un visuel attrayant. Je garde une longueur d'avance en intégrant les technologies et frameworks les plus récents pour des performances de pointe.",
+
+    "msService": "Maintenance & Support",
+    "msServiceDesc": "Je propose des services de maintenance fiables et proactifs pour garantir le bon fonctionnement de votre site web ou de votre application en permanence. Je veille à la sécurité, à la mise à jour et à l'adaptation de vos ressources numériques aux évolutions technologiques. Mon objectif est de minimiser les temps d'arrêt tout en maximisant l'efficacité, afin que vous puissiez vous concentrer sur la croissance de votre entreprise.",
+
+    "techsTitle": "Technologies",
+    "techsSubtitle": "J'utilise avec expertise des technologies de pointe pour concevoir des solutions performantes tout au long du cycle de développement. En adoptant continuellement les dernières innovations du secteur, je crée des systèmes évolutifs prêts à relever les défis futurs.",
+
+    "projectsTitle": "Projects",
+    "projectsSubtitle": "Découvrez mes travaux récents. Transformer des idées en solutions techniques performantes.",
+
+    "getIntouch": "Entrez en contact !",
+    "getIntouchSubtitle": "Vous avez une question ou un projet en tête ? Discutons-en !",
+
+    "dontLikeFormsText": "Vous n'aimez pas les formulaires ?",
+    "dontLikeFormsTextForSendMail": "Envoyez-moi un e-mail.",
+
+    "formTitle": "Envoie-moi un message",
+    "formName": "Nom",
+    "formNamePlaceholder": "Votre nom",
+
+    "formEmail": "Email",
+    "formEmailPlaceholder": "votre.email@example.com",
+
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Dites-nous comment nous pouvons vous aider...",
+
+    "formBtnSendMessageText": "Envoyer message",
+    "formBtnSendingMessageText": " En cours d'envoi...",
+
+    "successMessageToast": "Message envoyé avec succès!",
+    "errorMessageToast": "Une erreur s'est produite. Veuillez réessayer ultérieurement!",
+
+    "rgpd": "Mentions légales"
   }
 }

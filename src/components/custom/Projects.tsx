@@ -29,11 +29,16 @@ import { PORTFOLIO_ITEMS } from "@/constants/portfolio";
 import { VscClose } from "react-icons/vsc";
 import { FaRegEye } from "react-icons/fa";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function Projects() {
+  const t = useTranslations("HomePage");
+
   return (
     <Section>
-      <TitleSection title="Projects" />
-      <SubtitleSection text="Explore my recent work. Transforming ideas into powerful technical solutions." />
+      <TitleSection title={t("projectsTitle")} />
+      <SubtitleSection text={t("projectsSubtitle")} />
 
       <div className="flex flex-wrap justify-center gap-10">
         {PORTFOLIO_ITEMS.map((project, index) => (

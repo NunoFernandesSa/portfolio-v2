@@ -25,16 +25,16 @@ import SubtitleSection from "./SubtitleSection";
 import Section from "./Section";
 import TechIcon from "./TechIcon";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function Technologies() {
+  const t = useTranslations("HomePage");
+
   return (
     <Section>
-      <TitleSection title="Technologies" />
-      <SubtitleSection
-        text=" I expertly wield cutting-edge technologies to build high-performance
-        solutions across the full development lifecycle. By continuously
-        adopting the latest industry innovations, I create scalable systems
-        ready for future challenges."
-      />
+      <TitleSection title={t("techsTitle")} />
+      <SubtitleSection text={t("techsSubtitle")} />
 
       <div className="flex items-center justify-center flex-wrap gap-16">
         {/* ----- frontend ----- -----*/}

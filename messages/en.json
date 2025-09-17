@@ -1,5 +1,11 @@
 {
   "HomePage": {
+    "navbarHome": "Home",
+    "navbarServices": "Services",
+    "navbarTechnologies": "Technologies",
+    "navbarPortfolio": "Portfolio",
+    "navbarContact": "Contact",
+
     "title": "Full Stack Developer",
     "subtitle": "As a freelance developer, I design and build tailored web and mobile applications. Whether working directly with clients or collaborating with tech and design professionals, I deliver high-quality, customized solutions to meet your needs.",
 
@@ -29,7 +35,8 @@
     "getIntouch": "Get in touch !",
     "getIntouchSubtitle": "Got a question or a project in mind? Let's talk !",
 
-    "dontLikeFormsText": "Don't like forms? Send me an email.",
+    "dontLikeFormsText": "Don't like forms?",
+    "dontLikeFormsTextForSendMail": "Send me an email.",
 
     "formTitle": "Send me a message",
     "formName": "Name",
@@ -45,6 +52,8 @@
     "formBtnSendingMessageText": "Sending...",
 
     "successMessageToast": "Message sent successfully!",
-    "errorMessageToast": "An error has occurred. Please try again later!"
+    "errorMessageToast": "An error has occurred. Please try again later!",
+
+    "rgpd": "Legal Notices"
   }
 }

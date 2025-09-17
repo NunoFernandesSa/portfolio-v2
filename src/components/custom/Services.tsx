@@ -28,10 +28,7 @@ export default function Services() {
     <Section>
       <TitleSection title={t("servicesTitle")} />
 
-      <SubtitleSection
-        text="I build and maintain high-performance websites & mobile apps—secure, scalable, and tailored to your goals.
-From concept to long-term support, let's make your digital vision a reality."
-      />
+      <SubtitleSection text={t("servicesSubtitle")} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center text-center gap-6">
         {SERVICES.map((service, index) => (

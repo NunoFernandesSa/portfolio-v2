@@ -10,8 +10,12 @@ import { Button } from "@/components/ui/shadcn/button";
 import Section from "./Section";
 import { Modal } from "./modal/Modal";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
+  const t = useTranslations("HomePage");
 
   return (
     <Section className="border-t-2">
@@ -23,8 +27,9 @@ export default function Footer() {
           onClick={() => setIsOpen(true)}
           className="cursor-pointer"
           size={"sm"}
+          variant={"outline"}
         >
-          Legal notices
+          {t("rgpd")}
         </Button>
       </div>
 
@@ -33,7 +38,7 @@ export default function Footer() {
         <Modal
           isOpen={isOpen}
           onClose={() => setIsOpen(false)}
-          title="Legal Notices"
+          title="Legal notices"
         ></Modal>
       )}
     </Section>

@@ -11,17 +11,23 @@ import SubtitleSection from "./SubtitleSection";
 import { Card } from "../ui/shadcn/card";
 import ContactForm from "@/components/forms/ContactForm";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function Contact() {
+  const t = useTranslations("HomePage");
+
   return (
     <Section>
-      <TitleSection title="Get in touch !" />
-      <SubtitleSection text="Got a question or a project in mind? Let’s talk !" />
+      <TitleSection title={t("getIntouch")} />
+      <SubtitleSection text={t("getIntouchSubtitle")} />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 w-full">
         <div className="flex flex-col items-center justify-center gap-8 md:gap-16 w-full lg:w-2/3 mx-auto">
           <Card className="w-full flex flex-col items-center justify-center gap-4 bg-transparent border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300">
+            <h3 className="font-bold mx-3">{t("dontLikeFormsText")}</h3>
             <h3 className="font-bold mx-3">
-              Don&apos;t like forms? Send me an email.
+              {t("dontLikeFormsTextForSendMail")}
             </h3>
 
             <div className="flex flex-row items-center gap-3 my-6">
