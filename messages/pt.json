@@ -2,11 +2,52 @@
   "HomePage": {
     "title": "Desenvolvedor Full Stack",
     "subtitle": "Como desenvolvedor freelancer, desenho e desenvolvo aplicações web e mobile personalizadas. Seja a trabalhar diretamente com clientes ou a colaborar com profissionais de tecnologia e design, entrego soluções personalizadas e de alta qualidade para ir ao encontro das suas necessidades.",
+
     "ctlText": "Tem uma ideia? Posso transformá-la num produto.",
     "ctlBtnText": "Entre em contacto comigo",
     "linkedinBtnTitleText": "Visite o meu perfil LinkedIn",
     "maltBtnTitleText": "Visite o meu perfil Malt",
 
-    "servicesTitle": "O que eu faço ?"
+    "servicesTitle": "O que eu faço ?",
+    "servicesSubtitle": "Crio e mantenho sites e aplicações móveis de alto desempenho seguros, escaláveis e adaptados aos seus objetivos. Do conceito ao suporte a longo prazo, vamos transformar a sua visão digital em realidade.",
+
+    "wdService": "Desenvolvimento Web",
+    "wdServiceDesc": "Crio soluções personalizadas para sites de demonstração e aplicações web complexas, combinando design intuitivo, estética e arquitetura robusta. Construo sites de alto desempenho otimizados para SEO utilizando as mais recentes tecnologias e frameworks para oferecer resultados modernos e eficientes.",
+
+    "mdService": "Desenvolvimento Móvel",
+    "mdServiceDesc": "Desenvolvo aplicações móveis híbridas para smartphones e tablets, utilizando frameworks como o Flutter ou o React Native para oferecer soluções personalizadas. O meu trabalho destaca-se pelo forte foco na ergonomia e no design, garantindo usabilidade e apelo visual. Mantenho-me à frente integrando as mais recentes tecnologias e frameworks para um desempenho de vanguarda.",
+
+    "msService": "Manutenção e Suporte",
+    "msServiceDesc": "Ofereço serviços de manutenção fiáveis e proativos para garantir que o seu website ou aplicação funcione perfeitamente o tempo todo. Mantenho os seus ativos digitais seguros, atualizados e alinhados com as tecnologias em evolução. O meu objetivo é minimizar o tempo de inatividade e, ao mesmo tempo, maximizar a eficiência, para que se possa concentrar no crescimento do seu negócio.",
+
+    "techsTitle": "Tecnologias que utilizo",
+    "techsSubtitle": "Utilizo tecnologias de ponta para construir soluções de alto desempenho em todo o ciclo de vida do desenvolvimento. Adotando continuamente as mais recentes inovações do setor, crio sistemas escaláveis, prontos para desafios futuros.",
+
+    "projectsTitle": "Alguns Projetos",
+    "projectsSubtitle": "Explore o meu trabalho recente. Transformar ideias em soluções técnicas poderosas.",
+
+    "getIntouch": "Entre em contacto !",
+    "getIntouchSubtitle": "Tem alguma dúvida ou projeto em mente? Vamos conversar !",
+
+    "dontLikeFormsText": "Não gosta de formulários ?",
+    "dontLikeFormsTextForSendMail": "Envie-me um e-mail.",
+
+    "formTitle": "Envie-me uma mensagem",
+    "formName": "Nome",
+    "formNamePlaceholder": "O seu nome completo",
+
+    "formEmail": "Email",
+    "formEmailPlaceholder": "meu.email@examplo.com",
+
+    "formMessage": "Mensagem",
+    "formMessagePlaceholder": "Diga-nos como podemos ajudá-lo...",
+
+    "formBtnSendMessageText": "Enviar mensagem",
+    "formBtnSendingMessageText": "Enviando...",
+
+    "successMessageToast": "Mensagem enviada com sucesso !",
+    "errorMessageToast": "Ocorreu um erro. Tente novamente mais tarde !",
+
+    "rgpd": "Avisos legais"
   }
 }
