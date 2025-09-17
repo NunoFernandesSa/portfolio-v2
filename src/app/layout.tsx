@@ -10,6 +10,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ScrollToTop from "@/components/custom/ScrollToTop";
 
+import { NextIntlClientProvider } from "next-intl";
+
 export const metadata: Metadata = {
   title: "Nuno Fernandes | Portfolio",
   description:
@@ -44,7 +46,7 @@ export default function RootLayout({
             draggable
             pauseOnHover
           />
-          {children}
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>
