@@ -18,7 +18,7 @@ import Section from "./Section";
 import { useTranslations } from "next-intl";
 
 export default function Hero() {
-  const t = useTranslations("HeroSection");
+  const t = useTranslations("HomePage");
 
   return (
     <Section>

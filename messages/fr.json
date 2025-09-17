@@ -1,10 +1,12 @@
 {
-  "HeroSection": {
+  "HomePage": {
     "title": "Développeur Full Stack",
     "subtitle": "En tant que développeur freelance, je conçois et développe des applications web et mobiles sur mesure. Que ce soit en collaboration directe avec mes clients ou avec des professionnels de la technologie et du design, je propose des solutions personnalisées de haute qualité pour répondre à vos besoins.",
     "ctlText": "Vous avez une idée? Je peux la transformer en produit.",
     "ctlBtnText": "Contactez-moi",
     "linkedinBtnTitleText": "Visitez mon profil LinkedIn",
-    "maltBtnTitleText": "Visitez mon profil Malt"
+    "maltBtnTitleText": "Visitez mon profil Malt",
+
+    "servicesTitle": "Ce que je fais ?"
   }
 }

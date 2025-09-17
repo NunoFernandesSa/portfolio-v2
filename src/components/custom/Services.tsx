@@ -18,10 +18,15 @@ import SubtitleSection from "./SubtitleSection";
 import { SERVICES } from "@/constants/services";
 import Image from "next/image";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function Services() {
+  const t = useTranslations("HomePage");
+
   return (
     <Section>
-      <TitleSection title="What I Do" />
+      <TitleSection title={t("servicesTitle")} />
 
       <SubtitleSection
         text="I build and maintain high-performance websites & mobile apps—secure, scalable, and tailored to your goals.
