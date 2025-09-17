@@ -33,7 +33,7 @@ export default function Hero() {
             <Button
               size={"lg"}
               className="rounded-full min-w-22 bg-transparent hover:bg-transparent border border-purple-500 hover:scale-105 transition-all duration-300"
-              title="Visit my LinkedIn profile"
+              title={`${t("linkedinBtnTitleText")}`}
               asChild
             >
               <Link
@@ -46,7 +46,7 @@ export default function Hero() {
             <Button
               size={"lg"}
               className="rounded-full min-w-30 bg-transparent hover:bg-transparent border border-purple-500 hover:scale-105 transition-all duration-300"
-              title="Visit my Malt profile"
+              title={`${t("maltBtnTitleText")}`}
               asChild
             >
               <Link
