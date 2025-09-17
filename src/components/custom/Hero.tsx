@@ -62,21 +62,24 @@ export default function Hero() {
         </div>
 
         <div className="w-full flex flex-col items-center justify-start lg:items-start mt-20 lg:mt-10 lg:w-1/2 order-1 lg:order-2">
-          <h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
-            Nuno Fernandes
-          </h2>
-          <h1 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent">
-            {t("title")}
-          </h1>
+          <div className="w-full bg-gradient-to-r from-purple-500/10 via-purple-400/5 to-purple/20">
+            <h2 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-xl md:text-2xl tracking-tight text-transparent ml-2 py-3">
+              Nuno Fernandes
+            </h2>
 
-          <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+            <h1 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent ml-2 py-3">
+              {t("title")}
+            </h1>
+          </div>
+
+          <p className="my-2 py-6 max-w-xl text-md md:text-xl leading-relaxed tracking-tighter">
             {t("subtitle")}
           </p>
 
-          <p className="mt-4 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+          <p className="mt-4 max-w-xl text-md md:text-xl leading-relaxed tracking-tighter">
             {t("ctlText")}
           </p>
-          <p className="mb-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
+          <p className="mb-6 max-w-xl text-md md:text-xl leading-relaxed tracking-tighter">
             {t("ctlText2")}
           </p>
 
