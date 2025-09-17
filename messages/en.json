@@ -27,6 +27,24 @@
     "projectsSubtitle": "Explore my recent work. Transforming ideas into powerful technical solutions.",
 
     "getIntouch": "Get in touch !",
-    "getIntouchSubtitle": "Got a question or a project in mind? Let's talk !"
+    "getIntouchSubtitle": "Got a question or a project in mind? Let's talk !",
+
+    "dontLikeFormsText": "Don't like forms? Send me an email.",
+
+    "formTitle": "Send me a message",
+    "formName": "Name",
+    "formNamePlaceholder": "Your full name",
+
+    "formEmail": "Email",
+    "formEmailPlaceholder": "your.email@example.com",
+
+    "formMessage": "Message",
+    "formMessagePlaceholder": "Tell us how we can help you...",
+
+    "formBtnSendMessageText": "Send message",
+    "formBtnSendingMessageText": "Sending...",
+
+    "successMessageToast": "Message sent successfully!",
+    "errorMessageToast": "An error has occurred. Please try again later!"
   }
 }

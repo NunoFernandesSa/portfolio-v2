@@ -28,9 +28,13 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function ContactForm() {
   const contactForm = useRef<HTMLFormElement>(null);
   const [submitting, setSubmitting] = useState(false);
+  const t = useTranslations("HomePage");
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -56,10 +60,10 @@ export default function ContactForm() {
         contactForm.current!,
         email_js.PUBLIC_KEY
       );
-      toast.success("Message sent successfully!");
+      toast.success(t("successMessageToast"));
       form.reset();
     } catch (_) {
-      toast.error("⚠️ An error has occurred. Please try again later!");
+      toast.error("⚠️ " + t("errorMessageToast"));
     } finally {
       setSubmitting(false);
     }
@@ -68,7 +72,7 @@ export default function ContactForm() {
   return (
     <Card className="bg-transparent border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300">
       <CardHeader>
-        <CardTitle>Send me a message</CardTitle>
+        <CardTitle>{t("formTitle")}</CardTitle>
       </CardHeader>
       <CardContent>
         <Form {...form}>
@@ -83,9 +87,12 @@ export default function ContactForm() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel>{t("formName")}</FormLabel>
                     <FormControl>
-                      <Input placeholder="Your full name" {...field} />
+                      <Input
+                        placeholder={t("formNamePlaceholder")}
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -99,10 +106,10 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel>{t("formEmail")}</FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="your.email@example.com"
+                        placeholder={t("formEmailPlaceholder")}
                         type="email"
                         {...field}
                       />
@@ -119,11 +126,11 @@ export default function ContactForm() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel>{t("formMessage")}</FormLabel>
                     <FormControl>
                       <Textarea
                         id="message"
-                        placeholder="Tell us how we can help you..."
+                        placeholder={t("formMessagePlaceholder")}
                         {...field}
                       />
                     </FormControl>
@@ -138,7 +145,9 @@ export default function ContactForm() {
               className="w-full cursor-pointer"
               disabled={!isValid || submitting}
             >
-              {submitting ? "Sending..." : "Send message"}
+              {submitting
+                ? t("formBtnSendingMessageText")
+                : t("formBtnSendMessageText")}
             </Button>
           </form>
         </Form>
