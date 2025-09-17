@@ -17,10 +17,15 @@ import { PiBriefcase } from "react-icons/pi";
 import { LuMessageSquareCode } from "react-icons/lu";
 import { MdOutlineDesignServices } from "react-icons/md";
 
+// ----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export default function NavBar({ className }: { className?: string }) {
+  const t = useTranslations("HomePage");
+
   return (
     <>
-      {/* ----- Desktop navbar links ----- */}
+      {/* ----- navbar links ----- */}
       <NavigationMenu
         className={`flex h-full border px-3 mt-6 rounded-xl bg-black ${className} z-10`}
       >
@@ -33,7 +38,7 @@ export default function NavBar({ className }: { className?: string }) {
                 </NavigationMenuLink>
               </TooltipTrigger>
               <TooltipContent>
-                <span>Home</span>
+                <span>{t("navbarHome")}</span>
               </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
@@ -46,7 +51,7 @@ export default function NavBar({ className }: { className?: string }) {
                 </NavigationMenuLink>
               </TooltipTrigger>
               <TooltipContent>
-                <span>Services</span>
+                <span>{t("navbarServices")}</span>
               </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
@@ -62,7 +67,7 @@ export default function NavBar({ className }: { className?: string }) {
                 </NavigationMenuLink>
               </TooltipTrigger>
               <TooltipContent>
-                <span>Technologies</span>
+                <span>{t("navbarTechnologies")}</span>
               </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
@@ -78,7 +83,7 @@ export default function NavBar({ className }: { className?: string }) {
                 </NavigationMenuLink>
               </TooltipTrigger>
               <TooltipContent>
-                <span>Portfolio</span>
+                <span>{t("navbarPortfolio")}</span>
               </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
@@ -91,7 +96,7 @@ export default function NavBar({ className }: { className?: string }) {
                 </NavigationMenuLink>
               </TooltipTrigger>
               <TooltipContent>
-                <span>Contact</span>
+                <span>{t("navbarContact")}</span>
               </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
