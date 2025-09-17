@@ -77,7 +77,7 @@ export default function Hero() {
 
           <Button
             className="w-full max-w-lg rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer hover:scale-101 transition-all duration-300"
-            title="Send me a message!"
+            title={t("ctlBtnText")}
             asChild
           >
             <Link href={"#contact"}>{t("ctlBtnText")}</Link>
