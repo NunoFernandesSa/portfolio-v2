@@ -1,6 +1,8 @@
 {
-  "HomePage": {
+  "HeroSection": {
     "title": "Desenvolvedor Full Stack",
-    "subtitle": "Como developer freelancer, desenho e desenvolvo aplicações web e mobile personalizadas. Seja a trabalhar diretamente com clientes ou a colaborar com profissionais de tecnologia e design, entrego soluções personalizadas e de alta qualidade para ir ao encontro das suas necessidades."
+    "subtitle": "Como desenvolvedor freelancer, desenho e desenvolvo aplicações web e mobile personalizadas. Seja a trabalhar diretamente com clientes ou a colaborar com profissionais de tecnologia e design, entrego soluções personalizadas e de alta qualidade para ir ao encontro das suas necessidades.",
+    "ctlText": "Tem uma ideia? Posso transformá-la num produto.",
+    "ctlBtnText": "Entre em contacto comigo"
   }
 }

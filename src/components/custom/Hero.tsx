@@ -14,7 +14,12 @@ import { Button } from "../ui/shadcn/button";
 // ----- Custom components -----
 import Section from "./Section";
 
+// ----- i18n -----
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+  const t = useTranslations("HeroSection");
+
   return (
     <Section>
       <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
@@ -58,19 +63,16 @@ export default function Hero() {
           <h2 className="pb-2 text-3xl md:text-4xl lg:text-5xl xl:text-6xl tracking-tight">
             Nuno Fernandes
           </h2>
-          <span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent">
-            Full Stack Developer
-          </span>
+          <h1 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent">
+            {t("title")}
+          </h1>
 
           <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
-            As a freelance developer, I design and build tailored web and mobile
-            applications. Whether working directly with clients or collaborating
-            with tech and design professionals, I deliver high-quality,
-            customized solutions to meet your needs.
+            {t("subtitle")}
           </p>
 
           <p className="my-2 py-6 max-w-xl text-md md:text-xl xl:text-2xl leading-relaxed tracking-tighter">
-            Do you have an idea? I can turn it into a product.
+            {t("ctlText")}
           </p>
 
           <Button
@@ -78,7 +80,7 @@ export default function Hero() {
             title="Send me a message!"
             asChild
           >
-            <Link href={"#contact"}>Let&apos;s Connect</Link>
+            <Link href={"#contact"}>{t("ctlBtnText")}</Link>
           </Button>
         </div>
       </div>
