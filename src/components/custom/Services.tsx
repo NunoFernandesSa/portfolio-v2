@@ -23,6 +23,7 @@ import { useTranslations } from "next-intl";
 
 export default function Services() {
   const t = useTranslations("HomePage");
+  const ts = useTranslations("Services");
 
   return (
     <Section>
@@ -47,13 +48,16 @@ export default function Services() {
               <CardHeader className="p-2 sm:p-6 gap-6">
                 <Image
                   src={service.icon}
-                  alt={service.title}
+                  alt={ts(`${service.translationKey}.title`)}
                   width={80}
                   height={80}
                   className="mx-auto"
                 />
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
+
+                <CardTitle>{ts(`${service.translationKey}.title`)}</CardTitle>
+                <CardDescription>
+                  {ts(`${service.translationKey}.description`)}
+                </CardDescription>
               </CardHeader>
               <CardContent></CardContent>
             </Card>
