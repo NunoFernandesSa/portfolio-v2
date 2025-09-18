@@ -19,6 +19,7 @@ import { MdOutlineDesignServices } from "react-icons/md";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
+import LocalSwitcher from "./LocalSwitcher";
 
 export default function NavBar({ className }: { className?: string }) {
   const t = useTranslations("HomePage");
@@ -100,6 +101,8 @@ export default function NavBar({ className }: { className?: string }) {
               </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
+
+          <LocalSwitcher />
 
           {/* ---- toggle ligth/dark mode ---- */}
           {/* <ModeToggle /> */}
