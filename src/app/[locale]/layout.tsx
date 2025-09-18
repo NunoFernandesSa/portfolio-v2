@@ -10,7 +10,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ScrollToTop from "@/components/custom/ScrollToTop";
 
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
 export const metadata: Metadata = {
   title: "Nuno Fernandes | Portfolio",
@@ -18,11 +20,18 @@ export const metadata: Metadata = {
     "Nuno Fernandes | Full-Stack Developer React & React Native. I transform your ideas into high-performance mobile apps and modern websites. Explore my projects and let's discuss your vision to create a tailor-made solution.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+type Props = {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function RootLayout({ children, params }: Props) {
+  // Ensure that the incoming `locale` is valid
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
     <html lang="en" suppressHydrationWarning className={rubik.variable}>
       <body className={`${rubik.className} antialiased overflow-x-hidden`}>
