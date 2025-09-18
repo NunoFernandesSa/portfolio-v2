@@ -42,7 +42,7 @@ export default function LocalSwitcherSelect({
       >
         <SelectValue />
       </SelectTrigger>
-      <SelectContent className="">
+      <SelectContent>
         {routing.locales.map((locale) => (
           <SelectItem key={locale} value={locale}>
             {locale.toUpperCase()}
