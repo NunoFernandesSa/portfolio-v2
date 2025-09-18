@@ -36,10 +36,13 @@ export default function LocalSwitcherSelect({
 
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
-      <SelectTrigger className="" aria-label={label}>
+      <SelectTrigger
+        className="text-[12px] font-thin text-gray-300"
+        aria-label={label}
+      >
         <SelectValue />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent className="">
         {routing.locales.map((locale) => (
           <SelectItem key={locale} value={locale}>
             {locale.toUpperCase()}
