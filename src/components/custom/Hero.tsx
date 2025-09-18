@@ -67,7 +67,7 @@ export default function Hero() {
               Nuno Fernandes
             </h2>
 
-            <h1 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent ml-2 py-3">
+            <h1 className="bg-gradient-to-r from-stone-300 to-stone-700 bg-clip-text font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent ml-2 py-3">
               {t("title")}
             </h1>
           </div>
