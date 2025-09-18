@@ -30,7 +30,7 @@ export default function NavBar({ className }: { className?: string }) {
       <NavigationMenu
         className={`flex h-full border px-3 mt-6 rounded-xl bg-black ${className} z-10`}
       >
-        <NavigationMenuList className="flex gap-2 p-3">
+        <NavigationMenuList className="flex gap-1 sm:gap-2 md:gap-6 px-1 py-3 sm:px-3">
           <NavigationMenuItem>
             <Tooltip>
               <TooltipTrigger asChild>
