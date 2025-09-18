@@ -36,7 +36,7 @@ export default function LocalSwitcherSelect({
 
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
-      <SelectTrigger className="w-[180px]" aria-label={label}>
+      <SelectTrigger className="" aria-label={label}>
         <SelectValue />
       </SelectTrigger>
       <SelectContent>
