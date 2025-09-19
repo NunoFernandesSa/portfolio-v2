@@ -47,8 +47,12 @@
     "successMessageToast": "Mensagem enviada com sucesso !",
     "errorMessageToast": "Ocorreu um erro. Tente novamente mais tarde !",
 
-    "rgpd": "Avisos legais"
+    "rgpd": "Avisos legais",
+
+    "closeBtn": "Fechar",
+    "seeProjectBtn": "Ver projeto"
   },
+
   "Services": {
     "service1": {
       "title": "Desenvolvimento Web",
@@ -61,6 +65,21 @@
     "service3": {
       "title": "Manutenção e Suporte",
       "description": "Ofereço serviços de manutenção fiáveis e proativos para garantir que o seu website ou aplicação funcione perfeitamente o tempo todo. Mantenho os seus ativos digitais seguros, atualizados e alinhados com as tecnologias em evolução. O meu objetivo é minimizar o tempo de inatividade e, ao mesmo tempo, maximizar a eficiência, para que se possa concentrar no crescimento do seu negócio."
+    }
+  },
+
+  "Projects": {
+    "gracoeiro": {
+      "title": "Gracoeiro",
+      "desc": "Criei e desenvolvi o website profissional da especialista em cobranças Bárbara Graçoeiro, apresentando o seu impressionante percurso profissional e certificações profissionais. O design clean e moderno, aliado à navegação intuitiva, reforça a sua credibilidade e apresenta de forma clara os seus serviços especializados. Otimizado para SEO e totalmente compatível com dispositivos móveis, o site tornou-se uma plataforma de referência para converter visitantes em clientes."
+    },
+    "joaocerqueirapereira": {
+      "title": "João Cerqueira Pereira",
+      "desc": "Redesenhei e desenvolvi o website da João Cerqueira Pereira LDA, empresa portuguesa especializada em instalações elétricas desde 1977. O novo design destaca a sua competência técnica através de uma estética corporativa e limpa que reflete o rigor da sua área, com navegação intuitiva adequada tanto para particulares como para profissionais. Otimizado para SEO e totalmente otimizado para dispositivos móveis."
+    },
+    "artseecounsel": {
+      "title": "Artseecounsel",
+      "desc": "(em curso) Desenvolvimento personalizado de um website de demonstração elegante e de alto desempenho para a ArtseeCounsel, uma consultora financeira independente. O objetivo foi criar uma presença online profissional que inspirasse confiança e que destacasse a expertise e os serviços personalizados da consultora. Criei este website para proporcionar uma experiência de utilizador fluida e uma apresentação de conteúdo estratégica para converter visitantes em leads qualificados."
     }
   },
 

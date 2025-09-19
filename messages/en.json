@@ -46,7 +46,10 @@
     "successMessageToast": "Message sent successfully!",
     "errorMessageToast": "An error has occurred. Please try again later!",
 
-    "rgpd": "Legal Notices"
+    "rgpd": "Legal Notices",
+
+    "closeBtn": "Close",
+    "seeProjectBtn": "Go live"
   },
 
   "Services": {
@@ -61,6 +64,21 @@
     "service3": {
       "title": "Maintenance & Support",
       "description": "I provide reliable and proactive maintenance services to ensure your website or application runs smoothly at all times. I keep your digital assets secure, up-to-date, and aligned with evolving technologies. My goal is to minimize downtime while maximizing efficiency, so you can focus on growing your business."
+    }
+  },
+
+  "Projects": {
+    "gracoeiro": {
+      "title": "Gracoeiro",
+      "desc": "I designed and developed the professional website for Bárbara Graçoeiro, a debt collection expert, highlighting her impressive career path and professional certifications. The clean, modern design combined with intuitive navigation enhances her credibility while clearly presenting her specialized services. The website, optimized for SEO and fully mobile-responsive, now serves as a key platform for converting visitors into clients."
+    },
+    "joaocerqueirapereira": {
+      "title": "João Cerqueira Pereira",
+      "desc": "I re-designed and developed the website for João Cerqueira Pereira LDA, a Portuguese company specializing in electrical installations since 1977. The new design presents their technical expertise through a clean, corporate aesthetic that reflects the precision of their field, featuring intuitive navigation tailored for both individual and professional clients. SEO-optimized and fully mobile-responsive."
+    },
+    "artseecounsel": {
+      "title": "Artseecounsel",
+      "desc": "(in progress) Custom development of a sleek and high-performance showcase website for ArtseeCounsel, an independent financial consultant. The goal was to create a professional online presence that inspires trust and showcases the consultant's expertise and tailored services. I created this site to provide a seamless user experience and strategic content presentation to convert visitors into qualified leads."
     }
   },
 

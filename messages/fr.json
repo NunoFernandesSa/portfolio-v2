@@ -46,7 +46,10 @@
     "successMessageToast": "Message envoyé avec succès!",
     "errorMessageToast": "Une erreur s'est produite. Veuillez réessayer ultérieurement!",
 
-    "rgpd": "Mentions légales"
+    "rgpd": "Mentions légales",
+
+    "closeBtn": "Fermer",
+    "seeProjectBtn": "Voir projet"
   },
 
   "Services": {
@@ -62,6 +65,21 @@
     "service3": {
       "title": "Maintenance & Support",
       "description": "Je propose des services de maintenance fiables et proactifs pour garantir le bon fonctionnement de votre site web ou de votre application en permanence. Je veille à la sécurité, à la mise à jour et à l'adaptation de vos ressources numériques aux évolutions technologiques. Mon objectif est de minimiser les temps d'arrêt tout en maximisant l'efficacité, afin que vous puissiez vous concentrer sur la croissance de votre entreprise."
+    }
+  },
+
+  "Projects": {
+    "gracoeiro": {
+      "title": "Gracoeiro",
+      "desc": "J'ai conçu et développé le site web professionnel de Bárbara Graçoeiro, experte en recouvrement de créances, mettant en avant son parcours professionnel impressionnant et ses certifications professionnelles. Son design épuré et moderne, associé à une navigation intuitive, renforce sa crédibilité tout en présentant clairement ses services spécialisés. Optimisé pour le référencement et entièrement adapté aux mobiles, le site web est désormais une plateforme incontournable pour convertir les visiteurs en clients."
+    },
+    "joaocerqueirapereira": {
+      "title": "João Cerqueira Pereira",
+      "desc": "J'ai repensé et développé le site web de João Cerqueira Pereira LDA, une entreprise portugaise spécialisée dans les installations électriques depuis 1977. Le nouveau design met en valeur leur expertise technique à travers une esthétique épurée et corporative qui reflète la rigueur de leur domaine, avec une navigation intuitive adaptée aux particuliers comme aux professionnels. Optimisé pour le SEO et entièrement adapté aux mobiles."
+    },
+    "artseecounsel": {
+      "title": "Artseecounsel",
+      "desc": "(en cours) Développement sur mesure d'un site web vitrine élégant et performant pour ArtseeCounsel, consultant financier indépendant. L'objectif était de créer une présence en ligne professionnelle qui inspire confiance et mette en avant l'expertise et les services sur mesure du consultant. J'ai réalisé ce site afin d'offrir une expérience utilisateur fluide et une présentation de contenu stratégique pour convertir les visiteurs en prospects qualifiés."
     }
   },
 

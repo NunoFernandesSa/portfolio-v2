@@ -1,5 +1,5 @@
+"use client";
 // ----- Node modules / Next.js -----
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -31,39 +31,48 @@ import { FaRegEye } from "react-icons/fa";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function Projects() {
   const t = useTranslations("HomePage");
+  const tp = useTranslations("Projects");
+  const [openDrawerIndex, setOpenDrawerIndex] = useState<number | null>(null);
 
   return (
     <Section>
       <TitleSection title={t("projectsTitle")} />
       <SubtitleSection text={t("projectsSubtitle")} />
 
-      <div className="flex flex-wrap justify-center gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-10">
         {PORTFOLIO_ITEMS.map((project, index) => (
-          <Drawer key={index}>
+          <Drawer
+            key={index}
+            open={openDrawerIndex === index}
+            onOpenChange={(open) => setOpenDrawerIndex(open ? index : null)}
+          >
             <DrawerTrigger>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={tp(`${project.translationKey}.title`)}
                     width={300}
                     height={300}
                     className="rounded hover:scale-101 cursor-pointer border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300"
                   />
                 </TooltipTrigger>
                 <TooltipContent>
-                  <span>{project.title}</span>
+                  <span>{tp(`${project.translationKey}.title`)}</span>
                 </TooltipContent>
               </Tooltip>
             </DrawerTrigger>
             <DrawerContent>
               <DrawerHeader className="mx-auto">
-                <DrawerTitle>{project.title}</DrawerTitle>
+                <DrawerTitle>
+                  {tp(`${project.translationKey}.title`)}
+                </DrawerTitle>
                 <DrawerDescription className="max-w-2xl mx-auto">
-                  {project.description}
+                  {tp(`${project.translationKey}.desc`)}
                 </DrawerDescription>
                 <div className="flex items-center justify-center gap-2">
                   {project.technos.map((item, index) => (
@@ -79,13 +88,12 @@ export default function Projects() {
               <DrawerFooter className="flex flex-row justify-center flex-wrap">
                 <Button className="w-38 cursor-pointer" asChild>
                   <Link href={project.link} target="_blank">
-                    Go to live
-                    <FaRegEye />
+                    {t("seeProjectBtn")} <FaRegEye />
                   </Link>
                 </Button>
                 <DrawerClose asChild>
                   <Button variant="outline" className="w-38 cursor-pointer">
-                    Close <VscClose />
+                    {t("closeBtn")} <VscClose />
                   </Button>
                 </DrawerClose>
               </DrawerFooter>
