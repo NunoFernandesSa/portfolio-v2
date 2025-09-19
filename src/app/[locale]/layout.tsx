@@ -33,7 +33,12 @@ export default async function RootLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang="en" suppressHydrationWarning className={rubik.variable}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={rubik.variable}
+      data-scroll-behavior="smooth"
+    >
       <body className={`${rubik.className} antialiased overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"

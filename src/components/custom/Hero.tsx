@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 // ----- assets -----
-import profilePic from "@/assets/images/profile_photo.png";
 import linkedin from "../../../public/images/social/linkedin.png";
 import malt from "../../../public/images/social/malt.png";
 
@@ -25,9 +24,11 @@ export default function Hero() {
       <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
         <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 lg:order-1">
           <Image
-            src={profilePic}
+            src="/images/profile_photo.png"
             alt="My profile picture"
             className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu w-1/2 lg:w-full"
+            width={500}
+            height={500}
           />
           <div className="w-full flex items-center justify-center gap-6 mt-9">
             <Button
