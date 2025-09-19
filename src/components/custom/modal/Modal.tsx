@@ -4,7 +4,12 @@ import { ModalProps } from "@/types/ModalProps";
 //----- Types -----
 import ModalContent from "./ModalContent";
 
+//----- next-intl -----
+import { useTranslations } from "next-intl";
+
 export function Modal({ isOpen, onClose, title }: ModalProps) {
+  const t = useTranslations("LegalNotices");
+
   if (!isOpen) return null;
 
   return (
@@ -28,9 +33,9 @@ export function Modal({ isOpen, onClose, title }: ModalProps) {
         <div className="mt-6 flex justify-end">
           <button
             onClick={onClose}
-            className="px-4 py-2 bg-[#7922f2] hover:bg-purple-900 text-white rounded cursor-pointer"
+            className="px-2 py-1 bg-[#7922f2] hover:bg-purple-900 text-white rounded cursor-pointer"
           >
-            Close
+            {t("closeBtnText")}
           </button>
         </div>
       </div>

@@ -62,5 +62,38 @@
       "title": "Manutenção e Suporte",
       "description": "Ofereço serviços de manutenção fiáveis e proativos para garantir que o seu website ou aplicação funcione perfeitamente o tempo todo. Mantenho os seus ativos digitais seguros, atualizados e alinhados com as tecnologias em evolução. O meu objetivo é minimizar o tempo de inatividade e, ao mesmo tempo, maximizar a eficiência, para que se possa concentrar no crescimento do seu negócio."
     }
+  },
+
+  "LegalNotices": {
+    "title": "Menções legais",
+    "websitePublisher": "Editor du site",
+    "myName": "Fernandes Nuno",
+    "myAdress": "Rue Pierre Curie, 78370 Plaisir",
+    "myPhone": "+33 7 71 80 29 21",
+    "myEmail": "n.fernandes.contact@gmail.com",
+
+    "hostingProvider": "Provedor de alojamento web",
+    "hostingProviderName": "Vercel Inc",
+    "hostingProviderWebSite": "www.vercel.com",
+
+    "intellectualProperty": "Propriedade intelectual",
+    "intellectualPropertyDesc": "Todo o conteúdo deste site (texto, imagens, logótipos, código, etc.) é propriedade exclusiva de Nuno Fernandes, salvo indicação em contrário. Qualquer reprodução, modificação ou utilização comercial não autorizada são estritamente proibidas.",
+
+    "personalData": "Dados pessoais",
+    "personalDataDesc": "Este site não recolhe dados pessoais sem consentimento explícito. As informações fornecidas através de formulários de contacto (nome, endereço de e-mail, mensagem) são utilizadas apenas para responder a consultas. Nunca são partilhadas com terceiros e não são armazenadas em bases de dados.",
+
+    "cookies": "Cookies",
+    "cookiesDesc": "Este site não utiliza cookies de rastreio nem publicidade. Os cookies técnicos (essenciais ao funcionamento) não armazenam qualquer informação identificável.",
+
+    "liability": "Responsabilidade",
+    "liabilityDesc": "Embora me esforce por garantir a exatidão do conteúdo, não posso garantir a sua integralidade. Para comunicar um erro, contacte-me pelo endereço de e-mail acima.",
+
+    "externalLinks": "Links externos",
+    "externalLinksDesc": "Links para sites de terceiros não implicam qualquer aprovação. Não sou responsável pelo seu conteúdo ou práticas de privacidade.",
+
+    "governingLaw": "Lei aplicável",
+    "governingLawDesc": "Este site é regido pela lei francesa. Qualquer litígio estará sujeito à jurisdição do tribunal de Versalhes (Yvelines, França).",
+
+    "closeBtnText": "Fechar"
   }
 }

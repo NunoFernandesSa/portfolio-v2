@@ -1,77 +1,53 @@
+import { useTranslations } from "next-intl";
+
 export default function ModalContent() {
+  const t = useTranslations("LegalNotices");
+
   return (
     <div className="space-y-4">
       {/* Content */}
       <section>
-        <h3 className="text-lg">Website Publisher</h3>
-        <p>Name : Fernandes Nuno</p>
-        <p>Adress : Rue Pierre Curie, 78370 Plaisir</p>
-        <p>Phone : +33 7 71 80 29 21</p>
-        <p>E-mail : n.fernandes.contact@gmail.com</p>
+        <p className="italic text-gray-300">{t("myName")}</p>
+        <p className="italic text-gray-300">{t("myAdress")}</p>
+        <p className="italic text-gray-300">{t("myPhone")}</p>
+        <p className="italic text-gray-300">{t("myEmail")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">Hosting Provider</h3>
-        <p>Name : Vercel Inc</p>
-        <p>Website: https://vercel.com/</p>
+        <h3 className="text-lg text-[#7922f2]">{t("hostingProvider")} :</h3>
+        <p className="italic text-gray-300">{t("hostingProviderName")}</p>
+        <p className="italic text-gray-300">{t("hostingProviderWebSite")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">Intellectual Property</h3>
-        <p>
-          All content on this site (texts, images, logos, code, etc.) is the
-          exclusive property of Nuno Fernandes, unless stated otherwise.
-          Unauthorized reproduction, modification, or commercial use is strictly
-          prohibited.
-        </p>
+        <h3 className="text- text-[#7922f2]">{t("intellectualProperty")} :</h3>
+        <p className="italic text-gray-300">{t("intellectualPropertyDesc")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">Personal Data</h3>
-        <p>
-          This site does not collect personal data without explicit consent.
-          Information provided via contact forms (name, email, message) is used
-          solely to respond to inquiries and is never shared with third parties.
-        </p>
+        <h3 className="text- text-[#7922f2]">{t("personalData")} :</h3>
+        <p className="italic text-gray-300">{t("personalDataDesc")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">Cookies</h3>
-        <p>
-          This site uses no tracking or advertising cookies. Any technical
-          cookies (essential for functionality) do not store identifiable
-          information.
-        </p>
+        <h3 className="text- text-[#7922f2]">{t("cookies")}</h3>
+        <p className="italic text-gray-300">{t("cookiesDesc")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">Liability</h3>
-        <p>
-          While I strive to ensure accuracy, I cannot guarantee the completeness
-          of the content. To report an error, please contact me via the email
-          above.
-        </p>
+        <h3 className="text- text-[#7922f2]">{t("liability")}</h3>
+        <p className="italic text-gray-300">{t("liabilityDesc")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">External Links</h3>
-        <p>
-          Links to third-party sites do not imply endorsement. I am not
-          responsible for their content or privacy practices.
-        </p>
+        <h3 className="text- text-[#7922f2]">{t("externalLinks")}</h3>
+        <p className="italic text-gray-300">{t("externalLinksDesc")}</p>
       </section>
 
       <section>
-        <h3 className="text-lg">Governing Law</h3>
-        <p>
-          This site is governed by French law. Any disputes fall under the
-          jurisdiction of Versailles (Yvelines, France).
-        </p>
+        <h3 className="text- text-[#7922f2]">{t("governingLaw")}</h3>
+        <p className="italic text-gray-300">{t("governingLawDesc")}</p>
       </section>
-
-      {/* <section>
-        <h3 className="text-lg">Images/Icons credits</h3>
-      </section> */}
     </div>
   );
 }

@@ -63,5 +63,38 @@
       "title": "Maintenance & Support",
       "description": "Je propose des services de maintenance fiables et proactifs pour garantir le bon fonctionnement de votre site web ou de votre application en permanence. Je veille à la sécurité, à la mise à jour et à l'adaptation de vos ressources numériques aux évolutions technologiques. Mon objectif est de minimiser les temps d'arrêt tout en maximisant l'efficacité, afin que vous puissiez vous concentrer sur la croissance de votre entreprise."
     }
+  },
+
+  "LegalNotices": {
+    "title": "Mentions légales",
+    "websitePublisher": "Éditeur du site Web",
+    "myName": "Fernandes Nuno",
+    "myAdress": "Rue Pierre Curie, 78370 Plaisir",
+    "myPhone": "+33 7 71 80 29 21",
+    "myEmail": "n.fernandes.contact@gmail.com",
+
+    "hostingProvider": "Fournisseur d'hébergement",
+    "hostingProviderName": "Vercel Inc",
+    "hostingProviderWebSite": "www.vercel.com",
+
+    "intellectualProperty": "Propriété intellectuelle",
+    "intellectualPropertyDesc": "L'ensemble du contenu de ce site (textes, images, logos, code, etc.) est la propriété exclusive de Nuno Fernandes, sauf mention contraire. Toute reproduction, modification ou utilisation commerciale non autorisée est strictement interdite.",
+
+    "personalData": "Données personnelles",
+    "personalDataDesc": "Ce site ne collecte aucune donnée personnelle sans consentement explicite. Les informations fournies via les formulaires de contact (nom, adresse e-mail, message) sont utilisées uniquement pour répondre aux demandes de renseignements. Elles ne sont jamais partagées avec des tiers et ne sont pas stockées dans des bases de données.",
+
+    "cookies": "Cookies",
+    "cookiesDesc": "Ce site n'utilise aucun cookie de suivi ni de publicité. Les cookies techniques (essentiels au fonctionnement) ne stockent aucune information identifiable.",
+
+    "liability": "Responsabilité",
+    "liabilityDesc": "Bien que je m'efforce d'assurer l'exactitude du contenu, je ne peux garantir son exhaustivité. Pour signaler une erreur, veuillez me contacter à l'adresse e-mail ci-dessus.",
+
+    "externalLinks": "Liens externes",
+    "externalLinksDesc": "Les liens vers des sites tiers n'impliquent aucune approbation. Je ne suis pas responsable de leur contenu ni de leurs pratiques en matière de confidentialité.",
+
+    "governingLaw": "Loi applicable",
+    "governingLawDesc": "Ce site est régi par le droit français. Tout litige sera de la compétence du tribunal de Versailles (Yvelines, France).",
+
+    "closeBtnText": "Fermer"
   }
 }

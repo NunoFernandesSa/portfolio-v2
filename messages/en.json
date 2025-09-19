@@ -62,5 +62,38 @@
       "title": "Maintenance & Support",
       "description": "I provide reliable and proactive maintenance services to ensure your website or application runs smoothly at all times. I keep your digital assets secure, up-to-date, and aligned with evolving technologies. My goal is to minimize downtime while maximizing efficiency, so you can focus on growing your business."
     }
+  },
+
+  "LegalNotices": {
+    "title": "Legal notices",
+    "websitePublisher": "Website Publisher",
+    "myName": "Fernandes Nuno",
+    "myAdress": "Rue Pierre Curie, 78370 Plaisir",
+    "myPhone": "+33 7 71 80 29 21",
+    "myEmail": "n.fernandes.contact@gmail.com",
+
+    "hostingProvider": "Hosting Provider",
+    "hostingProviderName": "Vercel Inc",
+    "hostingProviderWebSite": "www.vercel.com",
+
+    "intellectualProperty": "Intellectual Property",
+    "intellectualPropertyDesc": "All content on this site (texts, images, logos, code, etc.) is the exclusive property of Nuno Fernandes, unless stated otherwise. Unauthorized reproduction, modification, or commercial use is strictly prohibited.",
+
+    "personalData": "Personal Data",
+    "personalDataDesc": "This site does not collect personal data without explicit consent. Information provided via contact forms (name, email, message) is used solely to respond to inquiries and is never shared with third parties.",
+
+    "cookies": "Cookies",
+    "cookiesDesc": "This site uses no tracking or advertising cookies. Any technical cookies (essential for functionality) do not store identifiable information.",
+
+    "liability": "Liability",
+    "liabilityDesc": "While I strive to ensure accuracy, I cannot guarantee the completeness of the content. To report an error, please contact me via the email above.",
+
+    "externalLinks": "External Links",
+    "externalLinksDesc": "Links to third-party sites do not imply endorsement. I am not responsible for their content or privacy practices.",
+
+    "governingLaw": "Governing Law",
+    "governingLawDesc": "This site is governed by French law. Any disputes fall under the jurisdiction of Versailles (Yvelines, France).",
+
+    "closeBtnText": "Close"
   }
 }
