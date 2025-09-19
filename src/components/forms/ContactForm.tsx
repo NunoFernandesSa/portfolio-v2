@@ -28,6 +28,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
+import getContactFormSchema, {
+  ContactFormValues,
+} from "@/lib/ContactFormSchema";
 
 export default function ContactForm() {
   const contactForm = useRef<HTMLFormElement>(null);
@@ -35,17 +38,8 @@ export default function ContactForm() {
   const t = useTranslations("HomePage");
   const tv = useTranslations("ValidationForm");
 
-  const formSchema = z.object({
-    name: z
-      .string()
-      .min(2, { message: tv("nameError") })
-      .max(50),
-    email: z.email({ message: tv("emailError") }),
-    message: z.string().min(20, { message: tv("messageError") }),
-  });
-
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<ContactFormValues>({
+    resolver: zodResolver(getContactFormSchema(tv)),
     defaultValues: {
       name: "",
       email: "",
