@@ -19,10 +19,10 @@ export function Modal({ isOpen, onClose, title }: ModalProps) {
         <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
 
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-bold text-primary">{title}</h2>
+          <h2 className="text-xl font-bold text-primary">{t("title")}</h2>
           <button
             onClick={onClose}
-            className="text-[#7922f2] hover:text-purple-900 text-2xl cursor-pointer"
+            className="text-[#7922f2] hover:text-purple-900 text-4xl cursor-pointer"
           >
             ×
           </button>
