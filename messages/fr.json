@@ -114,5 +114,11 @@
     "governingLawDesc": "Ce site est régi par le droit français. Tout litige sera de la compétence du tribunal de Versailles (Yvelines, France).",
 
     "closeBtnText": "Fermer"
+  },
+
+  "ValidationForm": {
+    "nameError": "Le nom doit comporter au moins 2 caractères.",
+    "emailError": "Adresse e-mail invalide",
+    "messageError": "Le message doit comporter au moins 20 caractères."
   }
 }

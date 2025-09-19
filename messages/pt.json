@@ -114,5 +114,11 @@
     "governingLawDesc": "Este site é regido pela lei francesa. Qualquer litígio estará sujeito à jurisdição do tribunal de Versalhes (Yvelines, França).",
 
     "closeBtnText": "Fechar"
+  },
+
+  "ValidationForm": {
+    "nameError": "O nome deve ter pelo menos 2 caracteres.",
+    "emailError": "Endereço de e-mail inválido",
+    "messageError": "A mensagem deve ter pelo menos 20 caracteres."
   }
 }

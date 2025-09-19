@@ -113,5 +113,11 @@
     "governingLawDesc": "This site is governed by French law. Any disputes fall under the jurisdiction of Versailles (Yvelines, France).",
 
     "closeBtnText": "Close"
+  },
+
+  "ValidationForm": {
+    "nameError": "The name must be at least 2 characters.",
+    "emailError": "Invalid email address",
+    "messageError": "The message must be at least 20 characters long."
   }
 }

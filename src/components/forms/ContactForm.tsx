@@ -18,8 +18,6 @@ import {
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-// ----- schemas -----
-import { formSchema } from "@/lib/schemas";
 
 // ----- emailjs -----
 import { email_js } from "@/lib/email";
@@ -35,6 +33,16 @@ export default function ContactForm() {
   const contactForm = useRef<HTMLFormElement>(null);
   const [submitting, setSubmitting] = useState(false);
   const t = useTranslations("HomePage");
+  const tv = useTranslations("ValidationForm");
+
+  const formSchema = z.object({
+    name: z
+      .string()
+      .min(2, { message: tv("nameError") })
+      .max(50),
+    email: z.email({ message: tv("emailError") }),
+    message: z.string().min(20, { message: tv("messageError") }),
+  });
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
