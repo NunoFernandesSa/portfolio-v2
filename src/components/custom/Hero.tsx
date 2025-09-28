@@ -64,11 +64,11 @@ export default function Hero() {
 
         <div className="w-full flex flex-col items-center justify-start lg:items-start mt-20 lg:mt-10 lg:w-1/2 order-1 lg:order-2">
           <div className="w-full bg-gradient-to-r from-purple-500/10 via-purple-400/5 to-purple/20">
-            <h2 className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-xl md:text-2xl tracking-tight text-transparent ml-2 py-3">
+            <h2 className="bg-white bg-clip-text text-xl md:text-2xl tracking-tight text-transparent ml-2 py-3">
               Nuno Fernandes
             </h2>
 
-            <h1 className="bg-gradient-to-r from-stone-300 to-stone-700 bg-clip-text font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent ml-2 py-3">
+            <h1 className="bg-white bg-clip-text font-semibold text-2xl md:text-3xl lg:text-4xl xl:text-5xl tracking-tight text-transparent ml-2 py-3">
               {t("title")}
             </h1>
           </div>
