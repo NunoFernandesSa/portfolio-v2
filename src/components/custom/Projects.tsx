@@ -56,8 +56,8 @@ export default function Projects() {
                   <Image
                     src={project.image}
                     alt={tp(`${project.translationKey}.title`)}
-                    width={300}
-                    height={300}
+                    width={500}
+                    height={500}
                     className="rounded hover:scale-101 cursor-pointer border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300"
                   />
                 </TooltipTrigger>
