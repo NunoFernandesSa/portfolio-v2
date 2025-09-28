@@ -45,9 +45,8 @@ export default function Projects() {
 
       <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-20">
         {PORTFOLIO_ITEMS.map((project, index) => (
-          <div className="flex flex-col">
+          <div className="flex flex-col" key={index}>
             <Drawer
-              key={index}
               open={openDrawerIndex === index}
               onOpenChange={(open) => setOpenDrawerIndex(open ? index : null)}
             >
