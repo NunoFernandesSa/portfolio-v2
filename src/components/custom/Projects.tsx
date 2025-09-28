@@ -101,7 +101,7 @@ export default function Projects() {
               </DrawerContent>
             </Drawer>
             <span className="mt-3 font-bold">
-              {tp(`${project.translationKey}.title`)}.com
+              {tp(`${project.translationKey}.title`)}
             </span>
           </div>
         ))}
