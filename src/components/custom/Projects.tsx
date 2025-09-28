@@ -43,7 +43,7 @@ export default function Projects() {
       <TitleSection title={t("projectsTitle")} />
       <SubtitleSection text={t("projectsSubtitle")} />
 
-      <div className="flex flex-wrap justify-center items-center gap-10">
+      <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-20">
         {PORTFOLIO_ITEMS.map((project, index) => (
           <Drawer
             key={index}
