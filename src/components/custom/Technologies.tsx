@@ -27,6 +27,7 @@ import TechIcon from "./TechIcon";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
+import TechIconAndTitle from "./TechIcon";
 
 export default function Technologies() {
   const t = useTranslations("HomePage");
@@ -37,89 +38,93 @@ export default function Technologies() {
       <SubtitleSection text={t("techsSubtitle")} />
 
       <div className="flex items-center justify-center flex-wrap gap-16">
-        {/* ----- frontend ----- -----*/}
-        <TechIcon
+        <TechIconAndTitle
           name="React Native"
           icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Next.js"
           icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Typescript"
           icon={<TbBrandTypescript className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
-          name="TailwindCss"
+
+        <TechIconAndTitle
+          name="Tailwind Css"
           icon={<RiTailwindCssFill className="text-5xl md:text-7xl" />}
         />
 
-        {/* ----- backend ----- ----- */}
-        <TechIcon
-          name="Nodejs"
+        <TechIconAndTitle
+          name="Node.js"
           icon={<RiNodejsFill className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
-          name="Nestjs"
+
+        <TechIconAndTitle
+          name="Nest.js"
           icon={<SiNestjs className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Python"
           icon={<TbBrandPython className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Django"
           icon={<TbBrandDjango className="text-5xl md:text-7xl" />}
         />
 
-        {/* ----- mobile ----- */}
-        <TechIcon
-          name="Flutter"
-          icon={<RiFlutterFill className="text-5xl md:text-7xl" />}
-        />
-
-        {/* ----- Database -----*/}
-        <TechIcon
-          name="Postgresql"
+        <TechIconAndTitle
+          name="PostgreSQL"
           icon={<SiPostgresql className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Mysql"
           icon={<TbBrandMysql className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Sqlite"
           icon={<SiSqlite className="text-5xl md:text-7xl" />}
         />
 
-        {/* ----- other skills ----- */}
-        <TechIcon
+        <TechIconAndTitle
           name="Electron.js"
           icon={<SiElectron className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Figma"
           icon={<FaFigma className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Docker"
           icon={<TbBrandDocker className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Prisma"
           icon={<SiPrisma className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Vscode"
           icon={<VscVscode className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
+
+        <TechIconAndTitle
           name="Android studio"
           icon={<SiAndroidstudio className="text-5xl md:text-7xl" />}
         />
-        <TechIcon
-          name="Wordpress"
+
+        <TechIconAndTitle
+          name="CMS Wordpress"
           icon={<RiWordpressLine className="text-5xl md:text-7xl" />}
         />
       </div>
