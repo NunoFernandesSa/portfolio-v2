@@ -28,7 +28,7 @@ export default function NavBar({ className }: { className?: string }) {
     <>
       {/* ----- navbar links ----- */}
       <NavigationMenu
-        className={`flex h-full border px-3 mt-6 rounded-xl bg-black ${className} z-10`}
+        className={`flex h-full border px-3 mt-6 rounded-xl bg-black ${className} z-90`}
       >
         <NavigationMenuList className="flex gap-1 sm:gap-2 md:gap-6 px-1 py-3 sm:px-3">
           <NavigationMenuItem>
