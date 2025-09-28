@@ -63,7 +63,7 @@ export default function Projects() {
                     />
                   </TooltipTrigger>
                   <TooltipContent>
-                    <span>{tp(`${project.translationKey}.title`)}</span>
+                    <span>{tp(`${project.translationKey}.title`)}.com</span>
                   </TooltipContent>
                 </Tooltip>
               </DrawerTrigger>
@@ -101,7 +101,7 @@ export default function Projects() {
               </DrawerContent>
             </Drawer>
             <span className="mt-3 font-bold">
-              {tp(`${project.translationKey}.title`)}
+              {tp(`${project.translationKey}.title`)}.com
             </span>
           </div>
         ))}
