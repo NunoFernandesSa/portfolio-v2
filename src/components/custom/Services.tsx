@@ -35,7 +35,7 @@ export default function Services() {
         {SERVICES.map((service, index) => (
           <div key={index}>
             <Card
-              className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 hover:scale-101 ${
+              className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 hover:scale-101 min-h-[430px] ${
                 index === 0
                   ? "hover:rotate-1"
                   : index === 1
