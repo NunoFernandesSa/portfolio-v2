@@ -86,9 +86,13 @@ export default function Projects() {
                   </div>
                 </DrawerHeader>
                 <DrawerFooter className="flex flex-row justify-center flex-wrap">
-                  <Button className="w-38 cursor-pointer" asChild>
+                  <Button
+                    className={`w-38 cursor-pointer ${project.link === "" ? "opacity-50 pointer-events-none" : ""}`}
+                    asChild
+                  >
                     <Link href={project.link} target="_blank">
-                      {t("seeProjectBtn")} <FaRegEye />
+                      {project.link === "" ? "In Progress" : t("seeProjectBtn")}
+                      <FaRegEye />
                     </Link>
                   </Button>
                   <DrawerClose asChild>
