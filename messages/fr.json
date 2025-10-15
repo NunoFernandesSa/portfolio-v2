@@ -80,6 +80,10 @@
     "artseecounsel": {
       "title": "Artseecounsel",
       "desc": "(en cours) Développement sur mesure d'un site web vitrine élégant et performant pour ArtseeCounsel, consultant financier indépendant. L'objectif était de créer une présence en ligne professionnelle qui inspire confiance et mette en avant l'expertise et les services sur mesure du consultant. J'ai réalisé ce site afin d'offrir une expérience utilisateur fluide et une présentation de contenu stratégique pour convertir les visiteurs en prospects qualifiés."
+    },
+    "Par Le Monde": {
+      "title": "Par Le Monde",
+      "desc": "En charge de la refonte du nouveau site web, j'en ai assuré le développement complet sur WordPress. J'ai structuré la nouvelle architecture en implémentant le thème et les pages clés, puis j'ai sécurisé et optimisé les performances via l'installation et la configuration d'extensions dédiées (SEO, sécurité, formulaire). Mon rôle s'est également étendu à la proposition d'améliorations créatives sur l'ergonomie et le design, garantissant une expérience utilisateur optimale."
     }
   },
 

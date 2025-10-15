@@ -17,4 +17,10 @@ export const PORTFOLIO_ITEMS = [
     link: "https://artseecounsel.com/",
     technos: ["HTML", "CSS", "Javascript", "PHP", "Wordpress"],
   },
+  {
+    translationKey: "Par Le Monde",
+    image: "/images/works/par-le-monde.png",
+    link: "",
+    technos: ["HTML", "CSS", "Javascript", "PHP", "Wordpress"],
+  },
 ];
