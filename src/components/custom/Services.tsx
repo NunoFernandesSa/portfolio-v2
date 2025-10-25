@@ -35,15 +35,7 @@ export default function Services() {
         {SERVICES.map((service, index) => (
           <div key={index}>
             <Card
-              className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 hover:scale-101 min-h-[430px] ${
-                index === 0
-                  ? "hover:rotate-1"
-                  : index === 1
-                    ? "hover:-rotate-1"
-                    : index === 2
-                      ? "hover:rotate-1"
-                      : ""
-              } transition-all duration-300`}
+              className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 min-h-[430px transition-all duration-300`}
             >
               <CardHeader className="p-2 sm:p-6 gap-6">
                 <Image

@@ -5,9 +5,9 @@ import React from "react";
  */
 import { SectionProps } from "@/types/SectionProps";
 
-export default function Section({ children, className }: SectionProps) {
+export default function Section({ children, className, id }: SectionProps) {
   return (
-    <section className={`mt-12 md:mt-30 xl:mt-40 ${className}`}>
+    <section id={id} className={`mt-12 md:mt-30 xl:mt-40 ${className}`}>
       {children}
     </section>
   );

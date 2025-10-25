@@ -58,7 +58,7 @@ export default function Projects() {
                       alt={tp(`${project.translationKey}.title`)}
                       width={500}
                       height={500}
-                      className="rounded hover:scale-101 cursor-pointer border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300"
+                      className="rounded cursor-pointer border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-shadow duration-300"
                     />
                   </TooltipTrigger>
                   <TooltipContent>

@@ -20,13 +20,13 @@ export default function Hero() {
   const t = useTranslations("HomePage");
 
   return (
-    <Section>
+    <Section id="home">
       <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
         <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 lg:order-1">
           <Image
             src="/images/profile_photo.png"
             alt="My profile picture"
-            className="shadow-lg shadow-purple-500/30 hover:rotate-1 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu w-1/2 lg:w-full"
+            className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu w-1/2 lg:w-full"
             width={500}
             height={500}
           />

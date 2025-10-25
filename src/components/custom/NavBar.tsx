@@ -34,7 +34,7 @@ export default function NavBar({ className }: { className?: string }) {
           <NavigationMenuItem>
             <Tooltip>
               <TooltipTrigger asChild>
-                <NavigationMenuLink className="cursor-pointer" href="/">
+                <NavigationMenuLink className="cursor-pointer" href="#home">
                   <RiHome2Line />
                 </NavigationMenuLink>
               </TooltipTrigger>
