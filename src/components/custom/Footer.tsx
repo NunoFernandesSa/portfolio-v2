@@ -20,9 +20,7 @@ export default function Footer() {
   return (
     <Section className="border-t-2">
       <div className="max-w-6xl flex flex-wrap justify-center md:justify-between items-center gap-3 mx-auto my-3">
-        <div className="text-sm font-light">
-          &copy;2025 nunofernandes-dev.com
-        </div>
+        <div className="text-sm font-light">&copy;2025 nunofernandes-dev</div>
         <Button
           onClick={() => setIsOpen(true)}
           className="cursor-pointer"

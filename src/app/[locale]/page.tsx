@@ -17,19 +17,20 @@ export default function Home() {
       <header className="fixed top-0 w-full flex items-center justify-center px-4 sm:px-8 md:px-16">
         <NavBar />
       </header>
+      <span id="home"></span>
       <main className="container mx-auto px-4 sm:px-8 md:px-16">
         <Hero />
 
-        <div id="services"></div>
+        <span id="services"></span>
         <Services />
 
-        <div id="technologies"></div>
+        <span id="technologies"></span>
         <Technologies />
 
-        <div id="portfolio"></div>
+        <span id="portfolio"></span>
         <Projects />
 
-        <div id="contact"></div>
+        <span id="contact"></span>
         <Contact />
       </main>
       <footer className="container mx-auto px-4 sm:px-8 md:px-16">

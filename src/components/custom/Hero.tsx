@@ -20,7 +20,7 @@ export default function Hero() {
   const t = useTranslations("HomePage");
 
   return (
-    <Section id="home">
+    <Section>
       <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
         <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 lg:order-1">
           <Image
