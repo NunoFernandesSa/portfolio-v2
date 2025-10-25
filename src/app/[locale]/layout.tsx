@@ -40,12 +40,7 @@ export default async function RootLayout({ children, params }: Props) {
       data-scroll-behavior="smooth"
     >
       <body className={`${rubik.className} antialiased overflow-x-hidden`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark">
           {/* ----- background fixed ----- */}
           <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
           <ScrollToTop />
