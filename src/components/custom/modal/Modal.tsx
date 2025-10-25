@@ -16,7 +16,7 @@ export function Modal({ isOpen, onClose, title }: ModalProps) {
     <div className="fixed inset-0 bg-transparent flex items-center justify-center p-4 z-50">
       <div className=" text-white rounded-lg max-w-6xl w-full p-6 max-h-[80vh] overflow-y-auto">
         {/* ----- background fixed ----- */}
-        <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+        <div className="fixed inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[#09090b]"></div>
 
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-bold text-primary">{t("title")}</h2>
