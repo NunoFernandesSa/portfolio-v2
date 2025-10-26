@@ -41,7 +41,7 @@ export default function HeroContentLeftSide() {
       </p>
 
       <Button
-        className="w-full max-w-lg rounded-full py-6 mb-10 text-sm xl:text-lg cursor-pointer hover:scale-101 transition-all duration-300 border"
+        className="w-full max-w-lg rounded-full py-6 mb-3 text-sm xl:text-lg cursor-pointer hover:scale-101 transition-all duration-300 border"
         variant={"outline"}
         title={t("ctlBtnText")}
         asChild
