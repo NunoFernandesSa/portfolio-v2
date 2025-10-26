@@ -14,13 +14,17 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/shadcn/drawer";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
-import { Button } from "../ui/shadcn/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "../../ui/shadcn/tooltip";
+import { Button } from "../../ui/shadcn/button";
 
 // ----- Custom components -----
-import Section from "./Section";
-import TitleSection from "./TitleSection";
-import SubtitleSection from "./SubtitleSection";
+import Section from "../../custom/Section";
+import TitleSection from "../../custom/TitleSection";
+import SubtitleSection from "../../custom/SubtitleSection";
 
 // ----- Constants -----
 import { PORTFOLIO_ITEMS } from "@/constants/portfolio";

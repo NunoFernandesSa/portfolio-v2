@@ -4,7 +4,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { SiNestjs } from "react-icons/si";
 import { SiElectron } from "react-icons/si";
 import { RiNodejsFill } from "react-icons/ri";
-import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandPython } from "react-icons/tb";
 import { TbBrandTypescript } from "react-icons/tb";
 import { TbBrandDjango } from "react-icons/tb";
@@ -20,14 +19,13 @@ import { SiSqlite } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 
 // ----- Custom components -----
-import TitleSection from "./TitleSection";
-import SubtitleSection from "./SubtitleSection";
-import Section from "./Section";
-import TechIcon from "./TechIcon";
+import TitleSection from "@/components/custom/TitleSection";
+import SubtitleSection from "@/components/custom/SubtitleSection";
+import Section from "@/components/custom/Section";
+import TechIconAndTitle from "./TechIcon";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
-import TechIconAndTitle from "./TechIcon";
 
 export default function Technologies() {
   const t = useTranslations("HomePage");

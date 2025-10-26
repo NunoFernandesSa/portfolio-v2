@@ -4,14 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 // ----- assets -----
-import linkedin from "../../../public/images/social/linkedin.png";
-import malt from "../../../public/images/social/malt.png";
+import linkedin from "./../../../../public/images/social/linkedin.png";
+import malt from "./../../../../public/images/social/malt.png";
 
 // ----- Shadcn components -----
-import { Button } from "../ui/shadcn/button";
+import { Button } from "@/components/ui/shadcn/button";
 
 // ----- Custom components -----
-import Section from "./Section";
+import Section from "@/components/custom/Section";
 
 // ----- i18n -----
 import { useTranslations } from "next-intl";

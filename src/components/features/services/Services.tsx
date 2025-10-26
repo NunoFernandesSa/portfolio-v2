@@ -7,12 +7,12 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "../ui/shadcn/card";
+} from "@/components/ui/shadcn/card";
 
 // -----  Custom components -----
-import Section from "./Section";
-import TitleSection from "./TitleSection";
-import SubtitleSection from "./SubtitleSection";
+import Section from "@/components/custom/Section";
+import TitleSection from "@/components/custom/TitleSection";
+import SubtitleSection from "@/components/custom/SubtitleSection";
 
 // ----- Constants -----
 import { SERVICES } from "@/constants/services";

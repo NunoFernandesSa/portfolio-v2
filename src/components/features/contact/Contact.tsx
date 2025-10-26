@@ -4,11 +4,11 @@ import { IoIosPhonePortrait } from "react-icons/io";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 
 // ----- Custom components -----
-import Section from "./Section";
-import TitleSection from "./TitleSection";
-import SubtitleSection from "./SubtitleSection";
+import Section from "@/components/custom/Section";
+import TitleSection from "@/components/custom/TitleSection";
+import SubtitleSection from "@/components/custom/SubtitleSection";
 // ----- Shadcn components -----
-import { Card } from "../ui/shadcn/card";
+import { Card } from "@/components/ui/shadcn/card";
 import ContactForm from "@/components/forms/ContactForm";
 
 // ----- next-intl -----

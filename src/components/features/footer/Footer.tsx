@@ -7,8 +7,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/shadcn/button";
 
 // ----- Custom components -----
-import Section from "./Section";
-import { Modal } from "./modal/Modal";
+import Section from "../../custom/Section";
+import { Modal } from "../../custom/modal/Modal";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";

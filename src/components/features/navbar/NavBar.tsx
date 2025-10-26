@@ -8,7 +8,11 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/shadcn/navigation-menu";
-import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/shadcn/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/shadcn/tooltip";
 
 // ----- React Icons -----
 import { RiHome2Line } from "react-icons/ri";
@@ -19,7 +23,7 @@ import { MdOutlineDesignServices } from "react-icons/md";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
-import LocalSwitcher from "./LocalSwitcher";
+import LocalSwitcher from "@/components/custom/LocalSwitcher";
 
 export default function NavBar({ className }: { className?: string }) {
   const t = useTranslations("HomePage");

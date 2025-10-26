@@ -4,7 +4,7 @@ import { rubik } from "@/lib/fonts";
 
 import "@/styles/globals.css";
 
-import { ThemeProvider } from "@/components/custom/theme-provider";
+import { ThemeProvider } from "@/components/features/theme/theme-provider";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

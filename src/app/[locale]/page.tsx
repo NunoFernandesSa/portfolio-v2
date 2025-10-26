@@ -1,13 +1,13 @@
 /**
  * Custom components
  */
-import NavBar from "@/components/custom/NavBar";
-import Hero from "@/components/custom/Hero";
-import Technologies from "@/components/custom/Technologies";
-import Projects from "@/components/custom/Projects";
-import Services from "@/components/custom/Services";
-import Contact from "@/components/custom/Contact";
-import Footer from "@/components/custom/Footer";
+import NavBar from "@/components/features/navbar/NavBar";
+import Hero from "@/components/features/hero/Hero";
+import Technologies from "@/components/features/techs/Technologies";
+import Projects from "@/components/features/projects/Projects";
+import Services from "@/components/features/services/Services";
+import Contact from "@/components/features/contact/Contact";
+import Footer from "@/components/features/footer/Footer";
 import SmoothFollower from "@/components/custom/SmoothFollowerCursor";
 
 export default function Home() {
