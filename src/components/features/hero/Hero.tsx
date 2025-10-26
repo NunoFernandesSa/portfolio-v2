@@ -12,19 +12,26 @@ import HeroContentLeftSide from "./HeroContentLeftSide";
 export default function Hero() {
   return (
     <Section>
-      <div className="flex flex-wrap justify-between flex-row md:flex-row-reverse">
-        <div className="w-full flex flex-col items-center lg:items-start mt-10 lg:w-1/3 order-2 lg:order-1">
-          <Image
-            src="/images/profile_photo.png"
-            alt="My profile picture"
-            className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu w-1/2 lg:w-full"
-            width={500}
-            height={500}
-          />
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between items-center">
+        {/* hero content right side */}
+        <HeroContentLeftSide />
 
         {/* hero content left side */}
-        <HeroContentLeftSide />
+        <div className="w-full flex justify-center items-center lg:items-start">
+          {/* <Image
+            src="/images/illustration-stylisé.png"
+            alt="My profile picture"
+            className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu"
+            width={400}
+            height={400}
+          /> */}
+          <Image
+            src="/images/illustration-stylisé.png"
+            alt="My profile picture"
+            width={400}
+            height={400}
+          />
+        </div>
       </div>
     </Section>
   );

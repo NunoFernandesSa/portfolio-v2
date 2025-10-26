@@ -18,7 +18,7 @@ export default function HeroContentLeftSide() {
   const t = useTranslations("HomePage");
 
   return (
-    <div className="w-full flex flex-col items-center justify-start lg:items-start mt-20 lg:mt-10 lg:w-1/2 order-1 lg:order-2">
+    <div className="w-full flex flex-col items-center justify-start lg:items-start mt-20 lg:mt-10">
       <div className="w-full">
         <h2 className="text-xl md:text-2xl font-semibold ml-2 py-3">
           Nuno Fernandes
