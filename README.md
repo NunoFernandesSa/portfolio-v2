@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio v2 – Next.js Personal Site
 
-## Getting Started
+A modern, responsive portfolio built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion.  
+Showcases projects and professional experience with fast rendering thanks to SSR/SSG.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- ⚡ Next.js 15 with App Router
+- 🎨 Tailwind CSS for utility-first styling
+- 🌐 Internationalization (i18n) with next-intl (FR/EN/PT)
+- 🪄 Page and component animations with Framer Motion
+- 📱 100% Lighthouse performance and accessibility score
+- 📬 Contact form with React-Hook-Form and Zod validation
+- 🔍 Optimized SEO meta tags
+- 🎯 One-click deploy to Vercel
+
+---
+
+## 🛠️ Technologies
+
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS, Shadcn/UI (Radix UI components)
+- **Forms**: React Hook Form, Zod
+- **Animations**: Framer Motion
+- **Internationalization**: next-intl
+- **Emails**: EmailJS
+- **Icons**: Lucide React, React Icons
+
+---
+
+## 📂 Project Structure
+
+```
+portfolio-v2/
+├── messages/           # Translation files (i18n)
+├── public/             # Static resources
+├── src/
+│   ├── app/            # Application routes
+│   ├── components/     # React components
+│   ├── constants/      # Constant data
+│   ├── i18n/           # i18n configuration
+│   ├── lib/            # Utilities and functions
+│   └── types/          # TypeScript types
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏁 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/portfolio-v2.git
+   cd portfolio-v2
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the site.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Internationalization
+
+This portfolio supports multiple languages (French, English, Portuguese) thanks to next-intl. Translation files are located in the `messages/` folder.
+
+To add a new language:
+
+1. Create a new JSON file in the `messages/` folder
+2. Add the language to the i18n configuration
+
+---
+
+## 🚀 Deployment
+
+This project is configured for easy deployment on Vercel.
