@@ -33,10 +33,10 @@ export default function HeroContentLeftSide() {
         {t("subtitle")}
       </p>
 
-      <p className="mt-4 max-w-xl text-md md:text-xl leading-relaxed tracking-tighter">
+      <p className="mt-4 max-w-xl text-md md:text-xl font-semibold">
         {t("ctlText")}
       </p>
-      <p className="mb-6 max-w-xl text-md md:text-xl leading-relaxed tracking-tighter">
+      <p className="mb-6 max-w-xl text-md md:text-xl font-semibold">
         {t("ctlText2")}
       </p>
 

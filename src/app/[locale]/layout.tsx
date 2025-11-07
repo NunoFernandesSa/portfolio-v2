@@ -42,8 +42,8 @@ export default async function RootLayout({ children, params }: Props) {
       <body className={`${rubik.className} antialiased overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
+          defaultTheme="system"
+          enableSystem={true}
         >
           {/* ----- background fixed ----- */}
           <ScrollToTop />
