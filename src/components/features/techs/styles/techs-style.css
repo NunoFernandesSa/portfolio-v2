@@ -10,7 +10,7 @@
 
 #techsCarrousel .carrouselGroup .card {
   min-width: 160px;
-  padding-right: 30px;
+  padding-right: 22px;
 }
 
 #techsCarrousel::-webkit-scrollbar {
