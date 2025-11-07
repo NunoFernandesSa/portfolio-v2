@@ -24,6 +24,9 @@ import SubtitleSection from "@/components/custom/SubtitleSection";
 import Section from "@/components/custom/Section";
 import TechIconAndTitle from "./TechIcon";
 
+// css import
+import "./styles/techs-style.css";
+
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
 
@@ -35,96 +38,232 @@ export default function Technologies() {
       <TitleSection title={t("techsTitle")} />
       <SubtitleSection text={t("techsSubtitle")} />
 
-      <div className="flex items-center justify-center flex-wrap gap-16">
-        <TechIconAndTitle
-          name="React Native"
-          icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
-        />
+      <div
+        id="techsCarrousel"
+        className="carrousel overflow-x-auto scrollbar-hide flex"
+      >
+        <div className="carrouselGroup flex items-center justify-center">
+          <TechIconAndTitle
+            name="React Native"
+            icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Next.js"
-          icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Next.js"
+            icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Typescript"
-          icon={<TbBrandTypescript className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Typescript"
+            icon={<TbBrandTypescript className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Tailwind Css"
-          icon={<RiTailwindCssFill className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Tailwind Css"
+            icon={<RiTailwindCssFill className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Node.js"
-          icon={<RiNodejsFill className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Node.js"
+            icon={<RiNodejsFill className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Nest.js"
-          icon={<SiNestjs className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Nest.js"
+            icon={<SiNestjs className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Python"
-          icon={<TbBrandPython className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Python"
+            icon={<TbBrandPython className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Django"
-          icon={<TbBrandDjango className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Django"
+            icon={<TbBrandDjango className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="PostgreSQL"
-          icon={<SiPostgresql className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="PostgreSQL"
+            icon={<SiPostgresql className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Mysql"
-          icon={<TbBrandMysql className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Mysql"
+            icon={<TbBrandMysql className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Sqlite"
-          icon={<SiSqlite className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Sqlite"
+            icon={<SiSqlite className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Electron.js"
-          icon={<SiElectron className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Electron.js"
+            icon={<SiElectron className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Figma"
-          icon={<FaFigma className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Figma"
+            icon={<FaFigma className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Docker"
-          icon={<TbBrandDocker className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Docker"
+            icon={<TbBrandDocker className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Prisma"
-          icon={<SiPrisma className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Prisma"
+            icon={<SiPrisma className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Vscode"
-          icon={<VscVscode className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Vscode"
+            icon={<VscVscode className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="Android studio"
-          icon={<SiAndroidstudio className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="Android studio"
+            icon={<SiAndroidstudio className="text-5xl md:text-7xl" />}
+            style="card"
+          />
 
-        <TechIconAndTitle
-          name="CMS Wordpress"
-          icon={<RiWordpressLine className="text-5xl md:text-7xl" />}
-        />
+          <TechIconAndTitle
+            name="CMS Wordpress"
+            icon={<RiWordpressLine className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+        </div>
+
+        <div
+          aria-hidden="true"
+          className="carrouselGroup flex items-center justify-center"
+        >
+          <TechIconAndTitle
+            name="React Native"
+            icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Next.js"
+            icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Typescript"
+            icon={<TbBrandTypescript className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Tailwind Css"
+            icon={<RiTailwindCssFill className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Node.js"
+            icon={<RiNodejsFill className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Nest.js"
+            icon={<SiNestjs className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Python"
+            icon={<TbBrandPython className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Django"
+            icon={<TbBrandDjango className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="PostgreSQL"
+            icon={<SiPostgresql className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Mysql"
+            icon={<TbBrandMysql className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Sqlite"
+            icon={<SiSqlite className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Electron.js"
+            icon={<SiElectron className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Figma"
+            icon={<FaFigma className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Docker"
+            icon={<TbBrandDocker className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Prisma"
+            icon={<SiPrisma className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Vscode"
+            icon={<VscVscode className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="Android studio"
+            icon={<SiAndroidstudio className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+
+          <TechIconAndTitle
+            name="CMS Wordpress"
+            icon={<RiWordpressLine className="text-5xl md:text-7xl" />}
+            style="card"
+          />
+        </div>
       </div>
     </Section>
   );

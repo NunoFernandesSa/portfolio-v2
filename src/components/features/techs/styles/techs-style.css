@@ -1,0 +1,28 @@
+#techsCarrousel {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carrouselGroup {
+  animation: spin 30s infinite linear;
+}
+
+#techsCarrousel .carrouselGroup .card {
+  min-width: 160px;
+  padding-right: 30px;
+}
+
+#techsCarrousel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
