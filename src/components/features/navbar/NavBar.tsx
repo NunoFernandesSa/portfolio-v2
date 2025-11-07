@@ -39,12 +39,10 @@ export default function NavBar({ className }: { className?: string }) {
             <Tooltip>
               <TooltipTrigger asChild>
                 <NavigationMenuLink className="cursor-pointer" href="#home">
-                  <RiHome2Line />
+                  <RiHome2Line className="md:hidden flex" />
+                  <span className="hidden md:flex">{t("navbarHome")}</span>
                 </NavigationMenuLink>
               </TooltipTrigger>
-              <TooltipContent>
-                <span>{t("navbarHome")}</span>
-              </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
 
@@ -52,12 +50,10 @@ export default function NavBar({ className }: { className?: string }) {
             <Tooltip>
               <TooltipTrigger asChild>
                 <NavigationMenuLink className="cursor-pointer" href="#services">
-                  <MdOutlineDesignServices />
+                  <MdOutlineDesignServices className="md:hidden flex" />{" "}
+                  <span className="hidden md:flex">{t("navbarServices")}</span>
                 </NavigationMenuLink>
               </TooltipTrigger>
-              <TooltipContent>
-                <span>{t("navbarServices")}</span>
-              </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
 
@@ -68,12 +64,12 @@ export default function NavBar({ className }: { className?: string }) {
                   className="cursor-pointer"
                   href="#technologies"
                 >
-                  <FaCode />
+                  <FaCode className="md:hidden flex" />
+                  <span className="hidden md:flex">
+                    {t("navbarTechnologies")}
+                  </span>
                 </NavigationMenuLink>
               </TooltipTrigger>
-              <TooltipContent>
-                <span>{t("navbarTechnologies")}</span>
-              </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
 
@@ -84,12 +80,10 @@ export default function NavBar({ className }: { className?: string }) {
                   className="cursor-pointer"
                   href="#portfolio"
                 >
-                  <PiBriefcase />
+                  <PiBriefcase className="md:hidden flex" />
+                  <span className="hidden md:flex">{t("navbarPortfolio")}</span>
                 </NavigationMenuLink>
               </TooltipTrigger>
-              <TooltipContent>
-                <span>{t("navbarPortfolio")}</span>
-              </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
 
@@ -97,12 +91,10 @@ export default function NavBar({ className }: { className?: string }) {
             <Tooltip>
               <TooltipTrigger asChild>
                 <NavigationMenuLink className="cursor-pointer" href="#contact">
-                  <LuMessageSquareCode />
+                  <LuMessageSquareCode className="md:hidden flex" />
+                  <span className="hidden md:flex">{t("navbarContact")}</span>
                 </NavigationMenuLink>
               </TooltipTrigger>
-              <TooltipContent>
-                <span>{t("navbarContact")}</span>
-              </TooltipContent>
             </Tooltip>
           </NavigationMenuItem>
 
