@@ -13,7 +13,7 @@ export default function NavBar() {
       <ul className="flex flex-row items-center justify-center">
         {navItems.map((item) => (
           <li key={item.href} className="px-4 py-2">
-            {t("navbar" + item.label)}
+            <a href={item.href}>{t("navbar" + item.label)}</a>
           </li>
         ))}
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/shadcn/button";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -12,11 +13,12 @@ export default function ThemeToggle() {
   if (!mounted) return null;
 
   return (
-    <button
+    <Button
+      variant={"outline"}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className="px-2 py-1 rounded btn btn-primary border"
     >
       {theme === "dark" ? "☀️" : "🌙"}
-    </button>
+    </Button>
   );
 }
