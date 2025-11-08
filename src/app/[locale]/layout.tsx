@@ -40,11 +40,7 @@ export default async function RootLayout({ children, params }: Props) {
       data-scroll-behavior="smooth"
     >
       <body className={`${rubik.className} antialiased overflow-x-hidden`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem={true}
-        >
+        <ThemeProvider attribute="class" defaultTheme="light">
           {/* ----- background fixed ----- */}
           <ScrollToTop />
           <ToastContainer

@@ -158,7 +158,7 @@ export default function Technologies() {
         >
           <TechIconAndTitle
             name="React Native"
-            icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
+            icon={<RiReactjsLine className="text-5xl md:text-7xl -z-90" />}
             style="card"
           />
 

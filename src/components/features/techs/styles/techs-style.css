@@ -2,6 +2,7 @@
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-color: #09080a;
 }
 
 .carrouselGroup {
@@ -11,7 +12,6 @@
 #techsCarrousel .carrouselGroup .card {
   min-width: 160px;
   padding-right: 22px;
-  z-index: -10;
 }
 
 #techsCarrousel::-webkit-scrollbar {

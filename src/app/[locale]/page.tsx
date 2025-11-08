@@ -1,7 +1,6 @@
 /**
  * Custom components
  */
-import NavBar from "@/components/features/navbar/NavBar";
 import Hero from "@/components/features/hero/Hero";
 import Technologies from "@/components/features/techs/Technologies";
 import Projects from "@/components/features/projects/Projects";
@@ -9,29 +8,30 @@ import Services from "@/components/features/services/Services";
 import Contact from "@/components/features/contact/Contact";
 import Footer from "@/components/features/footer/Footer";
 import SmoothFollower from "@/components/custom/SmoothFollowerCursor";
+import NavBarComponent from "@/components/features/navbar/NavBar";
 
 export default function Home() {
   return (
     <>
       <SmoothFollower />
-      <header className="fixed top-0 w-full flex items-center justify-center px-4 sm:px-8 md:px-16">
-        <NavBar />
+      <header>
+        <NavBarComponent />
       </header>
       <span id="home"></span>
       <main className="container mx-auto px-4 sm:px-8 md:px-16">
         <Hero />
 
         <span id="services"></span>
-        <Services />
+        {/* <Services /> */}
 
         <span id="technologies"></span>
-        <Technologies />
+        {/* <Technologies /> */}
 
         <span id="portfolio"></span>
-        <Projects />
+        {/* <Projects /> */}
 
         <span id="contact"></span>
-        <Contact />
+        {/* <Contact /> */}
       </main>
       <footer className="container mx-auto px-4 sm:px-8 md:px-16">
         <Footer />
