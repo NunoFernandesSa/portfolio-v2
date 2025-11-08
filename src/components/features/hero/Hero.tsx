@@ -19,7 +19,7 @@ export default function Hero() {
         {/* hero content left side */}
         <div className="w-full flex justify-center items-center lg:items-start">
           <Image
-            src="/images/illustration-stylisé.png"
+            src="/images/profile_photo.png"
             alt="My profile picture"
             className="shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300 rounded-3xl transform-gpu -z-10"
             width={400}
