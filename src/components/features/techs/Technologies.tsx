@@ -38,10 +38,7 @@ export default function Technologies() {
       <TitleSection title={t("techsTitle")} />
       <SubtitleSection text={t("techsSubtitle")} />
 
-      <div
-        id="techsCarrousel"
-        className="carrousel overflow-x-auto scrollbar-hide flex"
-      >
+      <div id="techsCarrousel" className="overflow-x-auto scrollbar-hide flex">
         <div className="carrouselGroup flex items-center justify-center">
           <TechIconAndTitle
             name="React Native"

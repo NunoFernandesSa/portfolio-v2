@@ -25,13 +25,13 @@ export default function Home() {
         <Services />
 
         <span id="technologies"></span>
-        {/* <Technologies /> */}
+        <Technologies />
 
         <span id="portfolio"></span>
-        {/* <Projects /> */}
+        <Projects />
 
         <span id="contact"></span>
-        {/* <Contact /> */}
+        <Contact />
       </main>
       <footer className="container mx-auto px-4 sm:px-8 md:px-16">
         <Footer />

@@ -9,12 +9,12 @@ export default function NavBar() {
   const t = useTranslations("HomePage");
 
   return (
-    <nav className="fixed top-0 left-0 right-0 h-24 flex flex-row items-center justify-center text-primary-foreground bg-primary">
+    <nav className="fixed top-3 left-1/2 -translate-x-1/2 w-[800px] h-16 flex flex-row items-center justify-center text-primary-foreground bg-primary/90 backdrop-blur-md rounded-full">
       <ul className="flex flex-row items-center justify-center">
         {navItems.map((item) => (
           <li
             key={item.href}
-            className="px-4 py-2 hover:bg-primary-foreground hover:text-primary ease-in-out duration-300"
+            className="px-4 py-2 hover:underline ease-in-out duration-300 text-md"
           >
             <a href={`#${item.href}`}>
               <p className="text-md">{t("navbar" + item.label)}</p>
