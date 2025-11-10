@@ -29,6 +29,7 @@ import "./styles/techs-style.css";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
+import { Card } from "@/components/ui/shadcn/card";
 
 export default function Technologies() {
   const t = useTranslations("HomePage");
@@ -37,6 +38,13 @@ export default function Technologies() {
     <Section>
       <TitleSection title={t("techsTitle")} />
       <SubtitleSection text={t("techsSubtitle")} />
+
+      {/* Front */}
+      <div className="">
+        <Card>
+          
+        </Card>
+      </div>
 
       <div id="techsCarrousel" className="overflow-x-auto scrollbar-hide flex">
         <div className="carrouselGroup flex items-center justify-center">
