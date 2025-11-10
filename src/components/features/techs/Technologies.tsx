@@ -1,4 +1,6 @@
 // ----- React icons -----
+import { RiHtml5Fill } from "react-icons/ri";
+import { RiCss3Fill } from "react-icons/ri";
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiNestjs } from "react-icons/si";
@@ -29,7 +31,14 @@ import "./styles/techs-style.css";
 
 // ----- next-intl -----
 import { useTranslations } from "next-intl";
-import { Card } from "@/components/ui/shadcn/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/shadcn/card";
+import { techsFront } from "@/constants/techs-list";
 
 export default function Technologies() {
   const t = useTranslations("HomePage");
@@ -40,35 +49,65 @@ export default function Technologies() {
       <SubtitleSection text={t("techsSubtitle")} />
 
       {/* Front */}
-      <div className="">
-        <Card>
-          
+      <div className="flex flex-wrap justify-center gap-4">
+        <Card
+          className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300`}
+        >
+          <CardContent>
+            {/* html*/}
+            <TechIconAndTitle
+              name="html"
+              icon={<RiHtml5Fill className="text-5xl" />}
+              style="card"
+            />
+            {/* css */}
+            <TechIconAndTitle
+              name="css"
+              icon={<RiCss3Fill className="text-5xl" />}
+              style="card"
+            />
+
+            {/* React JS */}
+            <TechIconAndTitle
+              name="React JS"
+              icon={<RiReactjsLine className="text-5xl" />}
+              style="card"
+            />
+
+            {/* React Native */}
+            <TechIconAndTitle
+              name="React Native"
+              icon={<RiReactjsLine className="text-5xl" />}
+              style="card"
+            />
+
+            {/* Next.js */}
+            <TechIconAndTitle
+              name="Next.js"
+              icon={<TbBrandNextjs className="text-5xl" />}
+              style="card"
+            />
+
+            {/* Tailwind Css */}
+            <TechIconAndTitle
+              name="Tailwind Css"
+              icon={<RiTailwindCssFill className="text-5xl" />}
+              style="card"
+            />
+          </CardContent>
         </Card>
       </div>
 
       <div id="techsCarrousel" className="overflow-x-auto scrollbar-hide flex">
         <div className="carrouselGroup flex items-center justify-center">
           <TechIconAndTitle
-            name="React Native"
-            icon={<RiReactjsLine className="text-5xl md:text-7xl" />}
-            style="card"
-          />
-
-          <TechIconAndTitle
-            name="Next.js"
-            icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
-            style="card"
-          />
-
-          <TechIconAndTitle
             name="Typescript"
             icon={<TbBrandTypescript className="text-5xl md:text-7xl" />}
             style="card"
           />
-
           <TechIconAndTitle
-            name="Tailwind Css"
-            icon={<RiTailwindCssFill className="text-5xl md:text-7xl" />}
+            name="Python"
+            icon={<TbBrandPython className="text-5xl md:text-7xl" />}
             style="card"
           />
 
@@ -81,12 +120,6 @@ export default function Technologies() {
           <TechIconAndTitle
             name="Nest.js"
             icon={<SiNestjs className="text-5xl md:text-7xl" />}
-            style="card"
-          />
-
-          <TechIconAndTitle
-            name="Python"
-            icon={<TbBrandPython className="text-5xl md:text-7xl" />}
             style="card"
           />
 
@@ -161,12 +194,6 @@ export default function Technologies() {
           aria-hidden="true"
           className="carrouselGroup flex items-center justify-center"
         >
-          <TechIconAndTitle
-            name="React Native"
-            icon={<RiReactjsLine className="text-5xl md:text-7xl -z-90" />}
-            style="card"
-          />
-
           <TechIconAndTitle
             name="Next.js"
             icon={<TbBrandNextjs className="text-5xl md:text-7xl" />}
