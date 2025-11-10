@@ -53,7 +53,10 @@ export default function Technologies() {
         <Card
           className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all duration-300`}
         >
-          <CardContent>
+          <CardHeader>
+            <CardTitle className="text-3xl">Front-end</CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-wrap justify-center gap-2">
             {/* html*/}
             <TechIconAndTitle
               name="html"
