@@ -35,23 +35,21 @@ export default function Services() {
         {SERVICES.map((service, index) => (
           <div key={index}>
             <Card
-              className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 min-h-[425px] transition-all duration-300`}
+              className={`bg-transparent border-2 border-purple-500/10 shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 min-h-[320px] transition-all duration-300 flex flex-col items-start justify-center p-6 gap-4`}
             >
-              <CardHeader className="p-2 sm:p-6 gap-6">
-                <Image
-                  src={service.icon}
-                  alt={ts(`${service.translationKey}.title`)}
-                  width={80}
-                  height={80}
-                  className="mx-auto"
-                />
+              <Image
+                src={service.icon}
+                alt={ts(`${service.translationKey}.title`)}
+                width={36}
+                height={36}
+                sizes="36px"
+              />
 
-                <CardTitle>{ts(`${service.translationKey}.title`)}</CardTitle>
-                <CardDescription>
-                  {ts(`${service.translationKey}.description`)}
-                </CardDescription>
-              </CardHeader>
-              <CardContent></CardContent>
+              <p className="text-xl">{ts(`${service.translationKey}.title`)}</p>
+
+              <p className="text-start text-sm text-white/80">
+                {ts(`${service.translationKey}.description`)}
+              </p>
             </Card>
           </div>
         ))}

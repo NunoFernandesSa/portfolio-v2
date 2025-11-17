@@ -9,7 +9,7 @@ export default function NavBar() {
   const t = useTranslations("HomePage");
 
   return (
-    <nav className="fixed top-3 left-1/2 -translate-x-1/2 w-[800px] h-16 flex flex-row items-center justify-center text-primary-foreground bg-primary/90 backdrop-blur-md rounded-full">
+    <nav className="fixed top-3 left-1/2 -translate-x-1/2 w-[800px] h-16 flex flex-row items-center justify-center text-primary-foreground bg-zinc-900 backdrop-blur-md rounded-full">
       <ul className="flex flex-row items-center justify-center">
         {navItems.map((item) => (
           <li
